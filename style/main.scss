@@ -1,0 +1,142 @@
+// variables
+$page-bg:                   #607d8b;
+$base-font-size:            16px;       // becomes 1rem
+$menu-silver:               #eee;
+$menu-border:               #dedede;
+$menu-focused:              #1e88e5;
+$menu-separator:            #ccc;
+$menu-text-color:           #333;
+$menu-shortcut-color:       #999;
+$menu-focused-text-color:   #fff;
+$menu-text-color-disabled:  #999;
+$menu-border-width:         1px;
+$menu-shadow:               2px 2px 3px -3px $menu-text-color;
+$menu-content-padding:      0.5rem 1rem 0.5rem 1.75rem;
+$menu-border-radius:        0.5rem;
+$menu-top-padding:          0.25rem;
+
+.flyout-nav 
+{
+    // list of menu items at any level
+    ul 
+    {
+        background: $menu-silver;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        display: none;
+        list-style-type: none;
+    }
+
+    // a menu item
+    li 
+    {
+        position: relative;
+        display: block;
+
+
+        // the menu items - text, shortcut info and hover effect (blue bg)
+        a 
+        {
+            text-decoration: none;
+            color: $menu-text-color;
+            position: relative;
+            display: table;
+            width: 100%;
+
+            .label,
+            .shortcut 
+            {
+                display: table-cell;
+                padding: $menu-content-padding;
+            }
+
+            .shortcut 
+            {
+                text-align: right;
+                color: $menu-shortcut-color;
+            }
+
+            label 
+            {
+                cursor: pointer;
+            }
+
+            // for menu items that are toggles
+            input[type='checkbox'] 
+            {
+                display: none;
+            }
+
+            input[type='checkbox']:checked + .label 
+            {
+                &::before {
+                    content: '✔️';
+                    position: absolute;
+                    top: 0;
+                    left: 0.25rem;
+                    padding: 0.25rem;
+                }
+            }
+
+            &:hover 
+            {
+                background: $menu-focused;
+                .label,
+                .shortcut 
+                {
+                    color: $menu-focused-text-color;
+                }
+            }
+        }
+
+        // don't let disabled options respond to hover
+        // or click and color them different
+        &.disabled 
+        {
+            .label,
+            .shortcut 
+            {
+                color: $menu-text-color-disabled;
+            }
+            pointer-events: none;
+        }
+
+        // the separator item
+        &.separator 
+        {
+            margin-bottom: $menu-top-padding;
+            border-bottom: $menu-border-width solid $menu-separator;
+            padding-bottom: $menu-top-padding;
+        }
+
+        // show the next level drop-down on
+        // the right at the same height
+        &:hover 
+        {
+            & > ul 
+            {
+                display: block;
+                top: 0;
+                left: 100%;
+            }
+        }
+    }
+
+    // overrides for first-level behaviour (horizontal bar)
+    & > ul 
+    {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        // first-level drop-down should appear
+        // below at the same left position
+        & > li:hover > ul 
+        {
+            top: 100%;
+            left: 0;
+        }
+    }
+}

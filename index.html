@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Canvas</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/main.css">
+
+</head>
+<body>
+
+	<nav class="flyout-nav">
+
+	    <ul>
+	        <li>
+	            <a href="#"><span class="label">Init</span></a>
+	            <ul>
+	                <li>
+	                    <a href="#">
+	                        <span class="label" id="clear-canvas">Clear Canvas</span>
+	                    </a>
+	                </li>
+	                <li class="separator"></li>
+	                <li class="has-children">
+	                    <a href="#">
+	                        <span class="label">Single Circles</span>
+	                    </a>
+	                    <ul>
+	                    	<li>
+	                            <a href="#">
+	                                <input type="checkbox" id="seed-circle-checkbox" class="seed-checkbox" value="1"/>
+	                                <label class="label" for="seed-circle-checkbox">Seed</label>
+	  							</a>
+	                        </li>
+	                    	<li class="has-children">
+			                    <a href="#">
+			                        <span class="label">01</span>
+			                    </a>
+			                    <ul>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-01-01-checkbox" class="single-circle-checkbox" value="1"/>
+		                                	<label class="label" for="circle-01-01-checkbox">01</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-01-02-checkbox" class="single-circle-checkbox" value="2"/>
+		                                	<label class="label" for="circle-01-02-checkbox">02</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-01-03-checkbox" class="single-circle-checkbox" value="3"/>
+		                                	<label class="label" for="circle-01-03-checkbox">03</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-01-04-checkbox" class="single-circle-checkbox" value="4"/>
+		                                	<label class="label" for="circle-01-04-checkbox">04</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-01-05-checkbox" class="single-circle-checkbox" value="5"/>
+		                                	<label class="label" for="circle-01-05-checkbox">05</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-01-06-checkbox" class="single-circle-checkbox" value="6"/>
+		                                	<label class="label" for="circle-01-06-checkbox">06</label>
+		  								</a>
+			                        </li>
+			                    </ul>
+		                	</li>
+		                	<li class="has-children">
+			                    <a href="#">
+			                        <span class="label">02</span>
+			                    </a>
+			                    <ul>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-02-01-checkbox" class="single-circle-checkbox" value="7"/>
+		                                	<label class="label" for="circle-02-01-checkbox">01</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-02-02-checkbox" class="single-circle-checkbox" value="8"/>
+		                                	<label class="label" for="circle-02-02-checkbox">02</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-02-03-checkbox" class="single-circle-checkbox" value="9"/>
+		                                	<label class="label" for="circle-02-03-checkbox">03</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-02-04-checkbox" class="single-circle-checkbox" value="10"/>
+		                                	<label class="label" for="circle-02-04-checkbox">04</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-02-05-checkbox" class="single-circle-checkbox" value="11"/>
+		                                	<label class="label" for="circle-02-05-checkbox">05</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-02-06-checkbox" class="single-circle-checkbox" value="12"/>
+		                                	<label class="label" for="circle-02-06-checkbox">06</label>
+		  								</a>
+			                        </li>
+			                    </ul>
+		                	</li>
+		                	<li class="has-children">
+			                    <a href="#">
+			                        <span class="label">03</span>
+			                    </a>
+			                    <ul>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-03-01-checkbox" class="single-circle-checkbox" value="13"/>
+		                                	<label class="label" for="circle-03-01-checkbox">01</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-03-02-checkbox" class="single-circle-checkbox" value="14"/>
+		                                	<label class="label" for="circle-03-02-checkbox">02</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-03-03-checkbox" class="single-circle-checkbox" value="15"/>
+		                                	<label class="label" for="circle-03-03-checkbox">03</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-03-04-checkbox" class="single-circle-checkbox" value="16"/>
+		                                	<label class="label" for="circle-03-04-checkbox">04</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-03-05-checkbox" class="single-circle-checkbox" value="17"/>
+		                                	<label class="label" for="circle-03-05-checkbox">05</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-03-06-checkbox" class="single-circle-checkbox" value="18"/>
+		                                	<label class="label" for="circle-03-06-checkbox">06</label>
+		  								</a>
+			                        </li>
+			                    </ul>
+		                	</li>
+		                	<li class="has-children">
+			                    <a href="#">
+			                        <span class="label">04</span>
+			                    </a>
+			                    <ul>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-04-01-checkbox" class="single-circle-checkbox" value="19"/>
+		                                	<label class="label" for="circle-04-01-checkbox">01</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-04-02-checkbox" class="single-circle-checkbox" value="20"/>
+		                                	<label class="label" for="circle-04-02-checkbox">02</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-04-03-checkbox" class="single-circle-checkbox" value="21"/>
+		                                	<label class="label" for="circle-04-03-checkbox">03</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-04-04-checkbox" class="single-circle-checkbox" value="22"/>
+		                                	<label class="label" for="circle-04-04-checkbox">04</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-04-05-checkbox" class="single-circle-checkbox" value="23"/>
+		                                	<label class="label" for="circle-04-05-checkbox">05</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-04-06-checkbox" class="single-circle-checkbox" value="24"/>
+		                                	<label class="label" for="circle-04-06-checkbox">06</label>
+		  								</a>
+			                        </li>
+			                    </ul>
+		                	</li>
+		                	<li class="has-children">
+			                    <a href="#">
+			                        <span class="label">05</span>
+			                    </a>
+			                    <ul>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-05-01-checkbox" class="single-circle-checkbox" value="25"/>
+		                                	<label class="label" for="circle-05-01-checkbox">01</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-05-02-checkbox" class="single-circle-checkbox" value="26"/>
+		                                	<label class="label" for="circle-05-02-checkbox">02</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-05-03-checkbox" class="single-circle-checkbox" value="27"/>
+		                                	<label class="label" for="circle-05-03-checkbox">03</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-05-04-checkbox" class="single-circle-checkbox" value="28"/>
+		                                	<label class="label" for="circle-05-04-checkbox">04</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-05-05-checkbox" class="single-circle-checkbox" value="29"/>
+		                                	<label class="label" for="circle-05-05-checkbox">05</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-05-06-checkbox" class="single-circle-checkbox" value="30"/>
+		                                	<label class="label" for="circle-05-06-checkbox">06</label>
+		  								</a>
+			                        </li>
+			                    </ul>
+		                	</li>
+		                	<li class="has-children">
+			                    <a href="#">
+			                        <span class="label">06</span>
+			                    </a>
+			                    <ul>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-06-01-checkbox" class="single-circle-checkbox" value="31"/>
+		                                	<label class="label" for="circle-06-01-checkbox">01</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-06-02-checkbox" class="single-circle-checkbox" value="32"/>
+		                                	<label class="label" for="circle-06-02-checkbox">02</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-06-03-checkbox" class="single-circle-checkbox" value="33"/>
+		                                	<label class="label" for="circle-06-03-checkbox">03</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-06-04-checkbox" class="single-circle-checkbox" value="34"/>
+		                                	<label class="label" for="circle-06-04-checkbox">04</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-06-05-checkbox" class="single-circle-checkbox" value="35"/>
+		                                	<label class="label" for="circle-06-05-checkbox">05</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-06-06-checkbox" class="single-circle-checkbox" value="36"/>
+		                                	<label class="label" for="circle-06-06-checkbox">06</label>
+		  								</a>
+			                        </li>
+			                    </ul>
+		                	</li>
+		                	<li class="has-children">
+			                    <a href="#">
+			                        <span class="label">07</span>
+			                    </a>
+			                    <ul>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-07-01-checkbox" class="single-circle-checkbox" value="37"/>
+		                                	<label class="label" for="circle-07-01-checkbox">01</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-07-02-checkbox" class="single-circle-checkbox" value="38"/>
+		                                	<label class="label" for="circle-07-02-checkbox">02</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-07-03-checkbox" class="single-circle-checkbox" value="39"/>
+		                                	<label class="label" for="circle-07-03-checkbox">03</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-07-04-checkbox" class="single-circle-checkbox" value="40"/>
+		                                	<label class="label" for="circle-07-04-checkbox">04</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-07-05-checkbox" class="single-circle-checkbox" value="41"/>
+		                                	<label class="label" for="circle-07-05-checkbox">05</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-07-06-checkbox" class="single-circle-checkbox" value="42"/>
+		                                	<label class="label" for="circle-07-06-checkbox">06</label>
+		  								</a>
+			                        </li>
+			                    </ul>
+		                	</li>
+		                	<li class="has-children">
+			                    <a href="#">
+			                        <span class="label">08</span>
+			                    </a>
+			                    <ul>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-08-01-checkbox" class="single-circle-checkbox" value="43"/>
+		                                	<label class="label" for="circle-08-01-checkbox">01</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-08-02-checkbox" class="single-circle-checkbox" value="44"/>
+		                                	<label class="label" for="circle-08-02-checkbox">02</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-08-03-checkbox" class="single-circle-checkbox" value="45"/>
+		                                	<label class="label" for="circle-08-03-checkbox">03</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-08-04-checkbox" class="single-circle-checkbox" value="46"/>
+		                                	<label class="label" for="circle-08-04-checkbox">04</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-08-05-checkbox" class="single-circle-checkbox" value="47"/>
+		                                	<label class="label" for="circle-08-05-checkbox">05</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-08-06-checkbox" class="single-circle-checkbox" value="48"/>
+		                                	<label class="label" for="circle-08-06-checkbox">06</label>
+		  								</a>
+			                        </li>
+			                    </ul>
+		                	</li>
+		                	<li class="has-children">
+			                    <a href="#">
+			                        <span class="label">09</span>
+			                    </a>
+			                    <ul>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-09-01-checkbox" class="single-circle-checkbox" value="49"/>
+		                                	<label class="label" for="circle-09-01-checkbox">01</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-09-02-checkbox" class="single-circle-checkbox" value="50"/>
+		                                	<label class="label" for="circle-09-02-checkbox">02</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-09-03-checkbox" class="single-circle-checkbox" value="51"/>
+		                                	<label class="label" for="circle-09-03-checkbox">03</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-09-04-checkbox" class="single-circle-checkbox" value="52"/>
+		                                	<label class="label" for="circle-09-04-checkbox">04</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-09-05-checkbox" class="single-circle-checkbox" value="53"/>
+		                                	<label class="label" for="circle-09-05-checkbox">05</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-09-06-checkbox" class="single-circle-checkbox" value="54"/>
+		                                	<label class="label" for="circle-09-06-checkbox">06</label>
+		  								</a>
+			                        </li>
+			                    </ul>
+		                	</li>
+		                	<li class="has-children">
+			                    <a href="#">
+			                        <span class="label">10</span>
+			                    </a>
+			                    <ul>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-10-01-checkbox" class="single-circle-checkbox" value="55"/>
+		                                	<label class="label" for="circle-10-01-checkbox">01</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-10-02-checkbox" class="single-circle-checkbox" value="56"/>
+		                                	<label class="label" for="circle-10-02-checkbox">02</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-10-03-checkbox" class="single-circle-checkbox" value="57"/>
+		                                	<label class="label" for="circle-10-03-checkbox">03</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-10-04-checkbox" class="single-circle-checkbox" value="58"/>
+		                                	<label class="label" for="circle-10-04-checkbox">04</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-10-05-checkbox" class="single-circle-checkbox" value="59"/>
+		                                	<label class="label" for="circle-10-05-checkbox">05</label>
+		  								</a>
+			                        </li>
+			                        <li>
+			                            <a href="#">
+		                                	<input type="checkbox" id="circle-10-06-checkbox" class="single-circle-checkbox" value="60"/>
+		                                	<label class="label" for="circle-10-06-checkbox">06</label>
+		  								</a>
+			                        </li>
+			                    </ul>
+		                	</li>
+	                    </ul>
+	                </li>
+	                <li class="separator"></li>
+	                <li class="has-children">
+	                    <a href="#">
+	                        <span class="label">Sequenced Circles</span>
+	                    </a>
+	                    <ul>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="sequenced-circle-01-checkbox" class="sequenced-circle-checkbox" value="1"/>
+	                                <label class="label" for="sequenced-circle-01-checkbox">01</label>
+	  							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="sequenced-circle-02-checkbox" class="sequenced-circle-checkbox" value="2"/>
+	                                <label class="label" for="sequenced-circle-02-checkbox">02</label>
+	 							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="sequenced-circle-03-checkbox" class="sequenced-circle-checkbox" value="3"/>
+	                                <label class="label" for="sequenced-circle-03-checkbox">03</label>
+	 							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="sequenced-circle-04-checkbox" class="sequenced-circle-checkbox" value="4"/>
+	                                <label class="label" for="sequenced-circle-04-checkbox">04</label>
+	 							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="sequenced-circle-05-checkbox" class="sequenced-circle-checkbox" value="5"/>
+	                                <label class="label" for="sequenced-circle-05-checkbox">05</label>
+	 							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="sequenced-circle-06-checkbox" class="sequenced-circle-checkbox" value="6"/>
+	                                <label class="label" for="sequenced-circle-06-checkbox">06</label>
+	 							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="sequenced-circle-07-checkbox" class="sequenced-circle-checkbox" value="7"/>
+	                                <label class="label" for="sequenced-circle-07-checkbox">07</label>
+	 							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="sequenced-circle-08-checkbox" class="sequenced-circle-checkbox" value="8"/>
+	                                <label class="label" for="sequenced-circle-08-checkbox">08</label>
+	 							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="sequenced-circle-09-checkbox" class="sequenced-circle-checkbox" value="9"/>
+	                                <label class="label" for="sequenced-circle-09-checkbox">09</label>
+	 							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="sequenced-circle-10-checkbox" class="sequenced-circle-checkbox" value="10"/>
+	                                <label class="label" for="sequenced-circle-10-checkbox">10</label>
+	 							</a>
+	                        </li>
+	                        <li class="separator"></li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="full-circle-cycle-checkbox"/>
+	                                <label class="label fullcycle" for="full-circle-cycle-checkbox" id="full-circle-cycle">Full</label>
+	 							</a>
+	                        </li>
+	                    </ul>
+	                </li>
+	                <li class="separator"></li>
+	                <li class="has-children">
+	                    <a href="#">
+	                        <span class="label">Hexagon</span>
+	                    </a>
+	                    <ul>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="hexagon-01-checkbox" class="hexagon-checkbox" value="1"/>
+	                                <label class="label" for="hexagon-01-checkbox">01</label>
+	  							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="hexagon-02-checkbox" class="hexagon-checkbox" value="2"/>
+	                                <label class="label" for="hexagon-02-checkbox">02</label>
+	 							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="hexagon-03-checkbox" class="hexagon-checkbox" value="3"/>
+	                                <label class="label" for="hexagon-03-checkbox">03</label>
+	 							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="hexagon-04-checkbox" class="hexagon-checkbox" value="4"/>
+	                                <label class="label" for="hexagon-04-checkbox">04</label>
+	 							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="hexagon-05-checkbox" class="hexagon-checkbox" value="5"/>
+	                                <label class="label" for="hexagon-05-checkbox">05</label>
+	 							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="hexagon-06-checkbox" class="hexagon-checkbox" value="6"/>
+	                                <label class="label" for="hexagon-06-checkbox">06</label>
+	 							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="hexagon-07-checkbox" class="hexagon-checkbox" value="7"/>
+	                                <label class="label" for="hexagon-07-checkbox">07</label>
+	 							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="hexagon-08-checkbox" class="hexagon-checkbox" value="8"/>
+	                                <label class="label" for="hexagon-08-checkbox">08</label>
+	 							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="hexagon-09-checkbox" class="hexagon-checkbox" value="9"/>
+	                                <label class="label" for="hexagon-09-checkbox">09</label>
+	 							</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="hexagon-10-checkbox" class="hexagon-checkbox" value="10"/>
+	                                <label class="label" for="hexagon-10-checkbox">10</label>
+	 							</a>
+	                        </li>
+	                        <li class="separator"></li>
+	                        <li>
+	                            <a href="#">
+	                                <input type="checkbox" id="full-hexagon-checkbox"/>
+	                                <label class="label" for="full-hexagon-checkbox" id="full-hexagon-cycle">Full</label>
+	 							</a>
+	                        </li>
+	                    </ul>
+	                </li>
+	                <li class="separator"></li>
+	                <li>
+	                    <a href="#">
+	                        <span class="label">Print...</span>
+	                    </a>
+	                </li>
+	            </ul>
+<!-- 	        </li>
+	        <li>
+	            <a href="#">
+	                <span class="label">View</span>
+	            </a>
+	            <ul>
+	                <li>
+	                    <a href="#">
+	                        <input type="checkbox" id="alwaysShowBookmarksBar" checked />
+	                        <label class="label" for="alwaysShowBookmarksBar">Always Show Bookmarks Bar</label>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">
+	                        <input type="checkbox" id="alwaysShowToolbar" />
+	                        <label class="label" for="alwaysShowToolbar">Always Show Toolbar in Fullscreen</label>
+	                    </a>
+	                </li>
+	                <li class="separator"></li>
+	                <li>
+	                    <a href="#">
+	                        <span class="label">Stop</span>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">
+	                        <span class="label">Reload This Page</span>
+	                    </a>
+	                </li>
+	                <li class="separator"></li>
+	                <li>
+	                    <a href="#">
+	                        <span class="label">Exit Fullscreen</span>
+	                    </a>
+	                </li>
+	                <li class="separator"></li>
+	                <li>
+	                    <a href="#">
+	                        <span class="label">Zoom In</span>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">
+	                        <span class="label">Zoom Out</span>
+	                    </a>
+	                </li>
+	                <li class="separator"></li>
+	                <li>
+	                    <a href="#">
+	                        <span class="label">Cast...</span>
+	                    </a>
+	                </li>
+	                <li class="separator"></li>
+	                <li class="has-children">
+	                    <a href="#">
+	                        <span class="label">Developer</span>
+	                    </a>
+	                    <ul>
+	                        <li>
+	                            <a href="#">
+	                                <span class="label">View Source</span>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <span class="label">Developer Tools</span>
+	                            </a>
+	                        </li>
+	                    </ul>
+	                </li>
+	            </ul>
+	        </li>
+	        <li>
+	            <a href="#">
+	                <span class="label">Window</span>
+	            </a>
+	            <ul>
+	                <li>
+	                    <a href="#">
+	                        <span class="label">Minimize</span>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">
+	                        <span class="label">Zoom</span>
+	                    </a>
+	                </li>
+	                <li class="separator"></li>
+	                <li>
+	                    <a href="#">
+	                        <span class="label">Downloads</span>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">
+	                        <span class="label">Extensions</span>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">
+	                        <span class="label">Task Manager</span>
+	                    </a>
+	                </li>
+	            </ul>
+	        </li>
+	        <li>
+	            <a href="#">
+	                <span class="label">Help</span>
+	            </a>
+	            <ul>
+	                <li>
+	                    <a href="#">
+	                        <span class="label">Search</span>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">
+	                        <span class="label">Report an Issue...</span>
+	                    </a>
+	                </li>
+	            </ul>
+	        </li> -->
+	    </ul>
+
+	</nav>
+
+	<canvas id="canvas"></canvas>
+
+	<script src="script/main.js"></script>
+
+</body>
+</html>

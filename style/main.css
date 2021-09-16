@@ -1,0 +1,62 @@
+@charset "UTF-8";
+.flyout-nav ul {
+  background: #eee;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style-type: none; }
+.flyout-nav li {
+  position: relative;
+  display: block; }
+  .flyout-nav li a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    display: table;
+    width: 100%; }
+    .flyout-nav li a .label,
+    .flyout-nav li a .shortcut {
+      display: table-cell;
+      padding: 0.5rem 1rem 0.5rem 1.75rem; }
+    .flyout-nav li a .shortcut {
+      text-align: right;
+      color: #999; }
+    .flyout-nav li a label {
+      cursor: pointer; }
+    .flyout-nav li a input[type='checkbox'] {
+      display: none; }
+    .flyout-nav li a input[type='checkbox']:checked + .label::before {
+      content: '✔️';
+      position: absolute;
+      top: 0;
+      left: 0.25rem;
+      padding: 0.25rem; }
+    .flyout-nav li a:hover {
+      background: #1e88e5; }
+      .flyout-nav li a:hover .label,
+      .flyout-nav li a:hover .shortcut {
+        color: #fff; }
+  .flyout-nav li.disabled {
+    pointer-events: none; }
+    .flyout-nav li.disabled .label,
+    .flyout-nav li.disabled .shortcut {
+      color: #999; }
+  .flyout-nav li.separator {
+    margin-bottom: 0.25rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.25rem; }
+  .flyout-nav li:hover > ul {
+    display: block;
+    top: 0;
+    left: 100%; }
+.flyout-nav > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch; }
+  .flyout-nav > ul > li:hover > ul {
+    top: 100%;
+    left: 0; }
+
+/*# sourceMappingURL=main.css.map */
