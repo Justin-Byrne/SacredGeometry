@@ -1,6 +1,24 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.4.15] - 2021-10-10
+### Added
+- cycleFull() method to replace/merge fullCircleCycle() and fullHexagonCycle() methods
+- toggleCheckbox() method
+- toggleCheckboxes() method
+- convert2digStr() prototype method
+- isSequenceFull() prototype method
+
+### Changed
+- merged Sequenced Circles in with Single circles to streamline UI
+
+### Removed 
+- fullCircleCycle() method
+- fullHexagonCycle() method
+
+### Fixed
+- multiple cycling under sequenced shapes
+
 ## [1.0.11] - 2021-10-03
 ### Changed
 - HTML nav menu structure
@@ -31,7 +49,9 @@ All notable changes to this project will be documented in this file.
 - main.js
 
 ---
-[1.0.11]: 2021-10-03 [CURRENT REVISION]
+[1.4.15]: 2021-10-10 [CURRENT REVISION]
+
+[1.0.11]: 2021-10-03 [de2f86d](https://github.com/Justin-Byrne/SacredGeometry/commit/de2f86d) various bug fixes and trimming down 
 
 [1.0.0]: 2021-09-16 [9babc19](https://github.com/Justin-Byrne/SacredGeometry/commit/9babc19) initial upload
 ---

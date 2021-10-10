@@ -2,7 +2,6 @@
 
 /**
  * config                   {Object}                    Object literal variables
- * @var                     {Number} step               Primarily iterator for step animations
  * @var                     {DOM Element} canvas        DOM element
  * @var                     {DOM Element} context       CanvasRenderingContext2D for drawing surface on the <canvas> element
  * @var                     {Object} domWindow          DOM window width, height, center x-coordinate, and center y-coordinate
@@ -24,8 +23,8 @@ var config =
         Author:  'Justin Don Byrne',
         Created: 'September, 11 2021',
         Library: 'Sacred Geometry',
-        Updated: 'October, 3 2021',
-        Version: '1.0.11',
+        Updated: 'October, 10 2021',
+        Version: '1.4.15',
     }
 }
 
@@ -52,8 +51,8 @@ window.addEventListener('load',   resize);
 
 /**
  * containsArray()          {Array:Method}              Validates whether the root array contains the passed array passed.
- * @param                   {Array} val                 Array sequence to validate
- * @return                  {Boolean}                   True | False
+ * @param                   {array} val                 Array sequence to validate
+ * @return                  {boolean}                   True | False
  */
 Array.prototype.containsArray      = function(val) 
 {
@@ -69,8 +68,8 @@ Array.prototype.containsArray      = function(val)
 
 /**
  * indexOfArrayValues()     {Array:Method}              Returns the index of the array values (e.g.: [1, 2]) passed
- * @param                   {Array} val                 Array sequence to validate
- * @return                  {Int}                       Integer representing the index where the passed array matches 
+ * @param                   {array} val                 Array sequence to validate
+ * @return                  {number}                    Integer representing the index where the passed array matches 
  */
 Array.prototype.indexOfArrayValues = function(val) 
 {
@@ -89,7 +88,7 @@ Array.prototype.indexOfArrayValues = function(val)
 
 /**
  * pushPop()                {Array:Method}              Pushes or splices the value passed via the val param
- * @param                   {Int} val                   Value to be pushed or spliced
+ * @param                   {number} val                Value to be pushed or spliced
  */
 Array.prototype.pushPop            = function(val)
 {
@@ -104,7 +103,7 @@ Array.prototype.pushPop            = function(val)
 
 /**
  * pushPopAdv()             {Array:Method}              Pushes or splices the value passed via the val param into a multidimensional array
- * @param                   {Int} val                   Value to be parsed into the appropriate array values
+ * @param                   {number} val                Value to be parsed into the appropriate array values
  */
 Array.prototype.pushPopAdv         = function(val)
 {
@@ -137,20 +136,49 @@ Array.prototype.pushPopAdv         = function(val)
     sacredArrays.circle.sort();
 }
 
+/**
+ * convert2digStr()         {Number:Method}             Converts the casted value into a two digit string
+ * @return                  {string}                    Two digit string
+ */
+Number.prototype.convert2digStr    = function()
+{
+    return (this < 10) ? `0${this}` : `${this}`;
+}
+
+/**
+ * isSequenceFull()         {Number:Method}             Checks whether the sequence passed is full of it's child elements
+ * @return                  {boolean}                   True | False
+ */
+Number.prototype.isSequenceFull    = function()
+{
+    var count = 0;
+
+    for (var i = 1; i <= 6; i++)
+    {
+        (document.getElementById(`circle-${this.convert2digStr()}-${i.convert2digStr()}-checkbox`).checked)
+            ? count++
+            : null;
+    }
+
+    return (count == 6)
+        ? true
+        : false;
+}
+
 ////////////////////////////////////////////////////////////
 ////////        GLOBAL VARIABLES                    ////////
 ////////////////////////////////////////////////////////////
 
-const padding       = 10;
-const zonaPolusada  = config.domWindow.height / 2 - padding;
-const magNo         = 0.578;                                /// << === TODO: Convert from Array element to const var 
+const padding      = 10;
+const zonaPolusada = config.domWindow.height / 2 - padding;
+const magNo        = 0.578;                                
 
 const spirit = 
 {
     radius : zonaPolusada / 5
 }
 
-var matrix       = 
+const matrix = 
 [
     [       // Spirit
         [
@@ -360,7 +388,7 @@ var matrix       =
     ]
 ];
 
-var colorArray   = 
+const colorArray = 
 [
     '74, 42, 115',                  // PURPLE           SECONDARY
     '26, 46, 128',                  // BLUE-PURPLE      TERTIARY
@@ -376,7 +404,21 @@ var colorArray   =
     '146, 35, 121'                  // RED-PURPLE       TERTIARY
 ];
 
-var sacredArrays  = 
+const inputs =
+{
+    circle: 
+    {
+        single:   document.querySelectorAll('.single-circle-checkbox'),
+        sequence: document.querySelectorAll('.sequenced-circle-checkbox')
+    },
+    hexagon:
+    {
+        lines:   [],
+        hexagon: []
+    }
+}
+
+var sacredArrays = 
 {
     circle:   [],
     triangle: [],
@@ -394,6 +436,11 @@ console.log('colorArray: ',    colorArray);
 ////////        GENERAL FUNCTIONS                   ////////
 ////////////////////////////////////////////////////////////
 
+/**
+ * parseToSequence()        {Method}                    Returns the sequenced value of the value passed
+ * @param                   {number} val                Value to be identified within the predefined sequence
+ * @return                  {number}                    Sequence of which the passed value belongs to
+ */
 function parseToSequence(val)
 {
     var result        = null;
@@ -417,9 +464,99 @@ function parseToSequence(val)
     return result;
 }
 
+/**
+ * toggleCheckbox()         {Method}                    Toggles whether the passed input[type='checkbox'] is checked; or not
+ * @param                   {string} id                 The input element's id
+ */
+function toggleCheckbox(id)
+{
+    document.getElementById(id).checked = (document.getElementById(id).checked) ? false : true;
+}
+
+/**
+ * toggleCheckboxes()       {Method}                    Toggles checkboxes in accordance with their sequence
+ * @param                   {string} shape              String signifying the type of shape to sort
+ */
+function toggleCheckboxes(shape)
+{
+    switch (shape)
+    {
+        case 'sequencedCircle':
+
+            for (var i = 0; i <= 9; i++)
+            {
+                if (inputs.circle.sequence[i].checked)
+                {
+                    for (var j = 0; j <= 5; j++)
+                    {
+                        var idString = `circle-${(i + 1).convert2digStr()}-${(j + 1).convert2digStr()}-checkbox`;
+
+                        (document.getElementById(idString).checked)
+                            ? toggleCheckbox(idString)
+                            : null;
+
+                        toggleCheckbox(idString);
+
+                    }
+
+                }
+                else
+                {
+                    for (var j = 0; j <= 5; j++)
+                    {
+                        var idString = `circle-${(i + 1).convert2digStr()}-${(j + 1).convert2digStr()}-checkbox`;
+
+                        (document.getElementById(idString).checked)
+                            ? toggleCheckbox(idString)
+                            : null;
+
+                    }
+
+                }
+
+            }
+
+            break;
+
+        case 'singleCircle':
+
+            console.clear();
+
+            for (var i = 0; i <= 9; i++)
+            {
+                var idString = `sequenced-circle-${(i + 1).convert2digStr()}-checkbox`;
+
+                if (Number(document.getElementById(idString).value).isSequenceFull())
+                {
+                    document.getElementById(idString).checked = true;
+                }
+                else
+                {
+                    document.getElementById(idString).checked = false;
+                }
+
+            }
+
+            break;
+
+        default:
+
+            console.log(`${shape} is not supported by the toggleCheckboxes() function!`);
+
+    }
+}
+
 ////////////////////////////////////////////////////////////
 ////////        GRAPHIC ALGORITHMS                  ////////
 ////////////////////////////////////////////////////////////
+
+/**
+ * clearCanvas()            {Method}                    Clears the entire canvas element       
+ */
+function clearCanvas()
+{
+    config.context.clearRect(0, 0, config.canvas.width, config.canvas.height);
+}
 
 /**
  * drawCircle()             {Method}                    Draws a simple circle
@@ -430,7 +567,7 @@ function parseToSequence(val)
  * @param                   {number}  endAngle          End angle
  * @param                   {boolean} counterClockwise  Draw circle clockwise
  * @param                   {string}  color             RGB number set; r, g, b
- * @param                   {number}  alpha             Alpha (transparency) number value
+ * @param                   {decimal} alpha             Alpha (transparency) number value
  * @param                   {boolean} centerDot         Include a center dot
  */
 function drawCircle(x, y, radius, startAngle, endAngle, counterClockwise, color, alpha = 0.3, centerDot = true) 
@@ -460,10 +597,10 @@ function drawCircle(x, y, radius, startAngle, endAngle, counterClockwise, color,
 
 /**
  * drawLine()               {Method}                    Draws a simple circle
- * @param                   {number}  startX            X coordinate position to begin drawing at
- * @param                   {number}  StartY            Y coordinate position to begin drawing at
- * @param                   {number}  endX              X coordinate position to finish drawing at
- * @param                   {number}  endY              Y coordinate position to finish drawing at
+ * @param                   {number} startX             X coordinate position to begin drawing at
+ * @param                   {number} StartY             Y coordinate position to begin drawing at
+ * @param                   {number} endX               X coordinate position to finish drawing at
+ * @param                   {number} endY               Y coordinate position to finish drawing at
  */
 function drawLine(startX, startY, endX, endY) 
 {
@@ -474,14 +611,6 @@ function drawLine(startX, startY, endX, endY)
 
     // config.context.closePath();                    // Marks subpath as closed
     config.context.stroke();                       // strokes the subpaths with the current stroke style
-}
-
-/**
- * clearCanvas()            {Method}                    Clears the entire canvas element       
- */
-function clearCanvas()
-{
-    config.context.clearRect(0, 0, config.canvas.width, config.canvas.height);
 }
 
 /**
@@ -521,25 +650,55 @@ function seedCanvas()
 ////////////////////////////////////////////////////////////
 
 /**
- * fullCircleCycle()        {Method}                    Cycles through the 'whole circle array'
+ * cycleFull()              {Method}                    Cycles through the entire shape array of the shape passed; via param
+ * @param                   {string} shape              Shape array to cycle through
  */
-function fullCircleCycle()
+function cycleFull(shape)
 {
+    clearCanvas();
+
     setTimeout(function() 
     { 
         for (var i = 1; i <= matrix.length - 1; i++) 
         {
             for (var j = 0; j <= matrix[i].length - 1; j++) 
             {
-                drawCircle(
-                    matrix[i][j][0],        
-                    matrix[i][j][1], 
-                    spirit.radius, 
-                    0, 
-                    2 * Math.PI, 
-                    false, 
-                    colorArray[i]
-                );
+                switch (shape)
+                {
+                    case 'circle':
+
+                        drawCircle(
+                            matrix[i][j][0],        
+                            matrix[i][j][1], 
+                            spirit.radius, 
+                            0, 
+                            2 * Math.PI, 
+                            false, 
+                            colorArray[i]
+                        );
+
+                        break;
+
+                    case 'hexagon':
+
+                        var n = j + 1;
+
+                        if (n == 6) { n = 0; }
+
+                        drawLine(
+                            config.domWindow.xCenter + matrix[i][j][0],        
+                            config.domWindow.yCenter + matrix[i][j][1], 
+                            config.domWindow.xCenter + matrix[i][n][0], 
+                            config.domWindow.yCenter + matrix[i][n][1]
+                        );
+
+                        break;
+
+                    default:
+
+                        console.log(`${shape} is not supported by the cycleFull() function!`);
+
+                }
 
             }
 
@@ -549,36 +708,7 @@ function fullCircleCycle()
 }
 
 /**
- * fullHexagonCycle()       {Method}                    Cycles through the 'whole hexagon array'
- */
-function fullHexagonCycle()
-{
-    setTimeout(function() 
-    { 
-        for (var i = 1; i <= matrix.length - 1; i++) 
-        {
-            for (var j = 0; j <= matrix[i].length - 1; j++) 
-            {
-                var n = j + 1;
-
-                if (n == 6) { n = 0; }
-
-                drawLine(
-                    config.domWindow.xCenter + matrix[i][j][0],        
-                    config.domWindow.yCenter + matrix[i][j][1], 
-                    config.domWindow.xCenter + matrix[i][n][0], 
-                    config.domWindow.yCenter + matrix[i][n][1]
-                );
-
-            }
-
-        }
-
-    }, 1);
-}
-
-/**
- * cycleSacredArray() {Method}                    Cycles through the 'single circle array'
+ * cycleSacredArray()       {Method}                    Cycles through the 'single circle array'
  */
 function cycleSacredArray()
 {
@@ -587,8 +717,6 @@ function cycleSacredArray()
     // Circle 
     setTimeout(function() 
     { 
-        clearCanvas();
-
         for (var i = 0; i <= sacredArrays.circle.length - 1; i++) 
         {
             drawCircle(
@@ -626,8 +754,12 @@ function cycleSacredArray()
             }
 
         }
-
+        
     }, 1);
+
+    console.clear();
+    console.log('sacredArrays: ', sacredArrays);
+    console.log('inputs: ', inputs);
 }
 
 ////////////////////////////////////////////////////////////
@@ -636,8 +768,8 @@ function cycleSacredArray()
 
 /**
  * sortArray()              {Method}                    Sorts various shape arrays                    
- * @param                   {String} shape              String signifying the type of shape to sort
- * @param                   {Int|Array} value           Value(s) to be sorted through the below (corresponding) algorithms
+ * @param                   {string}       shape        String signifying the type of shape to sort
+ * @param                   {number|array} value        Value(s) to be sorted through the below (corresponding) algorithms
  */
 function sortArray(shape, value)
 {
@@ -652,7 +784,7 @@ function sortArray(shape, value)
 
             for (var i = min; i <= max; i++)
             {
-                document.querySelectorAll('.single-circle-checkbox')[i - 1].click();
+                sacredArrays.circle.pushPopAdv(i);
             }
 
             break;
@@ -670,13 +802,20 @@ function sortArray(shape, value)
             break;
 
         default:
-            console.log(`${shape} is not supported by this sortArray() function!`)
+
+            console.log(`${shape} is not supported by the sortArray() function!`);
     }
+
+    cycleSacredArray();
+    toggleCheckboxes(shape);
 }
 
 ////////////////////////////////////////////////////////////
 ////////        UI Event Listeners                  ////////
 ////////////////////////////////////////////////////////////
+
+let regex = /\w+/g;                                         // TODO: word selection regex for further refinement
+// console.log('item (regex): ', item.id.match(regex));
 
 /**
  * single-circle-checkbox   {Event Listener}            Listen for 'single circle' selections
@@ -687,8 +826,6 @@ document.querySelectorAll('.single-circle-checkbox').forEach(item =>
     item.addEventListener('click', event => 
     {
         sortArray('singleCircle', item.value);
-
-        cycleSacredArray();
     });
 });
 
@@ -713,8 +850,6 @@ document.querySelectorAll('.hexagon-checkbox').forEach(item =>
     item.addEventListener('click', event => 
     {
         sortArray('hexagon', item.value);
-
-        cycleSacredArray();
     });
 });
 
@@ -724,12 +859,10 @@ document.querySelectorAll('.hexagon-checkbox').forEach(item =>
  */
 document.getElementById('full-circle-cycle').addEventListener("click", function()
 {
-    clearCanvas();
-
     (document.getElementById('full-circle-cycle-checkbox').checked) 
         ? (sacredArrays.circle.length > 0) 
             ? cycleSacredArray() : null 
-        : fullCircleCycle();
+        : cycleFull('circle');
 });
 
 /**
@@ -738,12 +871,10 @@ document.getElementById('full-circle-cycle').addEventListener("click", function(
  */
 document.getElementById('full-hexagon-cycle').addEventListener("click", function()
 {
-    clearCanvas();
-
     (document.getElementById('full-hexagon-checkbox').checked)
         ? (sacredArrays.hexagon.length > 0)
             ? cycleSacredArray() : null
-        : fullHexagonCycle();
+        : cycleFull('hexagon');
 });
 
 /**
