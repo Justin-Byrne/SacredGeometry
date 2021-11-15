@@ -1,6 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+<<<<<<< HEAD
 ## [1.5.20] - 2021-11-15
 ### Added
 - insertUIElements() method to embed UI div objects for point & click interface
@@ -15,6 +16,8 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 - fixed resize() to include new UI overlay ordinates
 
+=======
+>>>>>>> parent of d26ee64... add UI and optimization elements
 ## [1.4.15] - 2021-10-10
 ### Added
 - cycleFull() method to replace/merge fullCircleCycle() and fullHexagonCycle() methods
@@ -63,9 +66,13 @@ All notable changes to this project will be documented in this file.
 - main.js
 
 ---
+<<<<<<< HEAD
 [1.5.20]: 2021-11-15 [CURRENT REVISION]
 
 [1.4.15]: 2021-10-10 [37c5ff6](https://github.com/Justin-Byrne/SacredGeometry/commit/37c5ff6) new algorithms to assist sorting along with minor bug fixes
+=======
+[1.4.15]: 2021-10-10 [CURRENT REVISION]
+>>>>>>> parent of d26ee64... add UI and optimization elements
 
 [1.0.11]: 2021-10-03 [de2f86d](https://github.com/Justin-Byrne/SacredGeometry/commit/de2f86d) various bug fixes and trimming down 
 
