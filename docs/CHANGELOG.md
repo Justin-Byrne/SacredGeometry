@@ -1,20 +1,6 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [1.4.15] - 2021-11-14
-### Added
-- insertUIElements() method to embed UI div objects for point & click interface
-- uiElementPos() method to return x & y coordinate values to position each UI element
-- setRegion() inserts the (clicked) circle within the sacredArray
-- activateRegion() draws a semi-transparent circle over the designed area
-- clickCheckbox() programmatically clicks on a specific checkbox
-
-### Changed
-- optimized UI Listeners into array groups
-
-### Fixed
-- fixed resize() to include new UI overlay ordinates
-
 ## [1.4.15] - 2021-10-10
 ### Added
 - cycleFull() method to replace/merge fullCircleCycle() and fullHexagonCycle() methods
@@ -63,9 +49,7 @@ All notable changes to this project will be documented in this file.
 - main.js
 
 ---
-[1.4.15]: 2021-11-14 [CURRENT REVISION]
-
-[1.4.15]: 2021-10-10 [37c5ff6](https://github.com/Justin-Byrne/SacredGeometry/commit/37c5ff6) new algorithms to assist sorting along with minor bug fixes
+[1.4.15]: 2021-10-10 [CURRENT REVISION]
 
 [1.0.11]: 2021-10-03 [de2f86d](https://github.com/Justin-Byrne/SacredGeometry/commit/de2f86d) various bug fixes and trimming down 
 
