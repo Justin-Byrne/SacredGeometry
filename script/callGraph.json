@@ -1,0 +1,4524 @@
+[
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 118,
+        "column": 24
+      },
+      "end": {
+        "row": 118,
+        "column": 76
+      },
+      "range": {
+        "start": 3735,
+        "end": 3787
+      }
+    },
+    "target": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 74,
+        "column": 37
+      },
+      "end": {
+        "row": 87,
+        "column": 1
+      },
+      "range": {
+        "start": 2589,
+        "end": 2806
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "sortArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 800,
+        "column": 12
+      },
+      "end": {
+        "row": 800,
+        "column": 47
+      },
+      "range": {
+        "start": 26962,
+        "end": 26997
+      }
+    },
+    "target": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 93,
+        "column": 37
+      },
+      "end": {
+        "row": 102,
+        "column": 1
+      },
+      "range": {
+        "start": 3048,
+        "end": 3217
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "sortArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 794,
+        "column": 12
+      },
+      "end": {
+        "row": 794,
+        "column": 49
+      },
+      "range": {
+        "start": 26865,
+        "end": 26902
+      }
+    },
+    "target": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 108,
+        "column": 37
+      },
+      "end": {
+        "row": 137,
+        "column": 1
+      },
+      "range": {
+        "start": 3512,
+        "end": 4174
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "sortArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 787,
+        "column": 16
+      },
+      "end": {
+        "row": 787,
+        "column": 49
+      },
+      "range": {
+        "start": 26753,
+        "end": 26786
+      }
+    },
+    "target": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 108,
+        "column": 37
+      },
+      "end": {
+        "row": 137,
+        "column": 1
+      },
+      "range": {
+        "start": 3512,
+        "end": 4174
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckboxes",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 527,
+        "column": 51
+      },
+      "end": {
+        "row": 527,
+        "column": 75
+      },
+      "range": {
+        "start": 18663,
+        "end": 18687
+      }
+    },
+    "target": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 143,
+        "column": 37
+      },
+      "end": {
+        "row": 146,
+        "column": 1
+      },
+      "range": {
+        "start": 4400,
+        "end": 4463
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckboxes",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 507,
+        "column": 77
+      },
+      "end": {
+        "row": 507,
+        "column": 101
+      },
+      "range": {
+        "start": 18222,
+        "end": 18246
+      }
+    },
+    "target": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 143,
+        "column": 37
+      },
+      "end": {
+        "row": 146,
+        "column": 1
+      },
+      "range": {
+        "start": 4400,
+        "end": 4463
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckboxes",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 507,
+        "column": 49
+      },
+      "end": {
+        "row": 507,
+        "column": 73
+      },
+      "range": {
+        "start": 18194,
+        "end": 18218
+      }
+    },
+    "target": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 143,
+        "column": 37
+      },
+      "end": {
+        "row": 146,
+        "column": 1
+      },
+      "range": {
+        "start": 4400,
+        "end": 4463
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckboxes",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 492,
+        "column": 77
+      },
+      "end": {
+        "row": 492,
+        "column": 101
+      },
+      "range": {
+        "start": 17745,
+        "end": 17769
+      }
+    },
+    "target": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 143,
+        "column": 37
+      },
+      "end": {
+        "row": 146,
+        "column": 1
+      },
+      "range": {
+        "start": 4400,
+        "end": 4463
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckboxes",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 492,
+        "column": 49
+      },
+      "end": {
+        "row": 492,
+        "column": 73
+      },
+      "range": {
+        "start": 17717,
+        "end": 17741
+      }
+    },
+    "target": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 143,
+        "column": 37
+      },
+      "end": {
+        "row": 146,
+        "column": 1
+      },
+      "range": {
+        "start": 4400,
+        "end": 4463
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 158,
+        "column": 68
+      },
+      "end": {
+        "row": 158,
+        "column": 86
+      },
+      "range": {
+        "start": 4841,
+        "end": 4859
+      }
+    },
+    "target": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 143,
+        "column": 37
+      },
+      "end": {
+        "row": 146,
+        "column": 1
+      },
+      "range": {
+        "start": 4400,
+        "end": 4463
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 158,
+        "column": 43
+      },
+      "end": {
+        "row": 158,
+        "column": 64
+      },
+      "range": {
+        "start": 4816,
+        "end": 4837
+      }
+    },
+    "target": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 143,
+        "column": 37
+      },
+      "end": {
+        "row": 146,
+        "column": 1
+      },
+      "range": {
+        "start": 4400,
+        "end": 4463
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckboxes",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 529,
+        "column": 20
+      },
+      "end": {
+        "row": 529,
+        "column": 84
+      },
+      "range": {
+        "start": 18721,
+        "end": 18785
+      }
+    },
+    "target": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 152,
+        "column": 37
+      },
+      "end": {
+        "row": 166,
+        "column": 1
+      },
+      "range": {
+        "start": 4701,
+        "end": 4987
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckboxes",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 510,
+        "column": 30
+      },
+      "end": {
+        "row": 510,
+        "column": 54
+      },
+      "range": {
+        "start": 18358,
+        "end": 18382
+      }
+    },
+    "target": {
+      "label": "toggleCheckbox",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 471,
+        "column": 0
+      },
+      "end": {
+        "row": 474,
+        "column": 1
+      },
+      "range": {
+        "start": 17030,
+        "end": 17157
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckboxes",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 498,
+        "column": 24
+      },
+      "end": {
+        "row": 498,
+        "column": 48
+      },
+      "range": {
+        "start": 17967,
+        "end": 17991
+      }
+    },
+    "target": {
+      "label": "toggleCheckbox",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 471,
+        "column": 0
+      },
+      "end": {
+        "row": 474,
+        "column": 1
+      },
+      "range": {
+        "start": 17030,
+        "end": 17157
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckboxes",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 495,
+        "column": 30
+      },
+      "end": {
+        "row": 495,
+        "column": 54
+      },
+      "range": {
+        "start": 17881,
+        "end": 17905
+      }
+    },
+    "target": {
+      "label": "toggleCheckbox",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 471,
+        "column": 0
+      },
+      "end": {
+        "row": 474,
+        "column": 1
+      },
+      "range": {
+        "start": 17030,
+        "end": 17157
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "sortArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 810,
+        "column": 4
+      },
+      "end": {
+        "row": 810,
+        "column": 27
+      },
+      "range": {
+        "start": 27156,
+        "end": 27179
+      }
+    },
+    "target": {
+      "label": "toggleCheckboxes",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 480,
+        "column": 0
+      },
+      "end": {
+        "row": 547,
+        "column": 1
+      },
+      "range": {
+        "start": 17376,
+        "end": 19173
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 886,
+        "column": 4
+      },
+      "end": {
+        "row": 886,
+        "column": 17
+      },
+      "range": {
+        "start": 29802,
+        "end": 29815
+      }
+    },
+    "target": {
+      "label": "clearCanvas",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 556,
+        "column": 0
+      },
+      "end": {
+        "row": 559,
+        "column": 1
+      },
+      "range": {
+        "start": 19463,
+        "end": 19568
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "cycleSacredArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 715,
+        "column": 4
+      },
+      "end": {
+        "row": 715,
+        "column": 17
+      },
+      "range": {
+        "start": 24543,
+        "end": 24556
+      }
+    },
+    "target": {
+      "label": "clearCanvas",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 556,
+        "column": 0
+      },
+      "end": {
+        "row": 559,
+        "column": 1
+      },
+      "range": {
+        "start": 19463,
+        "end": 19568
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "cycleFull",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 658,
+        "column": 4
+      },
+      "end": {
+        "row": 658,
+        "column": 17
+      },
+      "range": {
+        "start": 23038,
+        "end": 23051
+      }
+    },
+    "target": {
+      "label": "clearCanvas",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 556,
+        "column": 0
+      },
+      "end": {
+        "row": 559,
+        "column": 1
+      },
+      "range": {
+        "start": 19463,
+        "end": 19568
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 722,
+        "column": 12
+      },
+      "end": {
+        "row": 730,
+        "column": 13
+      },
+      "range": {
+        "start": 24697,
+        "end": 25086
+      }
+    },
+    "target": {
+      "label": "drawCircle",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 573,
+        "column": 0
+      },
+      "end": {
+        "row": 596,
+        "column": 1
+      },
+      "range": {
+        "start": 20331,
+        "end": 20967
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 670,
+        "column": 24
+      },
+      "end": {
+        "row": 678,
+        "column": 25
+      },
+      "range": {
+        "start": 23336,
+        "end": 23668
+      }
+    },
+    "target": {
+      "label": "drawCircle",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 573,
+        "column": 0
+      },
+      "end": {
+        "row": 596,
+        "column": 1
+      },
+      "range": {
+        "start": 20331,
+        "end": 20967
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 635,
+        "column": 8
+      },
+      "end": {
+        "row": 643,
+        "column": 9
+      },
+      "range": {
+        "start": 22412,
+        "end": 22587
+      }
+    },
+    "target": {
+      "label": "drawCircle",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 573,
+        "column": 0
+      },
+      "end": {
+        "row": 596,
+        "column": 1
+      },
+      "range": {
+        "start": 20331,
+        "end": 20967
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 624,
+        "column": 8
+      },
+      "end": {
+        "row": 632,
+        "column": 9
+      },
+      "range": {
+        "start": 22181,
+        "end": 22377
+      }
+    },
+    "target": {
+      "label": "drawCircle",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 573,
+        "column": 0
+      },
+      "end": {
+        "row": 596,
+        "column": 1
+      },
+      "range": {
+        "start": 20331,
+        "end": 20967
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "drawCircle",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 594,
+        "column": 10
+      },
+      "end": {
+        "row": 594,
+        "column": 108
+      },
+      "range": {
+        "start": 20851,
+        "end": 20949
+      }
+    },
+    "target": {
+      "label": "drawCircle",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 573,
+        "column": 0
+      },
+      "end": {
+        "row": 596,
+        "column": 1
+      },
+      "range": {
+        "start": 20331,
+        "end": 20967
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 747,
+        "column": 16
+      },
+      "end": {
+        "row": 752,
+        "column": 17
+      },
+      "range": {
+        "start": 25424,
+        "end": 25797
+      }
+    },
+    "target": {
+      "label": "drawLine",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 605,
+        "column": 0
+      },
+      "end": {
+        "row": 614,
+        "column": 1
+      },
+      "range": {
+        "start": 21449,
+        "end": 21952
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 688,
+        "column": 24
+      },
+      "end": {
+        "row": 693,
+        "column": 25
+      },
+      "range": {
+        "start": 23852,
+        "end": 24184
+      }
+    },
+    "target": {
+      "label": "drawLine",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 605,
+        "column": 0
+      },
+      "end": {
+        "row": 614,
+        "column": 1
+      },
+      "range": {
+        "start": 21449,
+        "end": 21952
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 877,
+        "column": 10
+      },
+      "end": {
+        "row": 877,
+        "column": 30
+      },
+      "range": {
+        "start": 29510,
+        "end": 29530
+      }
+    },
+    "target": {
+      "label": "cycleFull",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 656,
+        "column": 0
+      },
+      "end": {
+        "row": 708,
+        "column": 1
+      },
+      "range": {
+        "start": 23006,
+        "end": 24402
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 865,
+        "column": 10
+      },
+      "end": {
+        "row": 865,
+        "column": 29
+      },
+      "range": {
+        "start": 29060,
+        "end": 29079
+      }
+    },
+    "target": {
+      "label": "cycleFull",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 656,
+        "column": 0
+      },
+      "end": {
+        "row": 708,
+        "column": 1
+      },
+      "range": {
+        "start": 23006,
+        "end": 24402
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 876,
+        "column": 14
+      },
+      "end": {
+        "row": 876,
+        "column": 32
+      },
+      "range": {
+        "start": 29474,
+        "end": 29492
+      }
+    },
+    "target": {
+      "label": "cycleSacredArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 713,
+        "column": 0
+      },
+      "end": {
+        "row": 763,
+        "column": 1
+      },
+      "range": {
+        "start": 24509,
+        "end": 25954
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 864,
+        "column": 14
+      },
+      "end": {
+        "row": 864,
+        "column": 32
+      },
+      "range": {
+        "start": 29023,
+        "end": 29041
+      }
+    },
+    "target": {
+      "label": "cycleSacredArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 713,
+        "column": 0
+      },
+      "end": {
+        "row": 763,
+        "column": 1
+      },
+      "range": {
+        "start": 24509,
+        "end": 25954
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "sortArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 809,
+        "column": 4
+      },
+      "end": {
+        "row": 809,
+        "column": 22
+      },
+      "range": {
+        "start": 27132,
+        "end": 27150
+      }
+    },
+    "target": {
+      "label": "cycleSacredArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 713,
+        "column": 0
+      },
+      "end": {
+        "row": 763,
+        "column": 1
+      },
+      "range": {
+        "start": 24509,
+        "end": 25954
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 852,
+        "column": 8
+      },
+      "end": {
+        "row": 852,
+        "column": 40
+      },
+      "range": {
+        "start": 28584,
+        "end": 28616
+      }
+    },
+    "target": {
+      "label": "sortArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 774,
+        "column": 0
+      },
+      "end": {
+        "row": 811,
+        "column": 1
+      },
+      "range": {
+        "start": 26474,
+        "end": 27182
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 840,
+        "column": 8
+      },
+      "end": {
+        "row": 840,
+        "column": 48
+      },
+      "range": {
+        "start": 28226,
+        "end": 28266
+      }
+    },
+    "target": {
+      "label": "sortArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 774,
+        "column": 0
+      },
+      "end": {
+        "row": 811,
+        "column": 1
+      },
+      "range": {
+        "start": 26474,
+        "end": 27182
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 828,
+        "column": 8
+      },
+      "end": {
+        "row": 828,
+        "column": 45
+      },
+      "range": {
+        "start": 27853,
+        "end": 27890
+      }
+    },
+    "target": {
+      "label": "sortArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 774,
+        "column": 0
+      },
+      "end": {
+        "row": 811,
+        "column": 1
+      },
+      "range": {
+        "start": 26474,
+        "end": 27182
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 66,
+        "column": 11
+      },
+      "end": {
+        "row": 66,
+        "column": 35
+      },
+      "range": {
+        "start": 2197,
+        "end": 2221
+      }
+    },
+    "target": {
+      "label": "Object_prototype_hasOwnProperty",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 95,
+        "column": 18
+      },
+      "end": {
+        "row": 95,
+        "column": 35
+      },
+      "range": {
+        "start": 3082,
+        "end": 3099
+      }
+    },
+    "target": {
+      "label": "String_prototype_indexOf",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 95,
+        "column": 18
+      },
+      "end": {
+        "row": 95,
+        "column": 35
+      },
+      "range": {
+        "start": 3082,
+        "end": 3099
+      }
+    },
+    "target": {
+      "label": "Array_prototype_indexOf",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 126,
+        "column": 16
+      },
+      "end": {
+        "row": 126,
+        "column": 54
+      },
+      "range": {
+        "start": 3947,
+        "end": 3985
+      }
+    },
+    "target": {
+      "label": "Array_prototype_push",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 99,
+        "column": 10
+      },
+      "end": {
+        "row": 99,
+        "column": 24
+      },
+      "range": {
+        "start": 3163,
+        "end": 3177
+      }
+    },
+    "target": {
+      "label": "Array_prototype_push",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 136,
+        "column": 4
+      },
+      "end": {
+        "row": 136,
+        "column": 30
+      },
+      "range": {
+        "start": 4145,
+        "end": 4171
+      }
+    },
+    "target": {
+      "label": "Array_prototype_sort",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 101,
+        "column": 4
+      },
+      "end": {
+        "row": 101,
+        "column": 30
+      },
+      "range": {
+        "start": 3184,
+        "end": 3210
+      }
+    },
+    "target": {
+      "label": "Array_prototype_sort",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 848,
+        "column": 0
+      },
+      "end": {
+        "row": 854,
+        "column": 2
+      },
+      "range": {
+        "start": 28459,
+        "end": 28628
+      }
+    },
+    "target": {
+      "label": "Array_prototype_forEach",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 836,
+        "column": 0
+      },
+      "end": {
+        "row": 842,
+        "column": 2
+      },
+      "range": {
+        "start": 28092,
+        "end": 28278
+      }
+    },
+    "target": {
+      "label": "Array_prototype_forEach",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 824,
+        "column": 0
+      },
+      "end": {
+        "row": 830,
+        "column": 2
+      },
+      "range": {
+        "start": 27722,
+        "end": 27902
+      }
+    },
+    "target": {
+      "label": "Array_prototype_forEach",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 122,
+        "column": 16
+      },
+      "end": {
+        "row": 122,
+        "column": 52
+      },
+      "range": {
+        "start": 3848,
+        "end": 3884
+      }
+    },
+    "target": {
+      "label": "Array_prototype_splice",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 98,
+        "column": 10
+      },
+      "end": {
+        "row": 98,
+        "column": 31
+      },
+      "range": {
+        "start": 3130,
+        "end": 3151
+      }
+    },
+    "target": {
+      "label": "Array_prototype_splice",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "sortArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 806,
+        "column": 12
+      },
+      "end": {
+        "row": 806,
+        "column": 81
+      },
+      "range": {
+        "start": 27050,
+        "end": 27119
+      }
+    },
+    "target": {
+      "label": "console_log",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "sortArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 806,
+        "column": 12
+      },
+      "end": {
+        "row": 806,
+        "column": 81
+      },
+      "range": {
+        "start": 27050,
+        "end": 27119
+      }
+    },
+    "target": {
+      "label": "Math_log",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "cycleSacredArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 762,
+        "column": 4
+      },
+      "end": {
+        "row": 762,
+        "column": 35
+      },
+      "range": {
+        "start": 25920,
+        "end": 25951
+      }
+    },
+    "target": {
+      "label": "console_log",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "cycleSacredArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 762,
+        "column": 4
+      },
+      "end": {
+        "row": 762,
+        "column": 35
+      },
+      "range": {
+        "start": 25920,
+        "end": 25951
+      }
+    },
+    "target": {
+      "label": "Math_log",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "cycleSacredArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 761,
+        "column": 4
+      },
+      "end": {
+        "row": 761,
+        "column": 47
+      },
+      "range": {
+        "start": 25871,
+        "end": 25914
+      }
+    },
+    "target": {
+      "label": "console_log",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "cycleSacredArray",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 761,
+        "column": 4
+      },
+      "end": {
+        "row": 761,
+        "column": 47
+      },
+      "range": {
+        "start": 25871,
+        "end": 25914
+      }
+    },
+    "target": {
+      "label": "Math_log",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 699,
+        "column": 24
+      },
+      "end": {
+        "row": 699,
+        "column": 93
+      },
+      "range": {
+        "start": 24273,
+        "end": 24342
+      }
+    },
+    "target": {
+      "label": "console_log",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 699,
+        "column": 24
+      },
+      "end": {
+        "row": 699,
+        "column": 93
+      },
+      "range": {
+        "start": 24273,
+        "end": 24342
+      }
+    },
+    "target": {
+      "label": "Math_log",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckboxes",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 544,
+        "column": 12
+      },
+      "end": {
+        "row": 544,
+        "column": 88
+      },
+      "range": {
+        "start": 19087,
+        "end": 19163
+      }
+    },
+    "target": {
+      "label": "console_log",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckboxes",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 544,
+        "column": 12
+      },
+      "end": {
+        "row": 544,
+        "column": 88
+      },
+      "range": {
+        "start": 19087,
+        "end": 19163
+      }
+    },
+    "target": {
+      "label": "Math_log",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 433,
+        "column": 0
+      },
+      "end": {
+        "row": 433,
+        "column": 42
+      },
+      "range": {
+        "start": 15835,
+        "end": 15877
+      }
+    },
+    "target": {
+      "label": "console_log",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 433,
+        "column": 0
+      },
+      "end": {
+        "row": 433,
+        "column": 42
+      },
+      "range": {
+        "start": 15835,
+        "end": 15877
+      }
+    },
+    "target": {
+      "label": "Math_log",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 432,
+        "column": 0
+      },
+      "end": {
+        "row": 432,
+        "column": 38
+      },
+      "range": {
+        "start": 15795,
+        "end": 15833
+      }
+    },
+    "target": {
+      "label": "console_log",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 432,
+        "column": 0
+      },
+      "end": {
+        "row": 432,
+        "column": 38
+      },
+      "range": {
+        "start": 15795,
+        "end": 15833
+      }
+    },
+    "target": {
+      "label": "Math_log",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 431,
+        "column": 0
+      },
+      "end": {
+        "row": 431,
+        "column": 38
+      },
+      "range": {
+        "start": 15755,
+        "end": 15793
+      }
+    },
+    "target": {
+      "label": "console_log",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 431,
+        "column": 0
+      },
+      "end": {
+        "row": 431,
+        "column": 38
+      },
+      "range": {
+        "start": 15755,
+        "end": 15793
+      }
+    },
+    "target": {
+      "label": "Math_log",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 80,
+        "column": 40
+      },
+      "end": {
+        "row": 80,
+        "column": 59
+      },
+      "range": {
+        "start": 2716,
+        "end": 2735
+      }
+    },
+    "target": {
+      "label": "JSON_stringify",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 80,
+        "column": 12
+      },
+      "end": {
+        "row": 80,
+        "column": 35
+      },
+      "range": {
+        "start": 2688,
+        "end": 2711
+      }
+    },
+    "target": {
+      "label": "JSON_stringify",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "drawLine",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 613,
+        "column": 4
+      },
+      "end": {
+        "row": 613,
+        "column": 27
+      },
+      "range": {
+        "start": 21850,
+        "end": 21873
+      }
+    },
+    "target": {
+      "label": "CanvasRenderingContext2D_prototype_stroke",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "drawCircle",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 586,
+        "column": 4
+      },
+      "end": {
+        "row": 586,
+        "column": 27
+      },
+      "range": {
+        "start": 20683,
+        "end": 20706
+      }
+    },
+    "target": {
+      "label": "CanvasRenderingContext2D_prototype_stroke",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "drawLine",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 610,
+        "column": 4
+      },
+      "end": {
+        "row": 610,
+        "column": 37
+      },
+      "range": {
+        "start": 21678,
+        "end": 21711
+      }
+    },
+    "target": {
+      "label": "CanvasRenderingContext2D_prototype_lineTo",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "drawCircle",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 577,
+        "column": 4
+      },
+      "end": {
+        "row": 584,
+        "column": 5
+      },
+      "range": {
+        "start": 20487,
+        "end": 20672
+      }
+    },
+    "target": {
+      "label": "CanvasRenderingContext2D_prototype_arc",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "clearCanvas",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 558,
+        "column": 4
+      },
+      "end": {
+        "row": 558,
+        "column": 77
+      },
+      "range": {
+        "start": 19492,
+        "end": 19565
+      }
+    },
+    "target": {
+      "label": "CanvasRenderingContext2D_prototype_clearRect",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "drawLine",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 609,
+        "column": 4
+      },
+      "end": {
+        "row": 609,
+        "column": 41
+      },
+      "range": {
+        "start": 21581,
+        "end": 21618
+      }
+    },
+    "target": {
+      "label": "Window_prototype_moveTo",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "drawLine",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 609,
+        "column": 4
+      },
+      "end": {
+        "row": 609,
+        "column": 41
+      },
+      "range": {
+        "start": 21581,
+        "end": 21618
+      }
+    },
+    "target": {
+      "label": "CanvasRenderingContext2D_prototype_moveTo",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "drawCircle",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 590,
+        "column": 4
+      },
+      "end": {
+        "row": 590,
+        "column": 25
+      },
+      "range": {
+        "start": 20783,
+        "end": 20804
+      }
+    },
+    "target": {
+      "label": "CanvasRenderingContext2D_prototype_fill",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "drawLine",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 607,
+        "column": 4
+      },
+      "end": {
+        "row": 607,
+        "column": 30
+      },
+      "range": {
+        "start": 21502,
+        "end": 21528
+      }
+    },
+    "target": {
+      "label": "CanvasRenderingContext2D_prototype_beginPath",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "drawCircle",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 575,
+        "column": 4
+      },
+      "end": {
+        "row": 575,
+        "column": 30
+      },
+      "range": {
+        "start": 20450,
+        "end": 20476
+      }
+    },
+    "target": {
+      "label": "CanvasRenderingContext2D_prototype_beginPath",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 848,
+        "column": 0
+      },
+      "end": {
+        "row": 848,
+        "column": 46
+      },
+      "range": {
+        "start": 28459,
+        "end": 28505
+      }
+    },
+    "target": {
+      "label": "Element_prototype_querySelectorAll",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 848,
+        "column": 0
+      },
+      "end": {
+        "row": 848,
+        "column": 46
+      },
+      "range": {
+        "start": 28459,
+        "end": 28505
+      }
+    },
+    "target": {
+      "label": "DocumentFragment_prototype_querySelectorAll",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 848,
+        "column": 0
+      },
+      "end": {
+        "row": 848,
+        "column": 46
+      },
+      "range": {
+        "start": 28459,
+        "end": 28505
+      }
+    },
+    "target": {
+      "label": "Document_prototype_querySelectorAll",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 836,
+        "column": 0
+      },
+      "end": {
+        "row": 836,
+        "column": 55
+      },
+      "range": {
+        "start": 28092,
+        "end": 28147
+      }
+    },
+    "target": {
+      "label": "Element_prototype_querySelectorAll",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 836,
+        "column": 0
+      },
+      "end": {
+        "row": 836,
+        "column": 55
+      },
+      "range": {
+        "start": 28092,
+        "end": 28147
+      }
+    },
+    "target": {
+      "label": "DocumentFragment_prototype_querySelectorAll",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 836,
+        "column": 0
+      },
+      "end": {
+        "row": 836,
+        "column": 55
+      },
+      "range": {
+        "start": 28092,
+        "end": 28147
+      }
+    },
+    "target": {
+      "label": "Document_prototype_querySelectorAll",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 824,
+        "column": 0
+      },
+      "end": {
+        "row": 824,
+        "column": 52
+      },
+      "range": {
+        "start": 27722,
+        "end": 27774
+      }
+    },
+    "target": {
+      "label": "Element_prototype_querySelectorAll",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 824,
+        "column": 0
+      },
+      "end": {
+        "row": 824,
+        "column": 52
+      },
+      "range": {
+        "start": 27722,
+        "end": 27774
+      }
+    },
+    "target": {
+      "label": "DocumentFragment_prototype_querySelectorAll",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 824,
+        "column": 0
+      },
+      "end": {
+        "row": 824,
+        "column": 52
+      },
+      "range": {
+        "start": 27722,
+        "end": 27774
+      }
+    },
+    "target": {
+      "label": "Document_prototype_querySelectorAll",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 412,
+        "column": 18
+      },
+      "end": {
+        "row": 412,
+        "column": 73
+      },
+      "range": {
+        "start": 15481,
+        "end": 15536
+      }
+    },
+    "target": {
+      "label": "Element_prototype_querySelectorAll",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 412,
+        "column": 18
+      },
+      "end": {
+        "row": 412,
+        "column": 73
+      },
+      "range": {
+        "start": 15481,
+        "end": 15536
+      }
+    },
+    "target": {
+      "label": "DocumentFragment_prototype_querySelectorAll",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 412,
+        "column": 18
+      },
+      "end": {
+        "row": 412,
+        "column": 73
+      },
+      "range": {
+        "start": 15481,
+        "end": 15536
+      }
+    },
+    "target": {
+      "label": "Document_prototype_querySelectorAll",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 411,
+        "column": 18
+      },
+      "end": {
+        "row": 411,
+        "column": 70
+      },
+      "range": {
+        "start": 15409,
+        "end": 15461
+      }
+    },
+    "target": {
+      "label": "Element_prototype_querySelectorAll",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 411,
+        "column": 18
+      },
+      "end": {
+        "row": 411,
+        "column": 70
+      },
+      "range": {
+        "start": 15409,
+        "end": 15461
+      }
+    },
+    "target": {
+      "label": "DocumentFragment_prototype_querySelectorAll",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 411,
+        "column": 18
+      },
+      "end": {
+        "row": 411,
+        "column": 70
+      },
+      "range": {
+        "start": 15409,
+        "end": 15461
+      }
+    },
+    "target": {
+      "label": "Document_prototype_querySelectorAll",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 888,
+        "column": 5
+      },
+      "end": {
+        "row": 888,
+        "column": 58
+      },
+      "range": {
+        "start": 29823,
+        "end": 29876
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 884,
+        "column": 0
+      },
+      "end": {
+        "row": 884,
+        "column": 39
+      },
+      "range": {
+        "start": 29719,
+        "end": 29758
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 874,
+        "column": 5
+      },
+      "end": {
+        "row": 874,
+        "column": 53
+      },
+      "range": {
+        "start": 29358,
+        "end": 29406
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 872,
+        "column": 0
+      },
+      "end": {
+        "row": 872,
+        "column": 45
+      },
+      "range": {
+        "start": 29268,
+        "end": 29313
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 862,
+        "column": 5
+      },
+      "end": {
+        "row": 862,
+        "column": 58
+      },
+      "range": {
+        "start": 28901,
+        "end": 28954
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 860,
+        "column": 0
+      },
+      "end": {
+        "row": 860,
+        "column": 44
+      },
+      "range": {
+        "start": 28812,
+        "end": 28856
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckboxes",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 535,
+        "column": 20
+      },
+      "end": {
+        "row": 535,
+        "column": 53
+      },
+      "range": {
+        "start": 18952,
+        "end": 18985
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckboxes",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 531,
+        "column": 20
+      },
+      "end": {
+        "row": 531,
+        "column": 53
+      },
+      "range": {
+        "start": 18825,
+        "end": 18858
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckboxes",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 529,
+        "column": 27
+      },
+      "end": {
+        "row": 529,
+        "column": 60
+      },
+      "range": {
+        "start": 18728,
+        "end": 18761
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckboxes",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 509,
+        "column": 25
+      },
+      "end": {
+        "row": 509,
+        "column": 58
+      },
+      "range": {
+        "start": 18285,
+        "end": 18318
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckboxes",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 494,
+        "column": 25
+      },
+      "end": {
+        "row": 494,
+        "column": 58
+      },
+      "range": {
+        "start": 17808,
+        "end": 17841
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckbox",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 473,
+        "column": 43
+      },
+      "end": {
+        "row": 473,
+        "column": 70
+      },
+      "range": {
+        "start": 17103,
+        "end": 17130
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "toggleCheckbox",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 473,
+        "column": 4
+      },
+      "end": {
+        "row": 473,
+        "column": 31
+      },
+      "range": {
+        "start": 17064,
+        "end": 17091
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 158,
+        "column": 9
+      },
+      "end": {
+        "row": 158,
+        "column": 98
+      },
+      "range": {
+        "start": 4782,
+        "end": 4871
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "resize",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 39,
+        "column": 4
+      },
+      "end": {
+        "row": 39,
+        "column": 37
+      },
+      "range": {
+        "start": 1317,
+        "end": 1350
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "resize",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 38,
+        "column": 4
+      },
+      "end": {
+        "row": 38,
+        "column": 37
+      },
+      "range": {
+        "start": 1241,
+        "end": 1274
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 13,
+        "column": 14
+      },
+      "end": {
+        "row": 13,
+        "column": 47
+      },
+      "range": {
+        "start": 592,
+        "end": 625
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 12,
+        "column": 14
+      },
+      "end": {
+        "row": 12,
+        "column": 47
+      },
+      "range": {
+        "start": 543,
+        "end": 576
+      }
+    },
+    "target": {
+      "label": "Document_prototype_getElementById",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 889,
+        "column": 10
+      },
+      "end": {
+        "row": 889,
+        "column": 20
+      },
+      "range": {
+        "start": 29897,
+        "end": 29907
+      }
+    },
+    "target": {
+      "label": "HTMLElement_prototype_click",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 13,
+        "column": 14
+      },
+      "end": {
+        "row": 13,
+        "column": 64
+      },
+      "range": {
+        "start": 592,
+        "end": 642
+      }
+    },
+    "target": {
+      "label": "HTMLCanvasElement_prototype_getContext",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 884,
+        "column": 0
+      },
+      "end": {
+        "row": 891,
+        "column": 2
+      },
+      "range": {
+        "start": 29719,
+        "end": 29927
+      }
+    },
+    "target": {
+      "label": "XMLHttpRequest_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 884,
+        "column": 0
+      },
+      "end": {
+        "row": 891,
+        "column": 2
+      },
+      "range": {
+        "start": 29719,
+        "end": 29927
+      }
+    },
+    "target": {
+      "label": "Window_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 884,
+        "column": 0
+      },
+      "end": {
+        "row": 891,
+        "column": 2
+      },
+      "range": {
+        "start": 29719,
+        "end": 29927
+      }
+    },
+    "target": {
+      "label": "Node_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 872,
+        "column": 0
+      },
+      "end": {
+        "row": 878,
+        "column": 2
+      },
+      "range": {
+        "start": 29268,
+        "end": 29534
+      }
+    },
+    "target": {
+      "label": "XMLHttpRequest_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 872,
+        "column": 0
+      },
+      "end": {
+        "row": 878,
+        "column": 2
+      },
+      "range": {
+        "start": 29268,
+        "end": 29534
+      }
+    },
+    "target": {
+      "label": "Window_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 872,
+        "column": 0
+      },
+      "end": {
+        "row": 878,
+        "column": 2
+      },
+      "range": {
+        "start": 29268,
+        "end": 29534
+      }
+    },
+    "target": {
+      "label": "Node_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 860,
+        "column": 0
+      },
+      "end": {
+        "row": 866,
+        "column": 2
+      },
+      "range": {
+        "start": 28812,
+        "end": 29083
+      }
+    },
+    "target": {
+      "label": "XMLHttpRequest_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 860,
+        "column": 0
+      },
+      "end": {
+        "row": 866,
+        "column": 2
+      },
+      "range": {
+        "start": 28812,
+        "end": 29083
+      }
+    },
+    "target": {
+      "label": "Window_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 860,
+        "column": 0
+      },
+      "end": {
+        "row": 866,
+        "column": 2
+      },
+      "range": {
+        "start": 28812,
+        "end": 29083
+      }
+    },
+    "target": {
+      "label": "Node_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 850,
+        "column": 4
+      },
+      "end": {
+        "row": 853,
+        "column": 6
+      },
+      "range": {
+        "start": 28529,
+        "end": 28624
+      }
+    },
+    "target": {
+      "label": "XMLHttpRequest_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 850,
+        "column": 4
+      },
+      "end": {
+        "row": 853,
+        "column": 6
+      },
+      "range": {
+        "start": 28529,
+        "end": 28624
+      }
+    },
+    "target": {
+      "label": "Window_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 850,
+        "column": 4
+      },
+      "end": {
+        "row": 853,
+        "column": 6
+      },
+      "range": {
+        "start": 28529,
+        "end": 28624
+      }
+    },
+    "target": {
+      "label": "Node_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 838,
+        "column": 4
+      },
+      "end": {
+        "row": 841,
+        "column": 6
+      },
+      "range": {
+        "start": 28171,
+        "end": 28274
+      }
+    },
+    "target": {
+      "label": "XMLHttpRequest_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 838,
+        "column": 4
+      },
+      "end": {
+        "row": 841,
+        "column": 6
+      },
+      "range": {
+        "start": 28171,
+        "end": 28274
+      }
+    },
+    "target": {
+      "label": "Window_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 838,
+        "column": 4
+      },
+      "end": {
+        "row": 841,
+        "column": 6
+      },
+      "range": {
+        "start": 28171,
+        "end": 28274
+      }
+    },
+    "target": {
+      "label": "Node_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 826,
+        "column": 4
+      },
+      "end": {
+        "row": 829,
+        "column": 6
+      },
+      "range": {
+        "start": 27798,
+        "end": 27898
+      }
+    },
+    "target": {
+      "label": "XMLHttpRequest_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 826,
+        "column": 4
+      },
+      "end": {
+        "row": 829,
+        "column": 6
+      },
+      "range": {
+        "start": 27798,
+        "end": 27898
+      }
+    },
+    "target": {
+      "label": "Window_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "anon",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 826,
+        "column": 4
+      },
+      "end": {
+        "row": 829,
+        "column": 6
+      },
+      "range": {
+        "start": 27798,
+        "end": 27898
+      }
+    },
+    "target": {
+      "label": "Node_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 44,
+        "column": 0
+      },
+      "end": {
+        "row": 44,
+        "column": 41
+      },
+      "range": {
+        "start": 1472,
+        "end": 1513
+      }
+    },
+    "target": {
+      "label": "XMLHttpRequest_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 44,
+        "column": 0
+      },
+      "end": {
+        "row": 44,
+        "column": 41
+      },
+      "range": {
+        "start": 1472,
+        "end": 1513
+      }
+    },
+    "target": {
+      "label": "Window_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 44,
+        "column": 0
+      },
+      "end": {
+        "row": 44,
+        "column": 41
+      },
+      "range": {
+        "start": 1472,
+        "end": 1513
+      }
+    },
+    "target": {
+      "label": "Node_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 43,
+        "column": 0
+      },
+      "end": {
+        "row": 43,
+        "column": 41
+      },
+      "range": {
+        "start": 1429,
+        "end": 1470
+      }
+    },
+    "target": {
+      "label": "XMLHttpRequest_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 43,
+        "column": 0
+      },
+      "end": {
+        "row": 43,
+        "column": 41
+      },
+      "range": {
+        "start": 1429,
+        "end": 1470
+      }
+    },
+    "target": {
+      "label": "Window_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  },
+  {
+    "source": {
+      "label": "global",
+      "file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+      "start": {
+        "row": 43,
+        "column": 0
+      },
+      "end": {
+        "row": 43,
+        "column": 41
+      },
+      "range": {
+        "start": 1429,
+        "end": 1470
+      }
+    },
+    "target": {
+      "label": "Node_prototype_addEventListener",
+      "file": "Native",
+      "start": {
+        "row": null,
+        "column": null
+      },
+      "end": {
+        "row": null,
+        "column": null
+      },
+      "range": {
+        "start": null,
+        "end": null
+      }
+    }
+  }
+]
