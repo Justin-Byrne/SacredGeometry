@@ -1,3 +1,8 @@
+// @brief:   CSS Flyout concept obtained through
+// @author:  Abhishek Ghosh
+// @project: CodePen Home CSS-only multi-level hierarchical navigation flyout menu
+// @website: https://codepen.io/abhishekcghosh/pen/WqjOaX
+
 // variables
 $page-bg:                   #607d8b;
 $base-font-size:            16px;       // becomes 1rem
@@ -15,8 +20,16 @@ $menu-content-padding:      0.5rem 1rem 0.5rem 1.75rem;
 $menu-border-radius:        0.5rem;
 $menu-top-padding:          0.25rem;
 
+body 
+{
+    margin: 0;
+}
+
 .flyout-nav 
 {
+    position: absolute;
+    z-index: 1;
+
     // list of menu items at any level
     ul 
     {
@@ -139,4 +152,10 @@ $menu-top-padding:          0.25rem;
             left: 0;
         }
     }
+}
+
+#ui-overlay
+{
+    display: block;
+    position: absolute;
 }
