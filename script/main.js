@@ -13,8 +13,10 @@
  */
 const config = 
 {
-    canvas :  document.getElementById("canvas"),
-    context : document.getElementById("canvas").getContext("2d"),
+    canvas    : document.getElementById("canvas"),
+    context   : document.getElementById("canvas").getContext("2d"),
+    canvas2   : document.getElementById("canvas-underlay"),
+    context2  : document.getElementById("canvas-underlay").getContext("2d"),
     domWindow : 
     {
         width:    window.innerWidth  - 18,
@@ -26,9 +28,9 @@ const config =
     {
         Author:  'Justin Don Byrne',
         Created: 'September, 11 2021',
-        Library: 'Sacred Geometry',
-        Updated: 'November, 15 2021',
-        Version: '1.5.20',
+        Library: 'Sacred Geometry Sketch Pad',
+        Updated: 'November, 17 2021',
+        Version: '1.7.28',
     }
 }
 
@@ -311,23 +313,9 @@ console.log('configuration: ', config);
 console.log('matrix: ',        matrix);
 console.log('colorArray: ',    colorArray);
 
-////////        Resize              ////////
-
-/**
- * resize()                 {Method}                    Adjusts the canvas element in relation to the DOM window
- */
-function resize() 
-{
-    document.getElementById("canvas").width  = `${config.domWindow.width}`;
-    document.getElementById("canvas").height = `${config.domWindow.height}`;
-
-    document.getElementById("ui-overlay").style.setProperty('width', `${config.domWindow.width}px`);
-    document.getElementById("ui-overlay").style.setProperty('height', `${config.domWindow.height}px`);
-}
-
 //---   binding of resize()   ---//
-window.addEventListener('resize', resize);
-window.addEventListener('load',   resize);
+window.addEventListener('resize', setupEnvironment);
+window.addEventListener('load',   setupEnvironment);
 
 ////////////////////////////////////////////////////////////
 ////////        PROTOTYPE FUNCTIONS                 ////////
@@ -391,30 +379,35 @@ Array.prototype.pushPop            = function(val)
  */
 Array.prototype.pushPopAdv         = function(val)
 {
-    var compareValues = [1, 6];
-
-    for (var i = 1; i <= 10; i++)
+    if (val == 0)                   // Handle seed variable first
     {
-        var n = 1 + (6 * (i - 1));
+        let index = sacredArrays.circle.indexOfArrayValues([0, 0]);
 
-        if (val >= compareValues[0] && val <= compareValues[1])
+        (index > -1)
+            ? sacredArrays.circle.splice(index, 1)
+            : sacredArrays.circle.push([0, 0]);
+    }
+    else                            // If value > 0, compare against matrix 9 x 6 groups
+    {
+        var compareValues = [1, 6];
+
+        for (var i = 1; i <= 10; i++)
         {
-            var index = sacredArrays.circle.indexOfArrayValues([i, val - n]);
+            var n = 1 + (6 * (i - 1));
 
-            if (index > -1)
+            if (val >= compareValues[0] && val <= compareValues[1])
             {
-                sacredArrays.circle.splice(index, 1);
-            }
-            else
-            {
-                sacredArrays.circle.push([i, val - n]);
+                let index = sacredArrays.circle.indexOfArrayValues([i, val - n]);
 
-                break;
+                (index > -1)
+                    ? sacredArrays.circle.splice(index, 1)
+                    : sacredArrays.circle.push([i, val - n]); break;
+
             }
+
+            compareValues[0] = compareValues[0] + 6;
+            compareValues[1] = compareValues[1] + 6;
         }
-
-        compareValues[0] = compareValues[0] + 6;
-        compareValues[1] = compareValues[1] + 6;
     }
 
     sacredArrays.circle.sort();
@@ -472,6 +465,24 @@ Number.prototype.isSequenceEmpty   = function()
 ////////////////////////////////////////////////////////////
 ////////        GENERAL FUNCTIONS                   ////////
 ////////////////////////////////////////////////////////////
+
+function setupEnvironment()
+{
+    document.getElementById("canvas").width  = `${config.domWindow.width}`;
+    document.getElementById("canvas").height = `${config.domWindow.height}`;
+
+    document.getElementById("canvas-underlay").width  = `${config.domWindow.width}`;
+    document.getElementById("canvas-underlay").height = `${config.domWindow.height}`;
+
+    document.getElementById("ui-overlay").style.setProperty('width', `${config.domWindow.width}px`);
+    document.getElementById("ui-overlay").style.setProperty('height', `${config.domWindow.height}px`);
+
+    document.title = config.about.Library + ' | ver: ' + config.about.Version;
+
+    insertUIElements();
+
+    drawOutline();
+}
 
 /**
  * parseToSequence()        {Method}                    Returns the sequenced value of the value passed
@@ -618,13 +629,17 @@ function clearCanvas()
  * @param                   {number}  radius            Circle radius
  * @param                   {number}  startAngle        Start angle
  * @param                   {number}  endAngle          End angle
- * @param                   {boolean} counterClockwise  Draw circle clockwise
- * @param                   {string}  color             RGB number set; r, g, b
- * @param                   {decimal} alpha             Alpha (transparency) number value
+ * @param                   {string}  strokeColor       Stroke RGB number set for fill; r, g, b
+ * @param                   {decimal} strokeAlpha       Stroke alpha (transparency) number value
+ * @param                   {string}  fillColor         Fill RGB number set for fill; r, g, b
+ * @param                   {decimal} fillAlpha         Fill alpha (transparency) number value
  * @param                   {boolean} centerDot         Include a center dot
  */
-function drawCircle(x, y, radius, startAngle, endAngle, counterClockwise, color, alpha = 0.3, centerDot = true, mouseArea = true) 
+function drawCircle(x, y, radius, startAngle = 0, endAngle = 2 * Math.PI, strokeColor = '0, 0, 0', strokeAlpha = 0.5, fillColor, fillAlpha = 0.3, centerDot = true, mouseArea = true) 
 {
+    config.context.strokeStyle = "rgba(" + strokeColor + ", " + strokeAlpha + ")";
+    config.context.fillStyle   = "rgba(" + fillColor   + ", " + fillAlpha   + ")";
+    
     config.context.beginPath();
     
     config.context.arc(
@@ -633,19 +648,61 @@ function drawCircle(x, y, radius, startAngle, endAngle, counterClockwise, color,
         radius, 
         startAngle, 
         endAngle, 
-        counterClockwise
+        false                       // Counter Clockwise
     );
     
     config.context.stroke();
-
-    config.context.fillStyle = "rgba(" + color + ", " + alpha + ")";
-
     config.context.fill();
 
     // Center Dot
     (centerDot)
-        ? drawCircle(x, y, (radius / 4) * 0.18, startAngle, endAngle, counterClockwise, color, alpha, false, false)
+        ? drawCircle(x, y, (radius / 4) * 0.18, startAngle, endAngle, strokeColor, strokeAlpha, fillColor, fillAlpha, false, false)
         : null;
+}
+
+/**
+ * drawUnderlayCircles()    {Method}                    Draws outlines of (potential) points for reference
+ * @param                   {number} x                  x - axis; center
+ * @param                   {number} y                  y - axis; center
+ * @param                   {number} radius             Circle radius
+ */
+function drawUnderlayCircles(x, y, radius)
+{
+    config.context2.strokeStyle = 'rgba(' + '0, 0, 0' + ', ' + 0.15 + ')';
+
+    config.context2.beginPath();
+
+    config.context2.arc(
+        config.domWindow.xCenter + x, 
+        config.domWindow.yCenter + y, 
+        radius, 
+        0, 
+        2 * Math.PI, 
+        false
+    );
+
+    config.context2.stroke();
+}
+
+/**
+ * drawOutline              {Method}                    Draws a semi-transparent outline on canvas-underlay
+ */
+function drawOutline()
+{
+    setTimeout(function() 
+    {
+        drawUnderlayCircles(matrix[0][0][0], matrix[0][0][1], zonaPolusada);
+
+        for (var i = 0; i <= matrix.length - 1; i++)        // Draw circles around all points existing with the matrix array
+        {
+            for (var j = 0; j <= matrix[i].length - 1; j++) 
+            {
+                drawUnderlayCircles(matrix[i][j][0], matrix[i][j][1], spirit.radius);
+            }
+
+        }
+
+    }, 1);
 }
 
 /**
@@ -664,38 +721,6 @@ function drawLine(startX, startY, endX, endY)
 
     // config.context.closePath();                    // Marks subpath as closed
     config.context.stroke();                       // strokes the subpaths with the current stroke style
-}
-
-/**
- * seedCanvas()             {Method}                    Seeds the page with the root (spirit) node along with the zona polusada
- */
-function seedCanvas()
-{
-    setTimeout(function() 
-    { 
-        // Zona Polusada
-        drawCircle(
-            matrix[0][0][0], 
-            matrix[0][0][1], 
-            zonaPolusada, 
-            0, 
-            2 * Math.PI, 
-            false, 
-            "255,255,255"
-        );
-
-        // (0) - Spirit
-        drawCircle(
-            null, 
-            null, 
-            spirit.radius, 
-            0, 
-            2 * Math.PI, 
-            false, 
-            colorArray[0]
-        );
-
-    }, 1);
 }
 
 ////////////////////////////////////////////////////////////
@@ -721,13 +746,14 @@ function cycleFull(shape)
                     case 'circle':
 
                         drawCircle(
-                            matrix[i][j][0],        
-                            matrix[i][j][1], 
-                            spirit.radius, 
-                            0, 
-                            2 * Math.PI, 
-                            false, 
-                            colorArray[i]
+                            matrix[i][j][0],                // x
+                            matrix[i][j][1],                // y
+                            spirit.radius,                  // radius
+                            undefined,                      // startAngle
+                            undefined,                      // endAngle
+                            undefined,                      // strokeColor
+                            undefined,                      // strokeAlpha
+                            colorArray[i]                   // fillColor
                         );
 
                         break;
@@ -773,13 +799,14 @@ function cycleSacredArray()
         for (var i = 0; i <= sacredArrays.circle.length - 1; i++) 
         {
             drawCircle(
-                matrix[sacredArrays.circle[i][0]][sacredArrays.circle[i][1]][0],            // xCoord
-                matrix[sacredArrays.circle[i][0]][sacredArrays.circle[i][1]][1],            // yCoord
-                spirit.radius, 
-                0, 
-                2 * Math.PI, 
-                false, 
-                colorArray[sacredArrays.circle[i][0]]
+                matrix[sacredArrays.circle[i][0]][sacredArrays.circle[i][1]][0],// x
+                matrix[sacredArrays.circle[i][0]][sacredArrays.circle[i][1]][1],// y
+                spirit.radius,                                                  // radius
+                undefined,                                                      // startAngle
+                undefined,                                                      // endAngle
+                undefined,                                                      // strokeColor
+                undefined,                                                      // storkeAlpha
+                colorArray[sacredArrays.circle[i][0]]                           // fillColor
             );
 
         }
@@ -820,11 +847,11 @@ function cycleSacredArray()
 ////////////////////////////////////////////////////////////
 
 /**
- * sortArray()              {Method}                    Sorts various shape arrays                    
+ * pushPopSacredArray()     {Method}                    Sorts various shape arrays                    
  * @param                   {string}       shape        String signifying the type of shape to sort
  * @param                   {number|array} value        Value(s) to be sorted through the below (corresponding) algorithms
  */
-function sortArray(shape, value)
+function pushPopSacredArray(shape, value)
 {
     var n = parseInt(value);
 
@@ -856,7 +883,7 @@ function sortArray(shape, value)
 
         default:
 
-            console.log(`${shape} is not supported by the sortArray() function!`);
+            console.log(`${shape} is not supported by the pushPopSacredArray() function!`);
     }
 
     cycleSacredArray();
@@ -876,14 +903,15 @@ function activateRegion(obj)
     let node = obj.id.match(/(?<val1>\d+)-(?<val2>\d+)/);
 
     drawCircle(
-        matrix[parseInt(node[1])][parseInt(node[2])][0], 
-        matrix[parseInt(node[1])][parseInt(node[2])][1],
-        spirit.radius,
-        0,
-        2 * Math.PI,
-        false,
-        colorArray[parseInt(node[1])],
-        0.15
+        matrix[parseInt(node[1])][parseInt(node[2])][0],    // x
+        matrix[parseInt(node[1])][parseInt(node[2])][1],    // y
+        spirit.radius,                                      // radius
+        undefined,                                          // startAngle
+        undefined,                                          // endAngle
+        undefined,                                          // strokeColor
+        undefined,                                          // strokeAlpha
+        colorArray[parseInt(node[1])],                      // fillColor
+        0.15                                                // fillAlpha
     );
 }
 
@@ -906,7 +934,7 @@ function setRegion(obj)
  */
 function uiElementPos(x, y)
 {
-    var result = new Array();
+    let result = new Array();
 
     result[0] = config.domWindow.xCenter + x - (spirit.radius / 2);
     result[1] = config.domWindow.yCenter + y - (spirit.radius / 2);
@@ -919,7 +947,7 @@ function uiElementPos(x, y)
  */
 function insertUIElements()
 {
-    for (var i = 1; i <= matrix.length - 1; i++) 
+    for (var i = 0; i <= matrix.length - 1; i++) 
     {
         for (var j = 0; j <= matrix[i].length - 1; j++) 
         {
@@ -958,45 +986,28 @@ for (var i = 0; i <= inputArray.class.length - 1; i++)
     {
         item.addEventListener('click', event =>
         {
-            sortArray(getRegExp(item.className, '([^\.]+?)(-checkbox|-cycle)'), item.value);
+            pushPopSacredArray(getRegExp(item.className, '([^\.]+?)(-checkbox|-cycle)'), item.value);
         });
     });
 }
 
-/**
- * Bind id inputs
- */
-document.getElementById(inputArray.id[0]).addEventListener("click", function()
+document.getElementById('full-circle-cycle').addEventListener("click", function()
 {
-    (document.getElementById(`${inputArray.id[0]}-checkbox`).checked) 
+    (document.getElementById('full-circle-cycle').checked) 
         ? (sacredArrays.circle.length > 0) 
             ? cycleSacredArray() : null 
         : cycleFull('circle');
 });
 
-document.getElementById(inputArray.id[1]).addEventListener("click", function()
+document.getElementById('full-hexagon-cycle').addEventListener("click", function()
 {
-    (document.getElementById(`${inputArray.id[1]}-checkbox`).checked)
+    (document.getElementById('full-hexagon-cycle').checked)
         ? (sacredArrays.hexagon.length > 0)
             ? cycleSacredArray() : null
         : cycleFull('hexagon');
 });
 
-document.getElementById(inputArray.id[2]).addEventListener("click", function()
+document.getElementById('clear-canvas').addEventListener("click", function()
 {
     clearCanvas();
-
-    // (document.getElementById('full-circle-cycle-checkbox').checked) 
-    //     ? el.click() 
-    //     : null;
 });
-
-config.canvas.addEventListener("mousemove", function(event) 
-{
-    let mouseX = event.clientX;
-    let mouseY = event.clientY;
-
-    // console.log(`X: ${mouseX}, Y: ${mouseY}`);             // For Debugging Purposes Only
-});
-
-insertUIElements();

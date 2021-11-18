@@ -28,7 +28,7 @@ body
 .flyout-nav 
 {
     position: absolute;
-    z-index: 1;
+    z-index: 5;
 
     // list of menu items at any level
     ul 
@@ -155,6 +155,19 @@ body
 }
 
 #ui-overlay
+{
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+#canvas
+{
+    display: block;
+    position: absolute;
+}
+
+#canvas-underlay
 {
     display: block;
     position: absolute;

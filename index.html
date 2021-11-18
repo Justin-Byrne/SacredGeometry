@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
 
-	<title>Canvas</title>
+	<title></title>
 	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAUSxPgFEs35thON+bYThPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBRLC+AUSy/gFEs/4BRLP+bYTj/m2E4/5thOL+bYTgvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgFEsD4BRLI+AUSz/gFEs/4NXMv+fiF7/tJdo/55nPv+bYTj/m2E4/5thOI+bYTgPAAAAAAAAAAAAAAAAgFEsb4BRLO+AUSz/gFEs/5d6Uf+2sYT/vr+R/83NmP/Gv4z/rYlc/5thOP+bYTj/m2E475thOG8AAAAAAAAAAIBRLP+AUSz/i2U+/66jd/++v5H/u7yL/6yoYv+/umn/y8qS/83NmP/AsoD/p3xQ/5thOP+bYTj/AAAAAAAAAACAUSz/gFEs/9TRqf++v5H/s7Bz/5+WPv+bkTP/sqc6/7WrRf/CvnT/zc2Y/97ctP+bYTj/m2E4/wAAAAAAAAAAgFEs/4BRLP/x6sr/1c6d/5uRM/+bkTP/m5Ez/7KnOv+ypzr/sqc6/9/Zqf/28Nr/m2E4/5thOP8AAAAAAAAAAIBRLP+AUSz/8erK/9vTpP+bkTP/m5Ez/5uRM/+ypzr/sqc6/7KnOv/l3bL/9vDa/5thOP+bYTj/AAAAAAAAAACAUSz/gFEs//Hqyv/b06T/m5Ez/56TNP+1pzv/wbI+/7OoOv+ypzr/5d2y//bw2v+bYTj/m2E4/wAAAAAAAAAAgFEs/4BRLP/x6sr/29Ok/66hOf/Mu0L/0L5D/9C+Q//OvEL/va89/+Xdsv/28Nr/m2E4/5thOP8AAAAAAAAAAIBRLP+AUSz/9vHe//v47//q4q7/0sFN/9C+Q//QvkP/0sJO/+vmuP/8/v//+ffu/5thOP+bYTj/AAAAAAAAAACDUi3/nF41/7+DXv/o1ML/+/jv//j05P/l25n/49qV//n68//8/v//6djO/7+EYf+nZTr/nGE4/wAAAAAAAAAAq2Y6f7JpPe+yaT3/smk9/8iVdP/x5tj/+/jv//v8+//y6+b/yZd5/7JpPf+yaT3/smk9769oPH8AAAAAAAAAAAAAAACyaT0Psmk9n7JpPf+yaT3/tnFI/9awlv/Wspv/tnJJ/7JpPf+yaT3/smk9n7JpPQ8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyaT0vsmk9v7JpPf+yaT3/smk9/7JpPf+yaT2/smk9LwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyaT1Psmk937JpPd+yaT1PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/n8AAPgfAADgBwAAwAMAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAwAMAAOAHAAD4HwAA/n8AAA==" rel="icon" type="image/x-icon" />
 	<link rel="stylesheet" href="style/main.css">
 
 </head>
@@ -36,8 +37,8 @@
 					<!-- Seed -->
                 	<li>
                         <a href="#">
-                            <input type="checkbox" id="seed-circle-checkbox" class="seed-checkbox" value="1"/>
-                            <label class="label" for="seed-circle-checkbox">Seed</label>
+                            <input type="checkbox" id="circle-00-01-checkbox" class="single-circle-checkbox" value="0"/>
+                            <label class="label" for="circle-00-01-checkbox">Seed</label>
 						</a>
                     </li>
                     <li class="separator"></li>
@@ -618,6 +619,8 @@
 	<div id="ui-overlay"></div>
 
 	<canvas id="canvas"></canvas>
+
+	<canvas id="canvas-underlay"></canvas>
 
 	<script src="script/main.js"></script>
 
