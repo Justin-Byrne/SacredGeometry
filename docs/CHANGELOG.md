@@ -1,12 +1,28 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.8.35] - 2021-11-24
+### Added
+- circle object with master config
+- activateUnderlay() method to highlight the key parameters
+- clearUnderlay() method to clear the underlay
+- getRadialGradient() method to return a radial gradient for context.fillStyle()
+
+### Changed
+- uiElementPos() to get UI element window positions
+- insertUIElements() to insert UI elements
+
+### Removed
+- zona polusada UI element
+- all timers
+
 ## [1.7.28] - 2021-11-17
 ### Added 
-- canvas-underlay
+- canvas-underlay element
 - drawOutline() & canvas-underlay to draw circular outlines
 - favicon
 - drawUnderlayCircle() method to handle canvas-underlay circles; only
+- canvas-pre-ender element
 
 ### Changed
 - drawCircle() added strokeColor & strokeAlpha params, removed counterClockwise param
@@ -80,7 +96,9 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-[1.7.28]: 2021-11-17 [CURRENT REVISION]
+[1.8.35]: 2021-11-24 [CURRENT REVISION]
+
+[1.7.28]: 2021-11-17 [40feafa](https://github.com/Justin-Byrne/SacredGeometry/commit/40feafa) added canvas-underlay & revised existing features
 
 [1.5.20]: 2021-11-15 [31b3fc1](https://github.com/Justin-Byrne/SacredGeometry/commit/31b3fc1) add UI and optimization elements
 
