@@ -1,6 +1,19 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.10.41] - 2021-11-28
+### Added
+- unhighlitRegion() to un-highlight UI elements
+- startLine() defines the beginner of a straight line
+- endLine() defines the ending of a straight line 
+
+### Changed
+- activateRegion() to highlightRegion()
+- highlightRegion() optimization
+- Array.prototype.indexOfArrayValues() to Array.prototype.indexOfArray()
+- Array.prototype.indexOfArray() updated to handle line variances
+- Array.prototype.pushPop() updated to include array values being passed
+
 ## [1.8.35] - 2021-11-24
 ### Added
 - circle object with master config
@@ -106,7 +119,7 @@ All notable changes to this project will be documented in this file.
 
 [1.0.11]: 2021-10-03 [de2f86d](https://github.com/Justin-Byrne/SacredGeometry/commit/de2f86d) various bug fixes and trimming down 
 
-[1.0.0]: 2021-09-16 [9babc19](https://github.com/Justin-Byrne/SacredGeometry/commit/9babc19) initial upload
+[1.0.0]:  2021-09-16 [9babc19](https://github.com/Justin-Byrne/SacredGeometry/commit/9babc19) initial upload
 ---
 
 ## Types of changes

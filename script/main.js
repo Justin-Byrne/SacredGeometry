@@ -34,8 +34,8 @@ const config =
         Author:  'Justin Don Byrne',
         Created: 'September, 11 2021',
         Library: 'Sacred Geometry Sketch Pad',
-        Updated: 'November, 24 2021',
-        Version: '1.8.35',
+        Updated: 'November, 28 2021',
+        Version: '1.10.41',
     }
 }
 
@@ -312,6 +312,26 @@ const sacredArrays =
     line:     []
 }
 
+const mouse = 
+{
+    start: 
+    {
+        x: null,
+        y: null
+    },
+    current:
+    {
+        x: null,
+        y: null
+    },
+    end:
+    {
+        x: null,
+        y: null
+    },
+    down: false
+}
+
 ////////        Debug Output        ////////
 
 console.log('configuration: ', config);
@@ -344,17 +364,19 @@ Array.prototype.containsArray      = function(val)
 }
 
 /**
- * indexOfArrayValues()     {Array:Method}              Returns the index of the array values (e.g.: [1, 2]) passed
+ * indexOfArray()           {Array:Method}              Returns the index of the array values (e.g.: [1, 2]) passed
  * @param                   {array} val                 Array sequence to validate
  * @return                  {number}                    Integer representing the index where the passed array matches 
  */
-Array.prototype.indexOfArrayValues = function(val) 
+Array.prototype.indexOfArray       = function(val) 
 {
     var index = -1;
 
     for (var i = 0; i < this.length; i++) 
     {
-        if (JSON.stringify(this[i]) === JSON.stringify(val))
+        var pointInversion = [val[2], val[3], val[0], val[1]];                  // For lines draw in an inverted fashion
+
+        if (JSON.stringify(this[i]) === JSON.stringify(val) || JSON.stringify(this[i]) === JSON.stringify(pointInversion))
         {
             index = i;
         }
@@ -369,7 +391,9 @@ Array.prototype.indexOfArrayValues = function(val)
  */
 Array.prototype.pushPop            = function(val)
 {
-    const index = this.indexOf(val);
+    const index = (typeof(val) == 'number')
+        ? this.indexOf(val)
+        : this.indexOfArray(val);
 
     (index > -1) 
         ? this.splice(index, 1) 
@@ -386,7 +410,7 @@ Array.prototype.pushPopAdv         = function(val)
 {
     if (val == 0)                   // Handle seed variable first
     {
-        let index = sacredArrays.circle.indexOfArrayValues([0, 0]);
+        let index = sacredArrays.circle.indexOfArray([0, 0]);
 
         (index > -1)
             ? sacredArrays.circle.splice(index, 1)
@@ -402,7 +426,7 @@ Array.prototype.pushPopAdv         = function(val)
 
             if (val >= compareValues[0] && val <= compareValues[1])
             {
-                let index = sacredArrays.circle.indexOfArrayValues([i, val - n]);
+                let index = sacredArrays.circle.indexOfArray([i, val - n]);
 
                 (index > -1)
                     ? sacredArrays.circle.splice(index, 1)
@@ -541,15 +565,6 @@ function toggleCheckbox(id)
 }
 
 /**
- * clickCheckbox()          {Method}                    Programmatically clicks on a specific checkbox
- * @param                   {string} id                 String identifier for the checkbox to activate
- */
-function clickCheckbox(id)
-{
-    document.getElementById(id).click();
-}
-
-/**
  * toggleCheckboxes()       {Method}                    Toggles checkboxes in accordance with their sequence
  * @param                   {string} shape              String signifying the type of shape to sort
  */
@@ -614,6 +629,15 @@ function toggleCheckboxes(shape)
             console.log(`${shape} is not supported by the toggleCheckboxes() function!`);
 
     }
+}
+
+/**
+ * clickCheckbox()          {Method}                    Programmatically clicks on a specific checkbox
+ * @param                   {string} id                 String identifier for the checkbox to activate
+ */
+function clickCheckbox(id)
+{
+    document.getElementById(id).click();
 }
 
 ////////////////////////////////////////////////////////////
@@ -684,7 +708,7 @@ function drawCircle(x, y, radius, startAngle = 0, endAngle = 2 * Math.PI, stroke
 {
     config.context.strokeStyle = 'rgba(' + strokeColor + ', ' + strokeAlpha + ')';
 
-    config.context.fillStyle = getRadialGradient(config.domWindow.xCenter + x, config.domWindow.xCenter + y, 10, 'white', config.domWindow.xCenter + x, config.domWindow.xCenter + y, 100, 'rgba(' + fillColor   + ', ' + fillAlpha   + ')');
+    config.context.fillStyle = getRadialGradient(config.domWindow.xCenter + x, config.domWindow.yCenter + y, 10, 'white', config.domWindow.xCenter + x, config.domWindow.yCenter + y, 100, 'rgba(' + fillColor   + ', ' + fillAlpha   + ')');
 
     config.context.beginPath();
     
@@ -869,6 +893,17 @@ function cycleSacredArray()
         }
 
     }
+
+    // Lines
+    for (var i = 0; i <= sacredArrays.line.length - 1; i++) 
+    {
+        drawLine(
+            sacredArrays.line[i][0], 
+            sacredArrays.line[i][1], 
+            sacredArrays.line[i][2], 
+            sacredArrays.line[i][3]
+        );
+    }
         
     console.clear();
     console.log('sacredArrays: ', sacredArrays);
@@ -928,24 +963,21 @@ function pushPopSacredArray(shape, value)
 ////////////////////////////////////////////////////////////
 
 /**
- * activateRegion()         {Method}                    Draws a semi-transparent circle over the designed area
+ * highlightRegion()        {Method}                    Draws a semi-transparent circle over the designed area
  * @param                   {Object} obj                UI element
  */
-function activateRegion(obj)
+function highlightRegion(obj)
 {
-    let node = obj.id.match(/(?<val1>\d+)-(?<val2>\d+)/);
+    document.getElementById(obj.id).style.border = '1px dashed black';
+}
 
-    drawCircle(
-        matrix[parseInt(node[1])][parseInt(node[2])][0],    // x
-        matrix[parseInt(node[1])][parseInt(node[2])][1],    // y
-        spirit.radius,                                      // radius
-        undefined,                                          // startAngle
-        undefined,                                          // endAngle
-        undefined,                                          // strokeColor
-        undefined,                                          // strokeAlpha
-        undefined,                                          // fillColor
-        0.15                                                // fillAlpha
-    );
+/**
+ * unhighlightRegion()      {Method}                    Un-highlight UI elements
+ * @param                   {Object} obj                UI element
+ */
+function unhighlightRegion(obj)
+{
+    document.getElementById(obj.id).style.border = '1px solid transparent';
 }
 
 /**
@@ -957,6 +989,39 @@ function setRegion(obj)
     let node = obj.id.match(/(?<val1>\d+)-(?<val2>\d+)/);
 
     clickCheckbox(`circle-${node[1]}-${(parseInt(node[2]) + 1).convert2digStr()}-checkbox`);
+}
+
+/**
+ * startLine()              {Method}                    Defines the beginner of a straight line
+ * @param                   {object} obj                UI element
+ */
+function startLine(obj)
+{
+    mouse.down = true;
+
+    let node = obj.id.match(/(?<val1>\d+)-(?<val2>\d+)/);
+
+    mouse.start.x = config.domWindow.xCenter + matrix[parseInt(node[1])][parseInt(node[2])][0];
+    mouse.start.y = config.domWindow.yCenter + matrix[parseInt(node[1])][parseInt(node[2])][1];
+}
+
+/**
+ * endLine()                {Method}                    Defines the ending of a straight line 
+ * @param                   {object} obj                UI element
+ */
+function endLine(obj)
+{
+    mouse.down = false;
+
+    let node = obj.id.match(/(?<val1>\d+)-(?<val2>\d+)/);
+
+    mouse.end.x = config.domWindow.xCenter + matrix[parseInt(node[1])][parseInt(node[2])][0];
+    mouse.end.y = config.domWindow.yCenter + matrix[parseInt(node[1])][parseInt(node[2])][1];
+
+    sacredArrays.line.pushPop([mouse.start.x, mouse.start.y, mouse.end.x, mouse.end.y]);
+
+    clearCanvas();
+    cycleSacredArray();
 }
 
 /**
@@ -999,9 +1064,11 @@ function insertUIElements()
                 + `border-radius: 50px; `
                 + `border: 1px solid transparent;" ` 
                 + `id="ui-node-${i.convert2digStr()}-${(j).convert2digStr()}" `
-                + `onmouseover="activateRegion(this)" ` 
-                + `onmouseout="cycleSacredArray()" `
+                + `onmouseover="highlightRegion(this)" ` 
+                + `onmouseout="unhighlightRegion(this)" `
                 + `onclick="setRegion(this)" ` 
+                + `onmousedown="startLine(this)" `
+                + `onmouseup="endLine(this)" `
                 // + `>${i} - ${j}</div>`;                 // For Debugging Purposes Only
                 + `></div>`;
         }
@@ -1046,4 +1113,23 @@ document.getElementById('full-hexagon-cycle').addEventListener("click", function
 document.getElementById('clear-canvas').addEventListener("click", function()
 {
     clearCanvas();
+});
+
+window.addEventListener("mousemove", function(event) 
+{
+    clearCanvas();
+    cycleSacredArray();
+
+    mouse.current.x = event.clientX;
+    mouse.current.y = event.clientY;
+
+    if (mouse.down)
+    {
+        drawLine(
+            mouse.start.x, 
+            mouse.start.y, 
+            mouse.current.x, 
+            mouse.current.y
+        );
+    }
 });
