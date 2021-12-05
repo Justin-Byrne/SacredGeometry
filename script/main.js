@@ -13,8 +13,10 @@
  */
 const config = 
 {
-    canvas :  document.getElementById("canvas"),
-    context : document.getElementById("canvas").getContext("2d"),
+    canvas    : document.getElementById("canvas"),
+    context   : document.getElementById("canvas").getContext("2d"),
+    canvas2   : document.getElementById("canvas-underlay"),
+    context2  : document.getElementById("canvas-underlay").getContext("2d"),
     domWindow : 
     {
         width:    window.innerWidth  - 18,
@@ -22,13 +24,19 @@ const config =
         xCenter: (window.innerWidth  / 2),
         yCenter: (window.innerHeight / 2),
     },
+    circle : 
+    {
+        centerDot: false,
+        stroke: true
+    },
+    debug : false,
     about : 
     {
         Author:  'Justin Don Byrne',
         Created: 'September, 11 2021',
-        Library: 'Sacred Geometry',
-        Updated: 'October, 10 2021',
-        Version: '1.4.15',
+        Library: 'Sacred Geometry Sketch Pad',
+        Updated: 'December, 5 2021',
+        Version: '1.10.48',
     }
 }
 
@@ -305,29 +313,23 @@ const sacredArrays =
     line:     []
 }
 
+const mouse = 
+{
+    start:   { x: null, y: null },
+    current: { x: null, y: null },
+    end:     { x: null, y: null },
+    down: false,
+    existingLineIndex: -1
+}
+
 ////////        Debug Output        ////////
 
 console.log('configuration: ', config);
 console.log('matrix: ',        matrix);
-console.log('colorArray: ',    colorArray);
-
-////////        Resize              ////////
-
-/**
- * resize()                 {Method}                    Adjusts the canvas element in relation to the DOM window
- */
-function resize() 
-{
-    document.getElementById("canvas").width  = `${config.domWindow.width}`;
-    document.getElementById("canvas").height = `${config.domWindow.height}`;
-
-    document.getElementById("ui-overlay").style.setProperty('width', `${config.domWindow.width}px`);
-    document.getElementById("ui-overlay").style.setProperty('height', `${config.domWindow.height}px`);
-}
 
 //---   binding of resize()   ---//
-window.addEventListener('resize', resize);
-window.addEventListener('load',   resize);
+window.addEventListener('resize', setupEnvironment);
+window.addEventListener('load',   setupEnvironment);
 
 ////////////////////////////////////////////////////////////
 ////////        PROTOTYPE FUNCTIONS                 ////////
@@ -351,17 +353,19 @@ Array.prototype.containsArray      = function(val)
 }
 
 /**
- * indexOfArrayValues()     {Array:Method}              Returns the index of the array values (e.g.: [1, 2]) passed
+ * indexOfArray()           {Array:Method}              Returns the index of the array values (e.g.: [1, 2]) passed
  * @param                   {array} val                 Array sequence to validate
  * @return                  {number}                    Integer representing the index where the passed array matches 
  */
-Array.prototype.indexOfArrayValues = function(val) 
+Array.prototype.indexOfArray       = function(val) 
 {
     var index = -1;
 
     for (var i = 0; i < this.length; i++) 
     {
-        if (JSON.stringify(this[i]) === JSON.stringify(val))
+        var pointInversion = [val[2], val[3], val[0], val[1]];                  // For lines draw in an inverted fashion
+
+        if (JSON.stringify(this[i]) === JSON.stringify(val) || JSON.stringify(this[i]) === JSON.stringify(pointInversion))
         {
             index = i;
         }
@@ -376,7 +380,9 @@ Array.prototype.indexOfArrayValues = function(val)
  */
 Array.prototype.pushPop            = function(val)
 {
-    const index = this.indexOf(val);
+    const index = (typeof(val) == 'number')
+        ? this.indexOf(val)
+        : this.indexOfArray(val);
 
     (index > -1) 
         ? this.splice(index, 1) 
@@ -391,30 +397,25 @@ Array.prototype.pushPop            = function(val)
  */
 Array.prototype.pushPopAdv         = function(val)
 {
-    var compareValues = [1, 6];
-
-    for (var i = 1; i <= 10; i++)
+    if (val == 0)                   // Handle seed variable first
     {
-        var n = 1 + (6 * (i - 1));
+        sacredArrays.circle.pushPop([0, 0]);
+    }
+    else                            // If value > 0, compare against matrix 9 x 6 groups
+    {
+        var compareValues = [1, 6];
 
-        if (val >= compareValues[0] && val <= compareValues[1])
+        for (var i = 1; i <= 10; i++)
         {
-            var index = sacredArrays.circle.indexOfArrayValues([i, val - n]);
+            var n = 1 + (6 * (i - 1));
 
-            if (index > -1)
-            {
-                sacredArrays.circle.splice(index, 1);
-            }
-            else
-            {
-                sacredArrays.circle.push([i, val - n]);
+            (val >= compareValues[0] && val <= compareValues[1])
+                ? sacredArrays.circle.pushPop([i, val - n])
+                : null;
 
-                break;
-            }
+            compareValues[0] = compareValues[0] + 6;
+            compareValues[1] = compareValues[1] + 6;
         }
-
-        compareValues[0] = compareValues[0] + 6;
-        compareValues[1] = compareValues[1] + 6;
     }
 
     sacredArrays.circle.sort();
@@ -474,6 +475,45 @@ Number.prototype.isSequenceEmpty   = function()
 ////////////////////////////////////////////////////////////
 
 /**
+ * setupEnvironment()       {Method}                    Sets up the initial UI environment
+ */
+function setupEnvironment()
+{
+    document.getElementById("canvas").width  = `${config.domWindow.width}`;
+    document.getElementById("canvas").height = `${config.domWindow.height}`;
+
+    document.getElementById("canvas-underlay").width  = `${config.domWindow.width}`;
+    document.getElementById("canvas-underlay").height = `${config.domWindow.height}`;
+
+    document.getElementById("ui-overlay").style.setProperty('width', `${config.domWindow.width}px`);
+    document.getElementById("ui-overlay").style.setProperty('height', `${config.domWindow.height}px`);
+
+    document.title = config.about.Library + ' | ver: ' + config.about.Version;
+
+    insertUIElements();
+}
+
+/**
+ * centerX                  {Method}                    Orients the offset value passed with the canvas elements center x coordinate
+ * @param                   {number} offset             Offset value
+ * @return                  {number}                    X coordinate orientation offset by passed param
+ */
+function centerX(offset)
+{
+    return config.domWindow.xCenter + offset;
+}
+
+/**
+ * centerY                  {Method}                    Orients the offset value passed with the canvas elements center y coordinate
+ * @param                   {number} offset             Offset value
+ * @return                  {number}                    Y coordinate orientation offset by passed param
+ */
+function centerY(offset)
+{
+    return config.domWindow.yCenter + offset;
+}
+
+/**
  * parseToSequence()        {Method}                    Returns the sequenced value of the value passed
  * @param                   {number} val                Value to be identified within the predefined sequence
  * @return                  {number}                    Sequence of which the passed value belongs to
@@ -489,8 +529,7 @@ function parseToSequence(val)
 
         if (val >= compareValues[0] && val <= compareValues[1]) 
         { 
-            result = i;
-
+            result = i; 
             break; 
         }
 
@@ -524,15 +563,6 @@ function toggleCheckbox(id)
 }
 
 /**
- * clickCheckbox()          {Method}                    Programmatically clicks on a specific checkbox
- * @param                   {string} id                 String identifier for the checkbox to activate
- */
-function clickCheckbox(id)
-{
-    document.getElementById(id).click();
-}
-
-/**
  * toggleCheckboxes()       {Method}                    Toggles checkboxes in accordance with their sequence
  * @param                   {string} shape              String signifying the type of shape to sort
  */
@@ -555,9 +585,7 @@ function toggleCheckboxes(shape)
                             : null;
 
                         toggleCheckbox(idString);
-
                     }
-
                 }
                 else
                 {
@@ -568,11 +596,8 @@ function toggleCheckboxes(shape)
                         (document.getElementById(idString).checked)
                             ? toggleCheckbox(idString)
                             : null;
-
                     }
-
                 }
-
             }
 
             break;
@@ -587,7 +612,6 @@ function toggleCheckboxes(shape)
                     (Number(document.getElementById(idString).value).isSequenceFull())
                         ? true
                         : false;
-
             }
 
             break;
@@ -595,13 +619,62 @@ function toggleCheckboxes(shape)
         default:
 
             console.log(`${shape} is not supported by the toggleCheckboxes() function!`);
-
     }
+}
+
+/**
+ * clickCheckbox()          {Method}                    Programmatically clicks on a specific checkbox
+ * @param                   {string} id                 String identifier for the checkbox to activate
+ */
+function clickCheckbox(id)
+{
+    document.getElementById(id).click();
 }
 
 ////////////////////////////////////////////////////////////
 ////////        GRAPHIC ALGORITHMS                  ////////
 ////////////////////////////////////////////////////////////
+
+/**
+ * activateUnderlay()       {Method}                    Initiates the drawOutline method
+ */
+function activateUnderlay()
+{
+    drawOutline();
+}
+
+/**
+ * clearUnderlay            {Method}                    Clears the entire underlay
+ */
+function clearUnderlay()
+{
+    config.context2.clearRect(0, 0, config.canvas2.width, config.canvas2.height);
+}
+
+/**
+ * [getRadialGradient description]
+ * @param                   {Object} start              Start values of eventually rendered gradient
+ * @param                   {number} start.x            X-axis coordinate of the start circle
+ * @param                   {number} start.y            Y-axis coordinate of the start circle
+ * @param                   {number} start.radius       Radius of the start circle
+ * @param                   {color}  start.color        Color defined from CSS color name list
+ * @param                   {Object} end                End values of eventually rendered gradient
+ * @param                   {number} end.x              X-axis coordinate of the end circle
+ * @param                   {number} end.y              Y-axis coordinate of the end circle
+ * @param                   {number} end.radius         Radius of the end circle
+ * @param                   {color}  end.color          Color defined by RGB values
+ * @return                  {Object} result             CanvasGradient object
+ */
+function getRadialGradient(start = { x, y, radius, color }, end = { x, y, radius, color })
+{
+    let result = config.context.createRadialGradient(start.x, start.y, start.radius, end.x, end.y, end.radius);
+
+    result.addColorStop(0, start.color);
+    result.addColorStop(0.9, end.color);
+    result.addColorStop(1, end.color);
+
+    return result;
+}
 
 /**
  * clearCanvas()            {Method}                    Clears the entire canvas element       
@@ -616,36 +689,104 @@ function clearCanvas()
  * @param                   {number}  x                 x - axis; center
  * @param                   {number}  y                 y - axis; center
  * @param                   {number}  radius            Circle radius
- * @param                   {number}  startAngle        Start angle
- * @param                   {number}  endAngle          End angle
- * @param                   {boolean} counterClockwise  Draw circle clockwise
- * @param                   {string}  color             RGB number set; r, g, b
- * @param                   {decimal} alpha             Alpha (transparency) number value
+ * @param                   {Object}  angle             Angle object containing angle properties
+ * @param                   {number}  angle.start       Start angle
+ * @param                   {number}  angle.end         End angle
+ * @param                   {Object}  stroke            Stroke object containing stroke properties
+ * @param                   {string}  stroke.color      Stroke RGB number set for fill; r, g, b
+ * @param                   {decimal} stroke.alpha      Stroke alpha (transparency) number value
+ * @param                   {Object}  fill              Fill object containing fill properties
+ * @param                   {string}  fill.color        Fill RGB number set for fill; r, g, b
+ * @param                   {decimal} fill.alpha        Fill alpha (transparency) number value
  * @param                   {boolean} centerDot         Include a center dot
  */
-function drawCircle(x, y, radius, startAngle, endAngle, counterClockwise, color, alpha = 0.3, centerDot = true, mouseArea = true) 
+function drawCircle(x, y, radius, angle = { start: 0, end: 2 * Math.PI }, stroke = { color: '0, 0, 0', alpha: 0.5 }, fill = { color: '255, 255, 255', alpha: 0.3}) 
 {
+    const circle = 
+    { 
+        start: 
+        {
+            x: centerX(x), 
+            y: centerY(y), 
+            radius: 10,  
+            color: 'white'
+        },
+        end:
+        {
+            x: centerX(x), 
+            y: centerY(y), 
+            radius: 100, 
+            color: `rgba(${fill.color}, ${fill.alpha})`            
+        }
+    }
+
+    config.context.strokeStyle = `rgba(${stroke.color}, ${stroke.alpha})`;
+    config.context.lineWidth   = 1;
+
+    config.context.fillStyle = getRadialGradient(circle.start, circle.end);
+
     config.context.beginPath();
     
     config.context.arc(
-        config.domWindow.xCenter + x, 
-        config.domWindow.yCenter + y, 
+        circle.start.x, 
+        circle.start.y, 
         radius, 
-        startAngle, 
-        endAngle, 
-        counterClockwise
+        angle.start, 
+        angle.end, 
+        false                       // Counter Clockwise
     );
     
-    config.context.stroke();
-
-    config.context.fillStyle = "rgba(" + color + ", " + alpha + ")";
+    (config.circle.stroke)
+        ? config.context.stroke()
+        : null;
 
     config.context.fill();
 
-    // Center Dot
-    (centerDot)
-        ? drawCircle(x, y, (radius / 4) * 0.18, startAngle, endAngle, counterClockwise, color, alpha, false, false)
+    (config.circle.centerDot)
+        ? drawCircle(x, y, (radius / 4) * 0.18, angle.start, angle.end, stroke.color, stroke.alpha, fill.color, fill.alpha, false)
         : null;
+}
+
+/**
+ * drawUnderlayCircles()    {Method}                    Draws outlines of (potential) points for reference
+ * @param                   {number} x                  x - axis; center
+ * @param                   {number} y                  y - axis; center
+ * @param                   {number} radius             Circle radius
+ * @param                   {number} alpha              Alpha level of underlay circles
+ */
+function drawUnderlayCircles(x, y, radius, alpha = 0.15)
+{
+    config.context2.strokeStyle = `rgba(0, 0, 0, ${alpha})`;
+
+    config.context2.beginPath();
+
+    config.context2.arc(
+        centerX(x), 
+        centerY(y), 
+        radius, 
+        0, 
+        2 * Math.PI, 
+        false
+    );
+
+    config.context2.stroke();
+}
+
+/**
+ * drawOutline              {Method}                    Draws a semi-transparent outline on canvas-underlay
+ * @param                   {number} alpha              Alpha level of underlay circles
+ */
+function drawOutline(alpha)
+{
+    drawUnderlayCircles(matrix[0][0][0], matrix[0][0][1], zonaPolusada, alpha);
+
+    for (var i = 0; i <= matrix.length - 1; i++)            // Draw circles around all points existing with the matrix array
+    {
+        for (var j = 0; j <= matrix[i].length - 1; j++) 
+        {
+            drawUnderlayCircles(matrix[i][j][0], matrix[i][j][1], spirit.radius, alpha);
+        }
+    }
 }
 
 /**
@@ -655,47 +796,18 @@ function drawCircle(x, y, radius, startAngle, endAngle, counterClockwise, color,
  * @param                   {number} endX               X coordinate position to finish drawing at
  * @param                   {number} endY               Y coordinate position to finish drawing at
  */
-function drawLine(startX, startY, endX, endY) 
+function drawLine(startX, startY, endX, endY, lineWidth = 1, strokeColor = '0, 0, 0', strokeAlpha = 0.5) 
 {
-    config.context.beginPath();                    // Resets the current path
+    config.context.strokeStyle = `rgba(${strokeColor}, ${strokeAlpha})`;
+    config.context.lineCap     = 'round';
 
-    config.context.moveTo(startX, startY);         // Creates a new subpath with the given point
-    config.context.lineTo(endX, endY);             // Adds the given point to the subpath
+    config.context.beginPath();                             // Resets the current path
 
-    // config.context.closePath();                    // Marks subpath as closed
-    config.context.stroke();                       // strokes the subpaths with the current stroke style
-}
+    config.context.moveTo(startX, startY);                  // Creates a new subpath with the given point
+    config.context.lineTo(endX, endY);                      // Adds the given point to the subpath
 
-/**
- * seedCanvas()             {Method}                    Seeds the page with the root (spirit) node along with the zona polusada
- */
-function seedCanvas()
-{
-    setTimeout(function() 
-    { 
-        // Zona Polusada
-        drawCircle(
-            matrix[0][0][0], 
-            matrix[0][0][1], 
-            zonaPolusada, 
-            0, 
-            2 * Math.PI, 
-            false, 
-            "255,255,255"
-        );
-
-        // (0) - Spirit
-        drawCircle(
-            null, 
-            null, 
-            spirit.radius, 
-            0, 
-            2 * Math.PI, 
-            false, 
-            colorArray[0]
-        );
-
-    }, 1);
+    config.context.lineWidth = lineWidth;                   // Sets the width the the line to be rendered
+    config.context.stroke();                                // Strokes the subpaths with the current stroke style
 }
 
 ////////////////////////////////////////////////////////////
@@ -710,54 +822,49 @@ function cycleFull(shape)
 {
     clearCanvas();
 
-    setTimeout(function() 
-    { 
-        for (var i = 1; i <= matrix.length - 1; i++) 
+    for (var i = 1; i <= matrix.length - 1; i++) 
+    {
+        for (var j = 0; j <= matrix[i].length - 1; j++) 
         {
-            for (var j = 0; j <= matrix[i].length - 1; j++) 
+            switch (shape)
             {
-                switch (shape)
-                {
-                    case 'circle':
+                case 'circle':
 
-                        drawCircle(
-                            matrix[i][j][0],        
-                            matrix[i][j][1], 
-                            spirit.radius, 
-                            0, 
-                            2 * Math.PI, 
-                            false, 
-                            colorArray[i]
-                        );
+                    drawCircle(
+                        matrix[i][j][0],
+                        matrix[i][j][1],
+                        spirit.radius,
+                        undefined,
+                        undefined,           
+                        {
+                            color: colorArray[i],
+                            alpha: 0.3
+                        }
+                    );
 
-                        break;
+                    break;
 
-                    case 'hexagon':
+                case 'hexagon':
 
-                        var n = j + 1;
+                    var n = j + 1;
 
-                        if (n == 6) { n = 0; }
+                    if (n == 6) { n = 0; }
 
-                        drawLine(
-                            config.domWindow.xCenter + matrix[i][j][0],        
-                            config.domWindow.yCenter + matrix[i][j][1], 
-                            config.domWindow.xCenter + matrix[i][n][0], 
-                            config.domWindow.yCenter + matrix[i][n][1]
-                        );
+                    drawLine(
+                        centerX(matrix[i][j][0]),        
+                        centerY(matrix[i][j][1]), 
+                        centerX(matrix[i][n][0]), 
+                        centerY(matrix[i][n][1])
+                    );
 
-                        break;
+                    break;
 
-                    default:
+                default:
 
-                        console.log(`${shape} is not supported by the cycleFull() function!`);
-
-                }
-
+                    console.log(`${shape} is not supported by the cycleFull() function!`);
             }
-
         }
-
-    }, 1);
+    }
 }
 
 /**
@@ -767,64 +874,70 @@ function cycleSacredArray()
 {
     clearCanvas();
 
-    // Circle 
-    setTimeout(function() 
-    { 
-        for (var i = 0; i <= sacredArrays.circle.length - 1; i++) 
+    // Circles
+    for (var i = 0; i <= sacredArrays.circle.length - 1; i++)
+    {
+        drawCircle(
+            matrix[sacredArrays.circle[i][0]][sacredArrays.circle[i][1]][0],
+            matrix[sacredArrays.circle[i][0]][sacredArrays.circle[i][1]][1],
+            spirit.radius,
+            undefined,
+            undefined,
+            {
+                color: colorArray[sacredArrays.circle[i][0]],
+                alpha: 0.3
+            }
+        );
+    }
+
+    // Hexagon
+    for (var i = 0; i <= sacredArrays.hexagon.length - 1; i++)
+    {
+        for (var j = 0; j <= matrix[sacredArrays.hexagon[i]].length - 1; j++) 
         {
-            drawCircle(
-                matrix[sacredArrays.circle[i][0]][sacredArrays.circle[i][1]][0],            // xCoord
-                matrix[sacredArrays.circle[i][0]][sacredArrays.circle[i][1]][1],            // yCoord
-                spirit.radius, 
-                0, 
-                2 * Math.PI, 
-                false, 
-                colorArray[sacredArrays.circle[i][0]]
+            var n = j + 1;
+
+            if (n == 6) { n = 0; }
+
+            drawLine(
+                centerX(matrix[sacredArrays.hexagon[i]][j][0]),
+                centerY(matrix[sacredArrays.hexagon[i]][j][1]), 
+                centerX(matrix[sacredArrays.hexagon[i]][n][0]), 
+                centerY(matrix[sacredArrays.hexagon[i]][n][1]) 
             );
 
         }
+    }
 
-    }, 1);
-
-    // Hexagon
-    setTimeout(function() 
-    { 
-        for (var i = 0; i <= sacredArrays.hexagon.length - 1; i++) 
-        {
-            for (var j = 0; j <= matrix[sacredArrays.hexagon[i]].length - 1; j++) 
-            {
-                var n = j + 1;
-
-                if (n == 6) { n = 0; }
-
-                drawLine(
-                    config.domWindow.xCenter + matrix[sacredArrays.hexagon[i]][j][0], 
-                    config.domWindow.yCenter + matrix[sacredArrays.hexagon[i]][j][1], 
-                    config.domWindow.xCenter + matrix[sacredArrays.hexagon[i]][n][0], 
-                    config.domWindow.yCenter + matrix[sacredArrays.hexagon[i]][n][1]
-                );
-
-            }
-
-        }
-        
-    }, 1);
-
-    console.clear();
-    console.log('sacredArrays: ', sacredArrays);
-    console.log('inputs: ', inputs);
+    // Lines
+    for (var i = 0; i <= sacredArrays.line.length - 1; i++) 
+    {
+        drawLine(
+            sacredArrays.line[i][0], 
+            sacredArrays.line[i][1], 
+            sacredArrays.line[i][2], 
+            sacredArrays.line[i][3]
+        );
+    }
+    
+    if (!config.debug)
+    {
+        console.clear();
+        console.log('sacredArrays: ', sacredArrays);
+        console.log('inputs: ', inputs);
+    }
 }
 
 ////////////////////////////////////////////////////////////
-////////        SORTING ALGORITHMS                  ////////
+////////        PROPITIATORY ARRAY ALGORITHMS       ////////
 ////////////////////////////////////////////////////////////
 
 /**
- * sortArray()              {Method}                    Sorts various shape arrays                    
+ * pushPopSacredArray()     {Method}                    Sorts various shape arrays                    
  * @param                   {string}       shape        String signifying the type of shape to sort
  * @param                   {number|array} value        Value(s) to be sorted through the below (corresponding) algorithms
  */
-function sortArray(shape, value)
+function pushPopSacredArray(shape, value)
 {
     var n = parseInt(value);
 
@@ -856,7 +969,7 @@ function sortArray(shape, value)
 
         default:
 
-            console.log(`${shape} is not supported by the sortArray() function!`);
+            console.log(`${shape} is not supported by the pushPopSacredArray() function!`);
     }
 
     cycleSacredArray();
@@ -868,30 +981,41 @@ function sortArray(shape, value)
 ////////////////////////////////////////////////////////////
 
 /**
- * activateRegion()         {Method}                    Draws a semi-transparent circle over the designed area
+ * highlightRegion()        {Method}                    Draws a semi-transparent circle over the designed area
  * @param                   {Object} obj                UI element
  */
-function activateRegion(obj)
+function highlightRegion(obj)
 {
-    cycleSacredArray();
+    document.getElementById(obj.id).style.border = '1px dashed black';
+    document.body.style.cursor                   = 'pointer';
 
-    let node = obj.id.match(/(?<val1>\d+)-(?<val2>\d+)/);
+    if (mouse.down)
+    {
+        let node = obj.id.match(/(?<val1>\d+)-(?<val2>\d+)/);                   // For deletion detection
 
-    drawCircle(
-        matrix[parseInt(node[1])][parseInt(node[2])][0], 
-        matrix[parseInt(node[1])][parseInt(node[2])][1],
-        spirit.radius,
-        0,
-        2 * Math.PI,
-        false,
-        colorArray[parseInt(node[1])],
-        0.15
-    );
+        let mouseTempEnd =                                                      // Precalculate line destination
+        {
+            x: centerX(matrix[parseInt(node[1])][parseInt(node[2])][0]),
+            y: centerY(matrix[parseInt(node[1])][parseInt(node[2])][1])
+        }
+
+        mouse.existingLineIndex = sacredArrays.line.indexOfArray([mouse.start.x, mouse.start.y, mouseTempEnd.x, mouseTempEnd.y]);
+    }
+}
+
+/**
+ * unhighlightRegion()      {Method}                    Un-highlight UI elements
+ * @param                   {Object} obj                UI element
+ */
+function unhighlightRegion(obj)
+{
+    document.getElementById(obj.id).style.border = '1px solid transparent';
+    document.body.style.cursor                   = 'default';
 }
 
 /**
  * setRegion()              {Method}                    Inserts the (clicked) circle within the sacredArray
- * @param                   {object} obj                UI element
+ * @param                   {Object} obj                UI element
  */
 function setRegion(obj)
 {
@@ -901,17 +1025,51 @@ function setRegion(obj)
 }
 
 /**
+ * startLine()              {Method}                    Defines the beginner of a straight line
+ * @param                   {Object} obj                UI element
+ */
+function startLine(obj)
+{
+    mouse.down = true;
+
+    let node = obj.id.match(/(?<val1>\d+)-(?<val2>\d+)/);
+
+    mouse.start.x = centerX(matrix[parseInt(node[1])][parseInt(node[2])][0]);
+    mouse.start.y = centerY(matrix[parseInt(node[1])][parseInt(node[2])][1]);
+}
+
+/**
+ * endLine()                {Method}                    Defines the ending of a straight line 
+ * @param                   {Object} obj                UI element
+ */
+function endLine(obj)
+{
+    mouse.down = false;
+
+    let node = obj.id.match(/(?<val1>\d+)-(?<val2>\d+)/);
+
+    mouse.end.x = centerX(matrix[parseInt(node[1])][parseInt(node[2])][0]);
+    mouse.end.y = centerY(matrix[parseInt(node[1])][parseInt(node[2])][1]);
+
+    sacredArrays.line.pushPop([mouse.start.x, mouse.start.y, mouse.end.x, mouse.end.y]);
+
+    clearCanvas();
+    cycleSacredArray();
+}
+
+/**
  * uiElementPos()           {Method}                    Returns the appropriate position for each clickable UI element
  * @param                   {number} x                  X axis coordinate value 
  * @param                   {number} y                  Y axis coordinate value
+ * @param                   {number} radius             Radius of UI element being passed
  * @return                  {array}  result             Returns the appropriate x & y coordinate values in accordance with screen dimensions
  */
-function uiElementPos(x, y)
+function uiElementPos(x, y, radius = spirit.radius)
 {
-    var result = new Array();
+    let result = new Array();
 
-    result[0] = config.domWindow.xCenter + x - (spirit.radius / 2);
-    result[1] = config.domWindow.yCenter + y - (spirit.radius / 2);
+    result[0] = centerX(x - (radius / 2));
+    result[1] = centerY(y - (radius / 2));
 
     return result;
 }
@@ -921,32 +1079,36 @@ function uiElementPos(x, y)
  */
 function insertUIElements()
 {
-    for (var i = 1; i <= matrix.length - 1; i++) 
+    for (var i = 0; i <= matrix.length - 1; i++) 
     {
         for (var j = 0; j <= matrix[i].length - 1; j++) 
         {
-            var uiPositions = uiElementPos(matrix[i][j][0], matrix[i][j][1]);
+            let uiPositions = uiElementPos(matrix[i][j][0], matrix[i][j][1]);
 
             document.getElementById('ui-overlay').innerHTML += 
                 `<div style="` 
-                    + `text-align: center; `
-                    + `line-height: 100px; `
-                    + `position: absolute; ` 
-                    + `left: ${uiPositions[0]}px; ` 
-                    + `top: ${uiPositions[1]}px; ` 
-                    + `width: ${spirit.radius}px; ` 
-                    + `height: ${spirit.radius}px; `
-                    + `border-radius: 50px; `
-                    + `border: 1px solid transparent;" ` 
-                    + `id="ui-node-${i.convert2digStr()}-${(j).convert2digStr()}" `
-                    + `onmouseover="activateRegion(this)" ` 
-                    + `onmouseout="cycleSacredArray()" `
-                    + `onclick="setRegion(this)" ` 
-                    // + `>${i} - ${j}</div>`;                 // For Debugging Purposes Only
-                    + `></div>`
+                + `text-align: center; `
+                + `line-height: 100px; `
+                + `position: absolute; ` 
+                + `left: ${uiPositions[0]}px; ` 
+                + `top: ${uiPositions[1]}px; ` 
+                + `width: ${spirit.radius}px; ` 
+                + `height: ${spirit.radius}px; `
+                + `border-radius: 50px; `
+                + `border: 1px solid transparent;" ` 
+                + `id="ui-node-${i.convert2digStr()}-${(j).convert2digStr()}" `
+                + `onmouseover="highlightRegion(this)" ` 
+                + `onmouseout="unhighlightRegion(this)" `
+                + `onclick="setRegion(this)" ` 
+                + `onmousedown="startLine(this)" `
+                + `onmouseup="endLine(this)" `
+                // + `>${i} - ${j}</div>`;                 // For Debugging Purposes Only
+                + `></div>`;
         }
 
     }
+
+    activateUnderlay();
 }
 
 ////////        UI Listeners        ////////
@@ -960,45 +1122,48 @@ for (var i = 0; i <= inputArray.class.length - 1; i++)
     {
         item.addEventListener('click', event =>
         {
-            sortArray(getRegExp(item.className, '([^\.]+?)(-checkbox|-cycle)'), item.value);
+            pushPopSacredArray(getRegExp(item.className, '([^\.]+?)(-checkbox|-cycle)'), item.value);
         });
     });
 }
 
-/**
- * Bind id inputs
- */
-document.getElementById(inputArray.id[0]).addEventListener("click", function()
+document.getElementById('full-circle-cycle').addEventListener("click", function()
 {
-    (document.getElementById(`${inputArray.id[0]}-checkbox`).checked) 
+    (document.getElementById('full-circle-cycle').checked) 
         ? (sacredArrays.circle.length > 0) 
             ? cycleSacredArray() : null 
         : cycleFull('circle');
 });
 
-document.getElementById(inputArray.id[1]).addEventListener("click", function()
+document.getElementById('full-hexagon-cycle').addEventListener("click", function()
 {
-    (document.getElementById(`${inputArray.id[1]}-checkbox`).checked)
+    (document.getElementById('full-hexagon-cycle').checked)
         ? (sacredArrays.hexagon.length > 0)
             ? cycleSacredArray() : null
         : cycleFull('hexagon');
 });
 
-document.getElementById(inputArray.id[2]).addEventListener("click", function()
+document.getElementById('clear-canvas').addEventListener("click", function()
 {
     clearCanvas();
-
-    // (document.getElementById('full-circle-cycle-checkbox').checked) 
-    //     ? el.click() 
-    //     : null;
 });
 
-config.canvas.addEventListener("mousemove", function(event) 
+window.addEventListener("mousemove", function(event) 
 {
-    let mouseX = event.clientX;
-    let mouseY = event.clientY;
+    clearCanvas();
+    cycleSacredArray();
 
-    // console.log(`X: ${mouseX}, Y: ${mouseY}`);             // For Debugging Purposes Only
+    mouse.current.x = event.clientX;
+    mouse.current.y = event.clientY;
+
+    if (mouse.down)
+    {
+        document.body.style.cursor = 'crosshair';
+
+        drawLine(mouse.start.x, mouse.start.y, mouse.current.x, mouse.current.y);
+
+        (mouse.existingLineIndex != -1 && sacredArrays.line.length > 0)
+           ? drawLine(sacredArrays.line[mouse.existingLineIndex][0], sacredArrays.line[mouse.existingLineIndex][1], sacredArrays.line[mouse.existingLineIndex][2], sacredArrays.line[mouse.existingLineIndex][3], 7, '255, 25, 25')
+           : mouse.existingLineIndex = -1;
+    }
 });
-
-insertUIElements();
