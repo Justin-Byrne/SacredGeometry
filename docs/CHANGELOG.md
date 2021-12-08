@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.10.49] - 2021-12-08
+### Changed
+- pushPopSacredArray() to fix sequencing bug
+
 ## [1.10.48] - 2021-12-05
 ### Added
 - centerX() orients the offset value passed with the canvas elements center x coordinate
@@ -121,7 +125,9 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-[1.10.48]: 2021-12-05 [CURRENT REVISION]
+[1.10.49]: 2021-12-08 [CURRENT REVISION]
+
+[1.10.48]: 2021-12-05 [2288256](https://github.com/Justin-Byrne/SacredGeometry/commit/2288256) implemented line eraser highlighting, and minor optimizations
 
 [1.10.41]: 2021-11-28 [412aa0d](https://github.com/Justin-Byrne/SacredGeometry/commit/412aa0d) line drawing implemented & minor optimizations
 
@@ -129,7 +135,7 @@ All notable changes to this project will be documented in this file.
 
 [1.7.28]:  2021-11-17 [40feafa](https://github.com/Justin-Byrne/SacredGeometry/commit/40feafa) added canvas-underlay & revised existing features
 
-[1.5.20]:  2021-11-15 [31b3fc1](https://github.com/Justin-Byrne/SacredGeometry/commit/31b3fc1) add UI and optimization elements
+[1.5.20]:  2021-11-15 [d26ee64](https://github.com/Justin-Byrne/SacredGeometry/commit/d26ee64) add UI and optimization elements
 
 [1.4.15]:  2021-10-10 [37c5ff6](https://github.com/Justin-Byrne/SacredGeometry/commit/37c5ff6) new algorithms to assist sorting along with minor bug fixes
 
@@ -146,7 +152,7 @@ All notable changes to this project will be documented in this file.
 - `Fixed` for any bug fixes.
 - `Security` in case of vulnerabilities.
 
-## Copywrite
+## Copyright
 
 ![Byrne-Systems](http://byrne-systems.com/content/static/cube_sm.png)
 

@@ -1,0 +1,2820 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"exi",
+				"existingLineIndex\tabc"
+			],
+			[
+				"sac",
+				"sacredArrays.line"
+			],
+			[
+				"high",
+				"highlightLineSegment\tabc"
+			],
+			[
+				"hig",
+				"highlightLineSegment\tabc"
+			],
+			[
+				"inexo",
+				"indexOfArray\tabc"
+			],
+			[
+				"strin",
+				"stringify\tabc"
+			],
+			[
+				"index",
+				"indexOfArray"
+			],
+			[
+				"pushp",
+				"pushPop\tabc"
+			],
+			[
+				"sa",
+				"sacredArrays"
+			],
+			[
+				"trans",
+				"transparent\tabc"
+			],
+			[
+				"ci",
+				"circle\tabc"
+			],
+			[
+				"zona",
+				"zonaPolusada\tabc"
+			],
+			[
+				"zon",
+				"zonaPolusada"
+			],
+			[
+				"z",
+				"zonaPolusada\tabc"
+			],
+			[
+				"indexo",
+				"indexOfArrayValues\tabc"
+			],
+			[
+				"push",
+				"pushPop\tabc"
+			],
+			[
+				"par",
+				"parseInt"
+			],
+			[
+				"draw",
+				"drawCircle\tabc"
+			],
+			[
+				"he",
+				"height\tabc"
+			],
+			[
+				"wi",
+				"width\tabc"
+			],
+			[
+				"spiri",
+				"spirit.radius\tabc"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"spir",
+				"spirit.radius\tabc"
+			],
+			[
+				"co",
+				"context\tabc"
+			],
+			[
+				"distan",
+				"distanceSquared\tabc"
+			],
+			[
+				"mouse",
+				"mouseY\tabc"
+			],
+			[
+				"clien",
+				"clientY\tabc"
+			],
+			[
+				"se",
+				"sequence"
+			],
+			[
+				"togg",
+				"toggleCheckbox\tabc"
+			],
+			[
+				"is",
+				"isSequenceEmpty\tabc"
+			],
+			[
+				"clcik",
+				"clickCheckbox\tabc"
+			],
+			[
+				"sequ",
+				"sequenced-circle-10-checkbox\t(index.html)"
+			],
+			[
+				"singl",
+				"singleCircleAct\tabc"
+			],
+			[
+				"ids",
+				"idString\tabc"
+			],
+			[
+				"id",
+				"idString2\tabc"
+			],
+			[
+				"chec",
+				"checkboxes\tabc"
+			],
+			[
+				"seq",
+				"sequenced-circle-10-checkbox\t(index.html)"
+			],
+			[
+				"sacre",
+				"sacredArrays.circle"
+			],
+			[
+				"ch",
+				"checkbox\t(index.html)"
+			],
+			[
+				"inpu",
+				"inputs\tabc"
+			],
+			[
+				"sequen",
+				"sequenced\tabc"
+			],
+			[
+				"parse",
+				"parseToSequence\tabc"
+			],
+			[
+				"toggl",
+				"toggleCheckbox"
+			],
+			[
+				"cycl",
+				"cycleSacredArray\tabc"
+			],
+			[
+				"cen",
+				"centerDot\tabc"
+			],
+			[
+				"dra",
+				"drawCircle\tabc"
+			],
+			[
+				"cyc",
+				"cycleSacredArray\tabc"
+			],
+			[
+				"single",
+				"single-circle-checkbox\tabc"
+			],
+			[
+				"elem",
+				"elementId\tabc"
+			],
+			[
+				"cir",
+				"circle\tabc"
+			],
+			[
+				"valid",
+				"validateButtonArray\tabc"
+			],
+			[
+				"sing",
+				"single-circle-checkbox\tabc"
+			],
+			[
+				"val",
+				"value\tabc"
+			],
+			[
+				"initi",
+				"initialOccurance\tabc"
+			],
+			[
+				"circ",
+				"circle\tabc"
+			],
+			[
+				"pushpop",
+				"pushPopAdv\tabc"
+			],
+			[
+				"circl",
+				"circleArray\tabc"
+			],
+			[
+				"indexOfA",
+				"indexOfArrayValues\tabc"
+			],
+			[
+				"proto",
+				"prototype\tabc"
+			],
+			[
+				"cira",
+				"circleArray\tabc"
+			],
+			[
+				"fullCirc",
+				"fullCircleCycle\tabc"
+			],
+			[
+				"ind",
+				"indexOf"
+			],
+			[
+				"indexOf",
+				"indexOfArray\tabc"
+			],
+			[
+				"inde",
+				"indexSeed\tabc"
+			],
+			[
+				"singleCircl",
+				"singleCircleValueCompare\tabc"
+			],
+			[
+				"singleCirc",
+				"singleCircleArray\tabc"
+			],
+			[
+				"hex",
+				"hexagonArray"
+			],
+			[
+				"colo",
+				"colorArray\tabc"
+			],
+			[
+				"const",
+				"constraints\tabc"
+			],
+			[
+				"clear",
+				"clearCanvas\tabc"
+			],
+			[
+				"sacr",
+				"sacredSketch\tabc"
+			],
+			[
+				"cons",
+				"constants\tabc"
+			],
+			[
+				"dr",
+				"drawLine\tabc"
+			],
+			[
+				"fun",
+				"function\tabc"
+			],
+			[
+				"styl",
+				"style\t(index.html)"
+			],
+			[
+				"inc",
+				"INC"
+			],
+			[
+				"incl",
+				"include/"
+			],
+			[
+				"pdftot",
+				"pdftotext_exit\tabc"
+			],
+			[
+				"pd",
+				"pdf_to_text\tabc"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+			"settings":
+			{
+				"buffer_size": 40930,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/justinbyrne/Programs/SacredGeometry/index.html",
+			"settings":
+			{
+				"buffer_size": 30170,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/justinbyrne/Documents/Blood Pressure",
+			"settings":
+			{
+				"buffer_size": 222,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "144 / 98  - 12/02 @ 5:30 PM - No Alcohol"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "no-drop\ngrab",
+			"settings":
+			{
+				"buffer_size": 12,
+				"line_ending": "Unix",
+				"name": "no-drop"
+			}
+		},
+		{
+			"contents": "\"use strict\";\n\n////////////////////////////////////////////////////////////\n////////        GLOBAL VARIABLES                    ////////\n////////////////////////////////////////////////////////////\n\n/**\n * config                   {Object}                    Object literal variables\n * @var                     {DOM Element} canvas        DOM element\n * @var                     {DOM Element} context       CanvasRenderingContext2D for drawing surface on the <canvas> element\n * @var                     {Object} domWindow          DOM window width, height, center x-coordinate, and center y-coordinate\n * @var                     {Object} about              General Information concerning  \n */\nconst config = \n{\n    canvas    : document.getElementById(\"canvas\"),\n    context   : document.getElementById(\"canvas\").getContext(\"2d\"),\n    canvas2   : document.getElementById(\"canvas-underlay\"),\n    context2  : document.getElementById(\"canvas-underlay\").getContext(\"2d\"),\n    domWindow : \n    {\n        width:    window.innerWidth  - 18,\n        height:   window.innerHeight - 4,\n        xCenter: (window.innerWidth  / 2),\n        yCenter: (window.innerHeight / 2),\n    },\n    circle : \n    {\n        centerDot: false,\n        stroke: true\n    },\n    debug : false,\n    about : \n    {\n        Author:  'Justin Don Byrne',\n        Created: 'September, 11 2021',\n        Library: 'Sacred Geometry Sketch Pad',\n        Updated: 'December, 4 2021',\n        Version: '1.10.48',\n    }\n}\n\nconst padding      = 10;\nconst zonaPolusada = config.domWindow.height / 2 - padding;\nconst magNo        = 0.578;                                \n\nconst spirit = \n{\n    radius : zonaPolusada / 5\n}\n\nconst matrix = \n[\n    [       // Spirit\n        [\n            null,                                   // x    (00)\n            null                                    // y\n        ]\n    ],[     // 1st Cycle | Genesis Pattern\n        [\n            null,                                   // x    (1) - (01) \n            - (spirit.radius)                       // y\n        ],[\n            - (spirit.radius / magNo) / 2,          // x    (2) - (02) \n            - (spirit.radius / 2)                   // y\n        ],[\n            - (spirit.radius / magNo) / 2,          // x    (3) - (03) \n            spirit.radius / 2                       // y\n        ],[\n            null,                                   // x    (4) - (04) \n            spirit.radius                           // y\n        ],[\n            (spirit.radius / magNo) / 2,            // x    (5) - (05) \n            spirit.radius / 2                       // y\n        ],[\n            (spirit.radius / magNo) / 2,            // x    (6) - (06) \n            - (spirit.radius / 2)                   // y\n        ]\n    ],[     // 2nd Rotation | Egg of Life   \n        [\n            - (spirit.radius / magNo) / 2,          // x    (1) - (07)\n            - (spirit.radius * 1.5),                // y\n        ],[\n            - (spirit.radius / magNo),              // x    (2) - (08)\n            null,                                   // y\n        ],[\n            - (spirit.radius / magNo) / 2,          // x    (3) - (09)\n            spirit.radius * 1.5,                    // y\n        ],[\n            (spirit.radius / magNo) / 2,            // x    (4) - (10)\n            spirit.radius * 1.5,                    // y\n        ],[\n            spirit.radius / magNo,                  // x    (5) - (11)\n            null,                                   // y\n        ],[\n            (spirit.radius / magNo) / 2,            // x    (6) - (12)\n            - (spirit.radius * 1.5),                // y\n        ]\n    ],[     // 3rd Rotation\n        [\n            null,                                   // x    (1) - (13)\n            - (spirit.radius * 2),                  // y\n        ],[    \n            - (spirit.radius / magNo),              // x    (2) - (14)\n            - spirit.radius,                        // y\n        ],[    \n            - (spirit.radius / magNo),              // x    (3) - (15)\n            spirit.radius,                          // y\n        ],[    \n            null,                                   // x    (4) - (16)\n            spirit.radius * 2,                      // y\n        ],[    \n            spirit.radius / magNo,                  // x    (5) - (17)\n            spirit.radius,                          // y\n        ],[    \n            spirit.radius / magNo,                  // x    (6) - (18)\n            - spirit.radius,                        // y\n        ]\n    ],[     // 4th Rotation\n        [\n            null,                                   // x    (1) - (19)\n            - (spirit.radius * 3),                  // y    \n        ],[\n            - (spirit.radius / magNo) * 1.5,        // x    (2) - (20)\n            - (spirit.radius * 1.5),                // y    \n        ],[\n            - (spirit.radius / magNo) * 1.5,        // x    (3) - (21)\n            spirit.radius * 1.5,                    // y    \n        ],[\n            null,                                   // x    (4) - (22)\n            spirit.radius * 3,                      // y    \n        ],[\n            (spirit.radius / magNo) * 1.5,          // x    (5) - (23)\n            spirit.radius * 1.5,                    // y    \n        ],[\n            (spirit.radius / magNo) * 1.5,          // x    (6) - (24)\n            - (spirit.radius * 1.5),                // y    \n        ]\n    ],[     // 5th Rotation\n        [\n            - (spirit.radius / magNo) / 2,          // x    (1) - (25)\n            - (spirit.radius * 2.5),                // y    \n        ],[\n            - (spirit.radius / magNo) * 1.5,        // x    (2) - (26)\n            - (spirit.radius / 2),                  // y    \n        ],[\n            - (spirit.radius / magNo),              // x    (3) - (27)\n            spirit.radius * 2,                      // y    \n        ],[\n            (spirit.radius / magNo) / 2,            // x    (4) - (28)\n            spirit.radius * 2.5,                    // y    \n        ],[\n            (spirit.radius / magNo) * 1.5,          // x    (5) - (29)\n            spirit.radius / 2,                      // y    \n        ],[\n            spirit.radius / magNo,                  // x    (6) - (30)\n            - (spirit.radius * 2),                  // y    \n        ]\n    ],[     // 6th Rotation\n        [\n            - (spirit.radius / magNo),              // x    (1) - (31)\n            - (spirit.radius * 2),                  // y    \n        ],[\n            - (spirit.radius / magNo) * 1.5,        // x    (2) - (32)\n            spirit.radius / 2,                      // y    \n        ],[\n            - (spirit.radius / magNo) / 2,          // x    (3) - (33)\n            spirit.radius * 2.5,                    // y    \n        ],[\n            spirit.radius / magNo,                  // x    (4) - (34)\n            spirit.radius * 2,                      // y    \n        ],[\n            (spirit.radius / magNo) * 1.5,          // x    (5) - (35)\n            - (spirit.radius / 2),                  // y    \n        ],[\n            (spirit.radius / magNo) / 2,            // x    (6) - (36)\n            - (spirit.radius * 2.5),                // y    \n        ]\n    ],[     // 7th Rotation\n        [\n            null,                                   // x    (1) - (37)\n            - (spirit.radius * 4),                  // y    \n        ],[\n            - (spirit.radius / magNo) * 2,          // x    (2) - (38)\n            - (spirit.radius * 2),                  // y    \n        ],[\n            - (spirit.radius / magNo) * 2,          // x    (3) - (39)\n            spirit.radius * 2,                      // y    \n        ],[\n            null,                                   // x    (4) - (40)\n            spirit.radius * 4,                      // y    \n        ],[\n            (spirit.radius / magNo) * 2,            // x    (5) - (41)\n            spirit.radius * 2,                      // y    \n        ],[\n            (spirit.radius / magNo) * 2,            // x    (6) - (42)\n            - (spirit.radius * 2),                  // y    \n        ]\n    ],[     // 8th Rotation\n        [\n            - (spirit.radius / magNo) / 2,          // x    (1) - (43)\n            - (spirit.radius * 3.5),                // y    \n        ],[\n            - (spirit.radius / magNo) * 2,          // x    (2) - (44)\n            - (spirit.radius),                      // y    \n        ],[\n            - (spirit.radius / magNo) * 1.5,        // x    (3) - (45)\n            spirit.radius * 2.5,                    // y    \n        ],[\n            (spirit.radius / magNo) / 2,            // x    (4) - (46)\n            spirit.radius * 3.5,                    // y    \n        ],[\n            (spirit.radius / magNo) * 2,            // x    (5) - (47)\n            spirit.radius,                          // y    \n        ],[\n            (spirit.radius / magNo) * 1.5,          // x    (6) - (48)\n            - (spirit.radius * 2.5),                // y    \n        ]\n    ],[     // 9th Rotation\n        [\n            - (spirit.radius / magNo),              // x    (1) - (49)\n            - (spirit.radius * 3),                  // y    \n        ],[\n            - (spirit.radius / magNo) * 2,          // x    (2) - (50)\n            null,                                   // y    \n        ],[\n            - (spirit.radius / magNo),              // x    (3) - (60)\n            spirit.radius * 3,                      // y    \n        ],[\n            (spirit.radius / magNo),                // x    (4) - (70)\n            spirit.radius * 3,                      // y    \n        ],[\n            (spirit.radius / magNo) * 2,            // x    (5) - (71)\n            null,                                   // y    \n        ],[\n            spirit.radius / magNo,                  // x    (6) - (72)\n            - (spirit.radius * 3),                  // y    \n        ]\n    ],[     // 10th Rotation\n        [\n            - (spirit.radius / magNo) * 1.5,        // x    (1) - (73)\n            - (spirit.radius * 2.5),                // y    \n        ],[\n            - (spirit.radius / magNo) * 2,          // x    (2) - (74)\n            spirit.radius,                          // y    \n        ],[\n            - (spirit.radius / magNo) / 2,          // x    (3) - (75)\n            spirit.radius * 3.5,                    // y    \n        ],[\n            (spirit.radius / magNo) * 1.5,          // x    (4) - (76)\n            spirit.radius * 2.5,                    // y    \n        ],[\n            (spirit.radius / magNo) * 2,            // x    (5) - (77)\n            - (spirit.radius),                      // y    \n        ],[\n            (spirit.radius / magNo) / 2,            // x    (6) - (78)\n            - (spirit.radius * 3.5),                // y    \n        ]\n    ]\n];\n\nconst colorArray = \n[\n    '74, 42, 115',                  // PURPLE           SECONDARY\n    '26, 46, 128',                  // BLUE-PURPLE      TERTIARY\n    '40, 74, 144',                  // BLUE             PRIMARY\n    '63, 146, 167',                 // BLUE-GREEN       TERTIARY\n    '73, 146, 80',                  // GREEN            SECONDARY\n    '150, 181, 62',                 // YELLOW-GREEN     TERTIARY\n    '242, 227, 76',                 // YELLOW           PRIMARY\n    '239, 181, 65',                 // YELLOW-ORANGE    TERTIARY\n    '224, 130, 57',                 // ORANGE           SECONDARY\n    '215, 84, 50',                  // RED-ORANGE       TERTIARY\n    '200, 44, 41',                  // RED              PRIMARY\n    '146, 35, 121'                  // RED-PURPLE       TERTIARY\n];\n\nconst inputs =\n{\n    circle: \n    {\n        single:   document.querySelectorAll('.single-circle-checkbox'),\n        sequence: document.querySelectorAll('.sequenced-circle-checkbox')\n    },\n    hexagon:\n    {\n        lines:   [],\n        hexagon: []\n    }\n}\n\nconst inputArray = \n{\n    class : \n    [\n        '.single-circle-checkbox',\n        '.sequenced-circle-checkbox',\n        '.hexagon-checkbox',\n    ],\n    id : \n    [\n        'full-circle-cycle',\n        'full-hexagon-cycle',\n        'clear-canvas'\n    ]\n}\n\nconst sacredArrays = \n{\n    circle:   [],\n    triangle: [],\n    hexagon:  [],\n    line:     []\n}\n\nconst mouse = \n{\n    start:   { x: null, y: null },\n    current: { x: null, y: null },\n    end:     { x: null, y: null },\n    down: false,\n    existingLineIndex: -1\n}\n\n////////        Debug Output        ////////\n\nconsole.log('configuration: ', config);\nconsole.log('matrix: ',        matrix);\n\n//---   binding of resize()   ---//\nwindow.addEventListener('resize', setupEnvironment);\nwindow.addEventListener('load',   setupEnvironment);\n\n////////////////////////////////////////////////////////////\n////////        PROTOTYPE FUNCTIONS                 ////////\n////////////////////////////////////////////////////////////\n\n/**\n * containsArray()          {Array:Method}              Validates whether the root array contains the passed array passed.\n * @param                   {array} val                 Array sequence to validate\n * @return                  {boolean}                   True | False\n */\nArray.prototype.containsArray      = function(val) \n{\n    var hash = {};\n\n    for (var i = 0; i < this.length; i++) \n    {\n        hash[this[i]] = i;\n    }\n\n    return hash.hasOwnProperty(val);\n}\n\n/**\n * indexOfArray()           {Array:Method}              Returns the index of the array values (e.g.: [1, 2]) passed\n * @param                   {array} val                 Array sequence to validate\n * @return                  {number}                    Integer representing the index where the passed array matches \n */\nArray.prototype.indexOfArray       = function(val) \n{\n    var index = -1;\n\n    for (var i = 0; i < this.length; i++) \n    {\n        var pointInversion = [val[2], val[3], val[0], val[1]];                  // For lines draw in an inverted fashion\n\n        if (JSON.stringify(this[i]) === JSON.stringify(val) || JSON.stringify(this[i]) === JSON.stringify(pointInversion))\n        {\n            index = i;\n        }\n    }\n\n    return index;\n}\n\n/**\n * pushPop()                {Array:Method}              Pushes or splices the value passed via the val param\n * @param                   {number} val                Value to be pushed or spliced\n */\nArray.prototype.pushPop            = function(val)\n{\n    const index = (typeof(val) == 'number')\n        ? this.indexOf(val)\n        : this.indexOfArray(val);\n\n    (index > -1) \n        ? this.splice(index, 1) \n        : this.push(val);\n\n    this.sort((a, b) => a - b);    \n}\n\n/**\n * pushPopAdv()             {Array:Method}              Pushes or splices the value passed via the val param into a multidimensional array\n * @param                   {number} val                Value to be parsed into the appropriate array values\n */\nArray.prototype.pushPopAdv         = function(val)\n{\n    if (val == 0)                   // Handle seed variable first\n    {\n        sacredArrays.circle.pushPop([0, 0]);\n    }\n    else                            // If value > 0, compare against matrix 9 x 6 groups\n    {\n        var compareValues = [1, 6];\n\n        for (var i = 1; i <= 10; i++)\n        {\n            var n = 1 + (6 * (i - 1));\n\n            (val >= compareValues[0] && val <= compareValues[1])\n                ? sacredArrays.circle.pushPop([i, val - n])\n                : null;\n\n            compareValues[0] = compareValues[0] + 6;\n            compareValues[1] = compareValues[1] + 6;\n        }\n    }\n\n    sacredArrays.circle.sort();\n}\n\n/**\n * convert2digStr()         {Number:Method}             Converts the casted value into a two digit string\n * @return                  {string}                    Two digit string\n */\nNumber.prototype.convert2digStr    = function()\n{\n    return (this < 10) ? `0${this}` : `${this}`;\n}\n\n/**\n * isSequenceFull()         {Number:Method}             Checks whether the sequence passed is full of it's child elements\n * @return                  {boolean}                   True | False\n */\nNumber.prototype.isSequenceFull    = function()\n{\n    var count = 0;\n\n    for (var i = 1; i <= 6; i++)\n    {\n        (document.getElementById(`circle-${this.convert2digStr()}-${i.convert2digStr()}-checkbox`).checked)\n            ? count++\n            : null;\n    }\n\n    return (count == 6)\n        ? true\n        : false;\n}\n\n/**\n * isSequenceEmpty()        {Number:Method}             Checks whether the sequence passed is empty of it's child elements\n * @return                  {boolean}                   True | False\n */\nNumber.prototype.isSequenceEmpty   = function()\n{\n    var count = 0;\n\n    for (var i = 1; i <= 6; i++)\n    {\n        (document.getElementById(`circle-${this.convert2digStr()}-${i.convert2digStr()}-checkbox`).checked)\n            ? count++\n            : null;\n    }\n\n    return (count >= 1)\n        ? false\n        : true;\n}\n\n////////////////////////////////////////////////////////////\n////////        GENERAL FUNCTIONS                   ////////\n////////////////////////////////////////////////////////////\n\n/**\n * setupEnvironment()       {Method}                    Sets up the initial UI environment\n */\nfunction setupEnvironment()\n{\n    document.getElementById(\"canvas\").width  = `${config.domWindow.width}`;\n    document.getElementById(\"canvas\").height = `${config.domWindow.height}`;\n\n    document.getElementById(\"canvas-underlay\").width  = `${config.domWindow.width}`;\n    document.getElementById(\"canvas-underlay\").height = `${config.domWindow.height}`;\n\n    document.getElementById(\"ui-overlay\").style.setProperty('width', `${config.domWindow.width}px`);\n    document.getElementById(\"ui-overlay\").style.setProperty('height', `${config.domWindow.height}px`);\n\n    document.title = config.about.Library + ' | ver: ' + config.about.Version;\n\n    insertUIElements();\n}\n\n/**\n * centerX                  {Method}                    Orients the offset value passed with the canvas elements center x coordinate\n * @param                   {number} offset             Offset value\n * @return                  {number}                    X coordinate orientation offset by passed param\n */\nfunction centerX(offset)\n{\n    return config.domWindow.xCenter + offset;\n}\n\n/**\n * centerY                  {Method}                    Orients the offset value passed with the canvas elements center y coordinate\n * @param                   {number} offset             Offset value\n * @return                  {number}                    Y coordinate orientation offset by passed param\n */\nfunction centerY(offset)\n{\n    return config.domWindow.yCenter + offset;\n}\n\n/**\n * parseToSequence()        {Method}                    Returns the sequenced value of the value passed\n * @param                   {number} val                Value to be identified within the predefined sequence\n * @return                  {number}                    Sequence of which the passed value belongs to\n */\nfunction parseToSequence(val)\n{\n    var result        = null;\n    var compareValues = [1, 6];\n\n    for (var i = 1; i <= 10; i++)\n    {\n        var n = 1 + (6 * (i - 1));\n\n        if (val >= compareValues[0] && val <= compareValues[1]) \n        { \n            result = i; \n            break; \n        }\n\n        compareValues[0] = compareValues[0] + 6;\n        compareValues[1] = compareValues[1] + 6;\n    }\n\n    return result;\n}\n\n/**\n * getRegExp                {Method}                    Returns a single string from the passed RegEx expression\n * @param                   {string} string             String to match the passed RegEx expression\n * @param                   {string} regex              RegEx expression in string format\n * @return                  {string}                    RegEx matched group returned in a single string\n */\nfunction getRegExp(val, regex) \n{\n  let result = val.match(regex);\n  \n  return result[1];\n}\n\n/**\n * toggleCheckbox()         {Method}                    Toggles whether the passed input[type='checkbox'] is checked; or not\n * @param                   {string} id                 The input element's id\n */\nfunction toggleCheckbox(id)\n{\n    document.getElementById(id).checked = (document.getElementById(id).checked) ? false : true;\n}\n\n/**\n * toggleCheckboxes()       {Method}                    Toggles checkboxes in accordance with their sequence\n * @param                   {string} shape              String signifying the type of shape to sort\n */\nfunction toggleCheckboxes(shape)\n{\n    switch (shape)\n    {\n        case 'sequenced-circle':\n\n            for (var i = 0; i <= 9; i++)\n            {\n                if (inputs.circle.sequence[i].checked)\n                {\n                    for (var j = 0; j <= 5; j++)\n                    {\n                        var idString = `circle-${(i + 1).convert2digStr()}-${(j + 1).convert2digStr()}-checkbox`;\n\n                        (document.getElementById(idString).checked)\n                            ? toggleCheckbox(idString)\n                            : null;\n\n                        toggleCheckbox(idString);\n                    }\n                }\n                else\n                {\n                    for (var j = 0; j <= 5; j++)\n                    {\n                        var idString = `circle-${(i + 1).convert2digStr()}-${(j + 1).convert2digStr()}-checkbox`;\n\n                        (document.getElementById(idString).checked)\n                            ? toggleCheckbox(idString)\n                            : null;\n                    }\n                }\n            }\n\n            break;\n\n        case 'single-circle':\n\n            for (var i = 0; i <= 9; i++)\n            {\n                var idString = `sequenced-circle-${(i + 1).convert2digStr()}-checkbox`;\n\n                document.getElementById(idString).checked = \n                    (Number(document.getElementById(idString).value).isSequenceFull())\n                        ? true\n                        : false;\n            }\n\n            break;\n\n        default:\n\n            console.log(`${shape} is not supported by the toggleCheckboxes() function!`);\n    }\n}\n\n/**\n * clickCheckbox()          {Method}                    Programmatically clicks on a specific checkbox\n * @param                   {string} id                 String identifier for the checkbox to activate\n */\nfunction clickCheckbox(id)\n{\n    document.getElementById(id).click();\n}\n\n////////////////////////////////////////////////////////////\n////////        GRAPHIC ALGORITHMS                  ////////\n////////////////////////////////////////////////////////////\n\n/**\n * activateUnderlay()       {Method}                    Initiates the drawOutline method\n */\nfunction activateUnderlay()\n{\n    drawOutline();\n}\n\n/**\n * clearUnderlay            {Method}                    Clears the entire underlay\n */\nfunction clearUnderlay()\n{\n    config.context2.clearRect(0, 0, config.canvas2.width, config.canvas2.height);\n}\n\n/**\n * [getRadialGradient description]\n * @param                   {Object} start              Start values of eventually rendered gradient\n * @param                   {number} start.x            X-axis coordinate of the start circle\n * @param                   {number} start.y            Y-axis coordinate of the start circle\n * @param                   {number} start.radius       Radius of the start circle\n * @param                   {color}  start.color        Color defined from CSS color name list\n * @param                   {Object} end                End values of eventually rendered gradient\n * @param                   {number} end.x              X-axis coordinate of the end circle\n * @param                   {number} end.y              Y-axis coordinate of the end circle\n * @param                   {number} end.radius         Radius of the end circle\n * @param                   {color}  end.color          Color defined by RGB values\n * @return                  {Object} result             CanvasGradient object\n */\nfunction getRadialGradient(start = { x, y, radius, color }, end = { x, y, radius, color })\n{\n    let result = config.context.createRadialGradient(start.x, start.y, start.radius, end.x, end.y, end.radius);\n\n    result.addColorStop(0, start.color);\n    result.addColorStop(0.9, end.color);\n    result.addColorStop(1, end.color);\n\n    return result;\n}\n\n/**\n * clearCanvas()            {Method}                    Clears the entire canvas element       \n */\nfunction clearCanvas()\n{\n    config.context.clearRect(0, 0, config.canvas.width, config.canvas.height);\n}\n\n/**\n * drawCircle()             {Method}                    Draws a simple circle\n * @param                   {number}  x                 x - axis; center\n * @param                   {number}  y                 y - axis; center\n * @param                   {number}  radius            Circle radius\n * @param                   {Object}  angle             Angle object containing angle properties\n * @param                   {number}  angle.start       Start angle\n * @param                   {number}  angle.end         End angle\n * @param                   {Object}  stroke            Stroke object containing stroke properties\n * @param                   {string}  stroke.color      Stroke RGB number set for fill; r, g, b\n * @param                   {decimal} stroke.alpha      Stroke alpha (transparency) number value\n * @param                   {Object}  fill              Fill object containing fill properties\n * @param                   {string}  fill.color        Fill RGB number set for fill; r, g, b\n * @param                   {decimal} fill.alpha        Fill alpha (transparency) number value\n * @param                   {boolean} centerDot         Include a center dot\n */\nfunction drawCircle(x, y, radius, angle = { start: 0, end: 2 * Math.PI }, stroke = { color: '0, 0, 0', alpha: 0.5 }, fill = { color: '255, 255, 255', alpha: 0.3}) \n{\n    const circle = \n    { \n        start: \n        {\n            x: centerX(x), \n            y: centerY(y), \n            radius: 10,  \n            color: 'white'\n        },\n        end:\n        {\n            x: centerX(x), \n            y: centerY(y), \n            radius: 100, \n            color: `rgba(${fill.color}, ${fill.alpha})`            \n        }\n    }\n\n    config.context.strokeStyle = `rgba(${stroke.color}, ${stroke.alpha})`;\n    config.context.lineWidth   = 1;\n\n    config.context.fillStyle = getRadialGradient(circle.start, circle.end);\n\n    config.context.beginPath();\n    \n    config.context.arc(\n        circle.start.x, \n        circle.start.y, \n        radius, \n        angle.start, \n        angle.end, \n        false                       // Counter Clockwise\n    );\n    \n    (config.circle.stroke)\n        ? config.context.stroke()\n        : null;\n\n    config.context.fill();\n\n    (config.circle.centerDot)\n        ? drawCircle(x, y, (radius / 4) * 0.18, angle.start, angle.end, stroke.color, stroke.alpha, fill.color, fill.alpha, false)\n        : null;\n}\n\n/**\n * drawUnderlayCircles()    {Method}                    Draws outlines of (potential) points for reference\n * @param                   {number} x                  x - axis; center\n * @param                   {number} y                  y - axis; center\n * @param                   {number} radius             Circle radius\n * @param                   {number} alpha              Alpha level of underlay circles\n */\nfunction drawUnderlayCircles(x, y, radius, alpha = 0.15)\n{\n    config.context2.strokeStyle = `rgba(0, 0, 0, ${alpha})`;\n\n    config.context2.beginPath();\n\n    config.context2.arc(\n        centerX(x), \n        centerY(y), \n        radius, \n        0, \n        2 * Math.PI, \n        false\n    );\n\n    config.context2.stroke();\n}\n\n/**\n * drawOutline              {Method}                    Draws a semi-transparent outline on canvas-underlay\n * @param                   {number} alpha              Alpha level of underlay circles\n */\nfunction drawOutline(alpha)\n{\n    drawUnderlayCircles(matrix[0][0][0], matrix[0][0][1], zonaPolusada, alpha);\n\n    for (var i = 0; i <= matrix.length - 1; i++)            // Draw circles around all points existing with the matrix array\n    {\n        for (var j = 0; j <= matrix[i].length - 1; j++) \n        {\n            drawUnderlayCircles(matrix[i][j][0], matrix[i][j][1], spirit.radius, alpha);\n        }\n    }\n}\n\n/**\n * drawLine()               {Method}                    Draws a simple circle\n * @param                   {number} startX             X coordinate position to begin drawing at\n * @param                   {number} StartY             Y coordinate position to begin drawing at\n * @param                   {number} endX               X coordinate position to finish drawing at\n * @param                   {number} endY               Y coordinate position to finish drawing at\n */\nfunction drawLine(startX, startY, endX, endY, lineWidth = 1, strokeColor = '0, 0, 0', strokeAlpha = 0.5) \n{\n    config.context.strokeStyle = `rgba(${strokeColor}, ${strokeAlpha})`;\n    config.context.lineCap     = 'round';\n\n    config.context.beginPath();                             // Resets the current path\n\n    config.context.moveTo(startX, startY);                  // Creates a new subpath with the given point\n    config.context.lineTo(endX, endY);                      // Adds the given point to the subpath\n\n    config.context.lineWidth = lineWidth;                   // Sets the width the the line to be rendered\n    config.context.stroke();                                // Strokes the subpaths with the current stroke style\n}\n\n////////////////////////////////////////////////////////////\n////////        CYCLING ALGORITHMS                  ////////\n////////////////////////////////////////////////////////////\n\n/**\n * cycleFull()              {Method}                    Cycles through the entire shape array of the shape passed; via param\n * @param                   {string} shape              Shape array to cycle through\n */\nfunction cycleFull(shape)\n{\n    clearCanvas();\n\n    for (var i = 1; i <= matrix.length - 1; i++) \n    {\n        for (var j = 0; j <= matrix[i].length - 1; j++) \n        {\n            switch (shape)\n            {\n                case 'circle':\n\n                    drawCircle(\n                        matrix[i][j][0],\n                        matrix[i][j][1],\n                        spirit.radius,\n                        undefined,\n                        undefined,           \n                        {\n                            color: colorArray[i],\n                            alpha: 0.3\n                        }\n                    );\n\n                    break;\n\n                case 'hexagon':\n\n                    var n = j + 1;\n\n                    if (n == 6) { n = 0; }\n\n                    drawLine(\n                        centerX(matrix[i][j][0]),        \n                        centerY(matrix[i][j][1]), \n                        centerX(matrix[i][n][0]), \n                        centerY(matrix[i][n][1])\n                    );\n\n                    break;\n\n                default:\n\n                    console.log(`${shape} is not supported by the cycleFull() function!`);\n            }\n        }\n    }\n}\n\n/**\n * cycleSacredArray()       {Method}                    Cycles through the 'single circle array'\n */\nfunction cycleSacredArray()\n{\n    clearCanvas();\n\n    // Circles\n    for (var i = 0; i <= sacredArrays.circle.length - 1; i++)\n    {\n        drawCircle(\n            matrix[sacredArrays.circle[i][0]][sacredArrays.circle[i][1]][0],\n            matrix[sacredArrays.circle[i][0]][sacredArrays.circle[i][1]][1],\n            spirit.radius,\n            undefined,\n            undefined,\n            {\n                color: colorArray[sacredArrays.circle[i][0]],\n                alpha: 0.3\n            }\n        );\n    }\n\n    // Hexagon\n    for (var i = 0; i <= sacredArrays.hexagon.length - 1; i++)\n    {\n        for (var j = 0; j <= matrix[sacredArrays.hexagon[i]].length - 1; j++) \n        {\n            var n = j + 1;\n\n            if (n == 6) { n = 0; }\n\n            drawLine(\n                centerX(matrix[sacredArrays.hexagon[i]][j][0]),\n                centerY(matrix[sacredArrays.hexagon[i]][j][1]), \n                centerX(matrix[sacredArrays.hexagon[i]][n][0]), \n                centerY(matrix[sacredArrays.hexagon[i]][n][1]) \n            );\n\n        }\n    }\n\n    // Lines\n    for (var i = 0; i <= sacredArrays.line.length - 1; i++) \n    {\n        drawLine(\n            sacredArrays.line[i][0], \n            sacredArrays.line[i][1], \n            sacredArrays.line[i][2], \n            sacredArrays.line[i][3]\n        );\n    }\n    \n    if (!config.debug)\n    {\n        console.clear();\n        console.log('sacredArrays: ', sacredArrays);\n        console.log('inputs: ', inputs);\n    }\n}\n\n////////////////////////////////////////////////////////////\n////////        PROPITIATORY ARRAY ALGORITHMS       ////////\n////////////////////////////////////////////////////////////\n\n/**\n * pushPopSacredArray()     {Method}                    Sorts various shape arrays                    \n * @param                   {string}       shape        String signifying the type of shape to sort\n * @param                   {number|array} value        Value(s) to be sorted through the below (corresponding) algorithms\n */\nfunction pushPopSacredArray(shape, value)\n{\n    var n = parseInt(value);\n\n    switch (shape)\n    {\n        case 'sequenced-circle':\n\n            var min = (n + (5 * (n - 1)));\n            var max = (n + (5 * n));\n\n            for (var i = min; i <= max; i++)\n            {\n                sacredArrays.circle.pushPopAdv(i);\n            }\n\n            break;\n\n        case 'single-circle':\n\n            sacredArrays.circle.pushPopAdv(value);\n\n            break;\n\n        case 'hexagon':\n\n            sacredArrays.hexagon.pushPop(value);\n\n            break;\n\n        default:\n\n            console.log(`${shape} is not supported by the pushPopSacredArray() function!`);\n    }\n\n    cycleSacredArray();\n    toggleCheckboxes(shape);\n}\n\n////////////////////////////////////////////////////////////\n////////        UI ALGORITHMS                       ////////\n////////////////////////////////////////////////////////////\n\n/**\n * highlightRegion()        {Method}                    Draws a semi-transparent circle over the designed area\n * @param                   {Object} obj                UI element\n */\nfunction highlightRegion(obj)\n{\n    document.getElementById(obj.id).style.border = '1px dashed black';\n    document.body.style.cursor                   = 'pointer';\n\n    if (mouse.down)\n    {\n        let node = obj.id.match(/(?<val1>\\d+)-(?<val2>\\d+)/);                   // For deletion detection\n\n        let mouseTempEnd =                                                      // Precalculate line destination\n        {\n            x: centerX(matrix[parseInt(node[1])][parseInt(node[2])][0]),\n            y: centerY(matrix[parseInt(node[1])][parseInt(node[2])][1])\n        }\n\n        mouse.existingLineIndex = sacredArrays.line.indexOfArray([mouse.start.x, mouse.start.y, mouseTempEnd.x, mouseTempEnd.y]);\n    }\n}\n\n/**\n * unhighlightRegion()      {Method}                    Un-highlight UI elements\n * @param                   {Object} obj                UI element\n */\nfunction unhighlightRegion(obj)\n{\n    document.getElementById(obj.id).style.border = '1px solid transparent';\n    document.body.style.cursor                   = 'default';\n}\n\n/**\n * setRegion()              {Method}                    Inserts the (clicked) circle within the sacredArray\n * @param                   {Object} obj                UI element\n */\nfunction setRegion(obj)\n{\n    let node = obj.id.match(/(?<val1>\\d+)-(?<val2>\\d+)/);\n\n    clickCheckbox(`circle-${node[1]}-${(parseInt(node[2]) + 1).convert2digStr()}-checkbox`);\n}\n\n/**\n * startLine()              {Method}                    Defines the beginner of a straight line\n * @param                   {Object} obj                UI element\n */\nfunction startLine(obj)\n{\n    mouse.down = true;\n\n    let node = obj.id.match(/(?<val1>\\d+)-(?<val2>\\d+)/);\n\n    mouse.start.x = centerX(matrix[parseInt(node[1])][parseInt(node[2])][0]);\n    mouse.start.y = centerY(matrix[parseInt(node[1])][parseInt(node[2])][1]);\n}\n\n/**\n * endLine()                {Method}                    Defines the ending of a straight line \n * @param                   {Object} obj                UI element\n */\nfunction endLine(obj)\n{\n    mouse.down = false;\n\n    let node = obj.id.match(/(?<val1>\\d+)-(?<val2>\\d+)/);\n\n    mouse.end.x = centerX(matrix[parseInt(node[1])][parseInt(node[2])][0]);\n    mouse.end.y = centerY(matrix[parseInt(node[1])][parseInt(node[2])][1]);\n\n    sacredArrays.line.pushPop([mouse.start.x, mouse.start.y, mouse.end.x, mouse.end.y]);\n\n    clearCanvas();\n    cycleSacredArray();\n}\n\n/**\n * uiElementPos()           {Method}                    Returns the appropriate position for each clickable UI element\n * @param                   {number} x                  X axis coordinate value \n * @param                   {number} y                  Y axis coordinate value\n * @param                   {number} radius             Radius of UI element being passed\n * @return                  {array}  result             Returns the appropriate x & y coordinate values in accordance with screen dimensions\n */\nfunction uiElementPos(x, y, radius = spirit.radius)\n{\n    let result = new Array();\n\n    result[0] = centerX(x - (radius / 2));\n    result[1] = centerY(y - (radius / 2));\n\n    return result;\n}\n\n/**\n * insertUIElements()       {Method}                    Inserts UI objects for point and click interface\n */\nfunction insertUIElements()\n{\n    for (var i = 0; i <= matrix.length - 1; i++) \n    {\n        for (var j = 0; j <= matrix[i].length - 1; j++) \n        {\n            let uiPositions = uiElementPos(matrix[i][j][0], matrix[i][j][1]);\n\n            document.getElementById('ui-overlay').innerHTML += \n                `<div style=\"` \n                + `text-align: center; `\n                + `line-height: 100px; `\n                + `position: absolute; ` \n                + `left: ${uiPositions[0]}px; ` \n                + `top: ${uiPositions[1]}px; ` \n                + `width: ${spirit.radius}px; ` \n                + `height: ${spirit.radius}px; `\n                + `border-radius: 50px; `\n                + `border: 1px solid transparent;\" ` \n                + `id=\"ui-node-${i.convert2digStr()}-${(j).convert2digStr()}\" `\n                + `onmouseover=\"highlightRegion(this)\" ` \n                + `onmouseout=\"unhighlightRegion(this)\" `\n                + `onclick=\"setRegion(this)\" ` \n                + `onmousedown=\"startLine(this)\" `\n                + `onmouseup=\"endLine(this)\" `\n                // + `>${i} - ${j}</div>`;                 // For Debugging Purposes Only\n                + `></div>`;\n        }\n\n    }\n\n    activateUnderlay();\n}\n\n////////        UI Listeners        ////////\n\n/**\n * Bind class inputs\n */\nfor (var i = 0; i <= inputArray.class.length - 1; i++)\n{\n    document.querySelectorAll(inputArray.class[i]).forEach(item =>\n    {\n        item.addEventListener('click', event =>\n        {\n            pushPopSacredArray(getRegExp(item.className, '([^\\.]+?)(-checkbox|-cycle)'), item.value);\n        });\n    });\n}\n\ndocument.getElementById('full-circle-cycle').addEventListener(\"click\", function()\n{\n    (document.getElementById('full-circle-cycle').checked) \n        ? (sacredArrays.circle.length > 0) \n            ? cycleSacredArray() : null \n        : cycleFull('circle');\n});\n\ndocument.getElementById('full-hexagon-cycle').addEventListener(\"click\", function()\n{\n    (document.getElementById('full-hexagon-cycle').checked)\n        ? (sacredArrays.hexagon.length > 0)\n            ? cycleSacredArray() : null\n        : cycleFull('hexagon');\n});\n\ndocument.getElementById('clear-canvas').addEventListener(\"click\", function()\n{\n    clearCanvas();\n});\n\nwindow.addEventListener(\"mousemove\", function(event) \n{\n    clearCanvas();\n    cycleSacredArray();\n\n    mouse.current.x = event.clientX;\n    mouse.current.y = event.clientY;\n\n    if (mouse.down)\n    {\n        document.body.style.cursor = 'crosshair';\n\n        drawLine(mouse.start.x, mouse.start.y, mouse.current.x, mouse.current.y);\n\n        (mouse.existingLineIndex != -1 && sacredArrays.line.length > 0)\n           ? drawLine(sacredArrays.line[mouse.existingLineIndex][0], sacredArrays.line[mouse.existingLineIndex][1], sacredArrays.line[mouse.existingLineIndex][2], sacredArrays.line[mouse.existingLineIndex][3], 7, '255, 25, 25')\n           : mouse.existingLineIndex = -1;\n    }\n});",
+			"settings":
+			{
+				"buffer_size": 40611,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/justinbyrne/Programs/SacredGeometry/docs/CHANGELOG.md",
+			"settings":
+			{
+				"buffer_size": 5377,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/justinbyrne/Programs/SacredGeometry/style/main.scss",
+			"settings":
+			{
+				"buffer_size": 3972,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "0: Array(1)\n\t0: (2) [null, null]\n\n1: Array(6)\n\t0: (2) [null, -73.9]\t\t\t\t\t\t\t\t\t1   - 1 = 0\n\t1: (2) [-63.927335640138416, -36.95]\t\t\t\t\t2   - 1 = 1\n\t2: (2) [-63.927335640138416, 36.95]\t\t\t\t\t\t3\t- 1 = 2\n\t3: (2) [null, 73.9]\t\t\t\t\t\t\t\t\t\t4   - 1 = 3\n\t4: (2) [63.927335640138416, 36.95]\t\t\t\t\t\t5\t- 1 = 4\n\t5: (2) [63.927335640138416, -36.95]\t\t\t\t\t\t6\t- 1 = 5\n\n2: Array(6)\n\t0: (2) [-63.927335640138416, -110.85000000000001]\t\t7   - 7 = 0\n\t1: (2) [-127.85467128027683, null]\t\t\t\t\t\t8   - 7 = 1\n\t2: (2) [-63.927335640138416, 110.85000000000001]\t\t9\t- 7 = 2\n\t3: (2) [63.927335640138416, 110.85000000000001]\t\t\t10\t- 7 = 3\n\t4: (2) [127.85467128027683, null]\t\t\t\t\t\t11\t- 7 = 4\n\t5: (2) [63.927335640138416, -110.85000000000001]\t\t12\t- 7 = 5\n\n3: Array(6)\n\t0: (2) [null, -147.8]\t\t\t\t\t\t\t\t\t13\t- 13 = 0\n\t1: (2) [-127.85467128027683, -73.9]\t\t\t\t\t\t14\t- 13 = 1\n\t2: (2) [-127.85467128027683, 73.9]\t\t\t\t\t\t15\t- 13 = 2\n\t3: (2) [null, 147.8]\t\t\t\t\t\t\t\t\t16\t- 13 = 3\n\t4: (2) [127.85467128027683, 73.9]\t\t\t\t\t\t17\t- 13 = 4\n\t5: (2) [127.85467128027683, -73.9]\t\t\t\t\t\t18\t- 13 = 5\n\n4: Array(6)\n\t0: (2) [null, -221.70000000000002]\t\t\t\t\t\t19\t- 19 = 0\n\t1: (2) [-191.78200692041526, -110.85000000000001]\t\t20\t- 19 = 1\n\t2: (2) [-191.78200692041526, 110.85000000000001]\t\t21\t- 19 = 2\n\t3: (2) [null, 221.70000000000002]\t\t\t\t\t\t22\t- 19 = 3\n\t4: (2) [191.78200692041526, 110.85000000000001]\t\t\t23\t- 19 = 4\n\t5: (2) [191.78200692041526, -110.85000000000001]\t\t24\t- 19 = 5\n\n5: Array(6)\n\t0: (2) [-63.927335640138416, -184.75]\t\t\t\t\t25  - 25 = 0\n\t1: (2) [-191.78200692041526, -36.95] \t\t\t\t\t26  - 25 = 1\n\t2: (2) [-127.85467128027683, 147.8]\t\t\t\t\t\t27  - 25 = 2\n\t3: (2) [63.927335640138416, 184.75]\t\t\t\t\t\t28  - 25 = 3\n\t4: (2) [191.78200692041526, 36.95]\t\t\t\t\t\t29  - 25 = 4\n\t5: (2) [127.85467128027683, -147.8]\t\t\t\t\t\t30  - 25 = 5\n\n6: Array(6)\n\t0: (2) [-127.85467128027683, -147.8]\t\t\t\t\t31  - 31 = 0 \n\t1: (2) [-191.78200692041526, 36.95] \t\t\t\t\t32  - 31 = 1 \n\t2: (2) [-63.927335640138416, 184.75]\t\t\t\t\t33  - 31 = 2 \n\t3: (2) [127.85467128027683, 147.8]\t\t\t\t\t\t34  - 31 = 3 \n\t4: (2) [191.78200692041526, -36.95]\t\t\t\t\t\t35  - 31 = 4 \n\t5: (2) [63.927335640138416, -184.75]\t\t\t\t\t36  - 31 = 5 \n\n7: Array(6)\n\t0: (2) [null, -295.6]\t\t\t\t\t\t\t\t\t37  - 37 = 0\n\t1: (2) [-255.70934256055367, -147.8]\t\t\t\t\t38  - 37 = 1\n\t2: (2) [-255.70934256055367, 147.8]\t\t\t\t\t\t39  - 37 = 2\n\t3: (2) [null, 295.6]\t\t\t\t\t\t\t\t\t40  - 37 = 3\n\t4: (2) [255.70934256055367, 147.8]\t\t\t\t\t\t41  - 37 = 4\n\t5: (2) [255.70934256055367, -147.8]\t\t\t\t\t\t42  - 37 = 5\n\n8: Array(6)\n\t0: (2) [-63.927335640138416, -258.65000000000003]\t\t43  - 43 = 0\n\t1: (2) [-255.70934256055367, -73.9]\t\t\t\t\t\t44  - 43 = 1\n\t2: (2) [-191.78200692041526, 184.75]\t\t\t\t\t45  - 43 = 2\n\t3: (2) [63.927335640138416, 258.65000000000003]\t\t\t46  - 43 = 3\n\t4: (2) [255.70934256055367, 73.9]\t\t\t\t\t\t47  - 43 = 4\n\t5: (2) [191.78200692041526, -184.75]\t\t\t\t\t48  - 43 = 5\n\n9: Array(6)\n\t0: (2) [-127.85467128027683, -221.70000000000002]\t\t49  - 49 = 0\n\t1: (2) [-255.70934256055367, null]\t\t\t\t\t\t50  - 49 = 1\n\t2: (2) [-127.85467128027683, 221.70000000000002]\t\t51  - 49 = 2\n\t3: (2) [127.85467128027683, 221.70000000000002]\t\t\t52  - 49 = 3\n\t4: (2) [255.70934256055367, null]\t\t\t\t\t\t53  - 49 = 4\n\t5: (2) [127.85467128027683, -221.70000000000002]\t\t54  - 49 = 5\n\n10: Array(6)\n\t0: (2) [-191.78200692041526, -184.75]\t\t\t\t\t55  - 55 = 0\n\t1: (2) [-255.70934256055367, 73.9]\t\t\t\t\t\t56  - 55 = 1\n\t2: (2) [-63.927335640138416, 258.65000000000003]\t\t57  - 55 = 2\n\t3: (2) [191.78200692041526, 184.75]\t\t\t\t\t\t58  - 55 = 3\n\t4: (2) [255.70934256055367, -73.9]\t\t\t\t\t\t59  - 55 = 4\n\t5: (2) [63.927335640138416, -258.65000000000003]\t\t60  - 55 = 5\n\n\n0: input#sequenced-circle-01-checkbox.sequenced-circle-checkbox\n1: input#sequenced-circle-02-checkbox.sequenced-circle-checkbox\n2: input#sequenced-circle-03-checkbox.sequenced-circle-checkbox\n3: input#sequenced-circle-04-checkbox.sequenced-circle-checkbox\n4: input#sequenced-circle-05-checkbox.sequenced-circle-checkbox\n5: input#sequenced-circle-06-checkbox.sequenced-circle-checkbox\n6: input#sequenced-circle-07-checkbox.sequenced-circle-checkbox\n7: input#sequenced-circle-08-checkbox.sequenced-circle-checkbox\n8: input#sequenced-circle-09-checkbox.sequenced-circle-checkbox\n9: input#sequenced-circle-10-checkbox.sequenced-circle-checkbox",
+			"settings":
+			{
+				"buffer_size": 4136,
+				"line_ending": "Unix",
+				"name": "0: Array(1)"
+			}
+		},
+		{
+			"contents": "circle-01-01-checkbox\ncircle-01-02-checkbox\ncircle-01-03-checkbox\ncircle-01-04-checkbox\ncircle-01-05-checkbox\ncircle-01-06-checkbox\n\ncircle-02-01-checkbox\ncircle-02-02-checkbox\ncircle-02-03-checkbox\ncircle-02-04-checkbox\ncircle-02-05-checkbox\ncircle-02-06-checkbox\n\nsequenced-circle-01-checkbox\nsequenced-circle-02-checkbox\nsequenced-circle-03-checkbox\nsequenced-circle-04-checkbox\nsequenced-circle-05-checkbox\nsequenced-circle-06-checkbox\nsequenced-circle-07-checkbox\nsequenced-circle-08-checkbox\nsequenced-circle-09-checkbox\nsequenced-circle-10-checkbox\n\nhexagon-01-checkbox\nhexagon-02-checkbox\nhexagon-03-checkbox\nhexagon-04-checkbox\nhexagon-05-checkbox\nhexagon-06-checkbox\nhexagon-07-checkbox\nhexagon-08-checkbox\nhexagon-09-checkbox\nhexagon-10-checkbox\n\n\n(?<result>(sequenced\\-circle|circle|hexagon)+)\n\n(?<result>[^\\-\\d]+)\n\ndocument.getElementById('sequenced-circle-01-checkbox').checked = true;\n\n\ncircle-01-01-checkbox\ncircle-01-02-checkbox\n\n\nconst inputArray = \n{\n    sequence : \n    [\n        '.single-circle-checkbox',\n        '.sequenced-circle-checkbox',\n        '.hexagon-checkbox',\n    ],\n    single : \n    [\n        'full-circle-cycle',\n        'full-hexagon-cycle',\n        'clear-canvas'\n    ]\n}",
+			"settings":
+			{
+				"buffer_size": 1210,
+				"line_ending": "Unix",
+				"name": "circle-01-01-checkbox"
+			}
+		},
+		{
+			"contents": "# Changelog\nAll notable changes to this project will be documented in this file.\n\n## [1.10.48] - 2021-12-04\n### Added\n- centerX() orients the offset value passed with the canvas elements center x coordinate\n- centerY() orients the offset value passed with the canvas elements center y coordinate\n\n### Changed\n- Array.prototype.pushPopAdv() optimized internal algorithm\n- expanded global mouse object for additional UI features\n- expanded 'mousemove' event listener to implement visual erasing feature\n- getRadialGradient() optimized with object parameters rather than single variables\n- drawCircle() optimized with object parameters\n\n## [1.10.41] - 2021-11-28\n### Added\n- unhighlitRegion() to un-highlight UI elements\n- startLine() defines the beginner of a straight line\n- endLine() defines the ending of a straight line \n\n### Changed\n- activateRegion() to highlightRegion()\n- highlightRegion() optimization\n- Array.prototype.indexOfArrayValues() to Array.prototype.indexOfArray()\n- Array.prototype.indexOfArray() updated to handle line variances\n- Array.prototype.pushPop() updated to include array values being passed\n\n## [1.8.35] - 2021-11-24\n### Added\n- circle object with master config\n- activateUnderlay() method to highlight the key parameters\n- clearUnderlay() method to clear the underlay\n- getRadialGradient() method to return a radial gradient for context.fillStyle()\n\n### Changed\n- uiElementPos() to get UI element window positions\n- insertUIElements() to insert UI elements\n\n### Removed\n- zona polusada UI element\n- all timers\n\n## [1.7.28] - 2021-11-17\n### Added \n- canvas-underlay element\n- drawOutline() & canvas-underlay to draw circular outlines\n- favicon\n- drawUnderlayCircle() method to handle canvas-underlay circles; only\n- canvas-pre-ender element\n\n### Changed\n- drawCircle() added strokeColor & strokeAlpha params, removed counterClockwise param\n- sortArray() to pushPopSacredArray()\n- Array.prototype.pushPopAdv() to include seed variable of 0\n- resize() to setupEnvironment()\n\n### Removed\n- seedCanvas() method\n\n## [1.5.20] - 2021-11-15\n### Added\n- insertUIElements() method to embed UI div objects for point & click interface\n- uiElementPos() method to return x & y coordinate values to position each UI element\n- setRegion() inserts the (clicked) circle within the sacredArray\n- activateRegion() draws a semi-transparent circle over the designed area\n- clickCheckbox() programmatically clicks on a specific checkbox\n\n### Changed\n- optimized UI Listeners into array groups\n\n### Fixed\n- fixed resize() to include new UI overlay ordinates\n\n## [1.4.15] - 2021-10-10\n### Added\n- cycleFull() method to replace/merge fullCircleCycle() and fullHexagonCycle() methods\n- toggleCheckbox() method\n- toggleCheckboxes() method\n- convert2digStr() prototype method\n- isSequenceFull() prototype method\n\n### Changed\n- merged Sequenced Circles in with Single circles to streamline UI\n\n### Removed \n- fullCircleCycle() method\n- fullHexagonCycle() method\n\n### Fixed\n- multiple cycling under sequenced shapes\n\n## [1.0.11] - 2021-10-03\n### Changed\n- HTML nav menu structure\n- indexOfArray() to indexOfArrayValues() and refined method's structure\n- unnecessary magNo array to single variable\n- cycleSingleCircleArray() to cycleSacredArray()\n- trimmed down 'Center Dot' conditional algorithm within the drawCircle algorithm\n\n### Fixed\n- cycleSacredArray() method so it doesn't double draw each individual circle\n\n### Added\n- Array.prototype.pushPop() method\n- hexagon cycle array to cycleSacredArray()\n\n### Removed \n- Unnecessary clearCanvas() functions from main script\n- cycleCircleArray()\n- cycleHexagonArray()\n\n## [1.0.0] - 2021-09-16\n### Added\n- Directory structure\n- CHANGELOG.md\n- README.md\n- index.html\n- styles; scss and css\n- main.js\n\n---\n\n[1.10.48]: 2021-12-04 [CURRENT REVISION]\n\n[1.10.41]: 2021-11-28 [412aa0d](https://github.com/Justin-Byrne/SacredGeometry/commit/412aa0d) line drawing implemented & minor optimizations\n\n[1.8.35]:  2021-11-24 [841fb2f](https://github.com/Justin-Byrne/SacredGeometry/commit/841fb2f) added UI elements, including performance & proficiency tweaks\n\n[1.7.28]:  2021-11-17 [40feafa](https://github.com/Justin-Byrne/SacredGeometry/commit/40feafa) added canvas-underlay & revised existing features\n\n[1.5.20]:  2021-11-15 [31b3fc1](https://github.com/Justin-Byrne/SacredGeometry/commit/31b3fc1) add UI and optimization elements\n\n[1.4.15]:  2021-10-10 [37c5ff6](https://github.com/Justin-Byrne/SacredGeometry/commit/37c5ff6) new algorithms to assist sorting along with minor bug fixes\n\n[1.0.11]:  2021-10-03 [de2f86d](https://github.com/Justin-Byrne/SacredGeometry/commit/de2f86d) various bug fixes and trimming down \n\n[1.0.0]:   2021-09-16 [9babc19](https://github.com/Justin-Byrne/SacredGeometry/commit/9babc19) initial upload\n---\n\n## Types of changes\n- `Added` for new features.\n- `Changed` for changes in existing functionality.\n- `Deprecated` for soon-to-be removed features.\n- `Removed` for now removed features.\n- `Fixed` for any bug fixes.\n- `Security` in case of vulnerabilities.\n\n## Copywrite\n\n![Byrne-Systems](http://byrne-systems.com/content/static/cube_sm.png)\n\n==Byrne-Systems © 2021 - All rights reserved.==",
+			"settings":
+			{
+				"buffer_size": 5163,
+				"line_ending": "Unix",
+				"name": "# Changelog"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"REMOVE",
+				"Package Control: Remove Package"
+			],
+			[
+				"m",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"insta",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"INSTALL",
+				"Colorsublime: Install Theme"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 137.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/justinbyrne/Programs/SacredGeometry",
+		"/Users/justinbyrne/Programs/SacredGeometry/docs",
+		"/Users/justinbyrne/Programs/SacredGeometry/script",
+		"/Users/justinbyrne/Programs/SacredGeometry/style"
+	],
+	"file_history":
+	[
+		"/Users/justinbyrne/Programs/SacredGeometry 9272021 - 1229PM/script/main.js",
+		"/Users/justinbyrne/Programs/SacredGeometry 10022021 - 500PM/script/main.js",
+		"/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+		"/Users/justinbyrne/Programs/SacredGeometry/script/main.min.js",
+		"/Users/justinbyrne/Programs/SacredGeometry/script/callGraph.json",
+		"/Users/justinbyrne/.zshrc",
+		"/opt/local/var/macports/logs/_opt_local_var_macports_sources_rsync.macports.org_macports_release_tarballs_ports_graphics_graphviz/graphviz/main.log",
+		"/Users/justinbyrne/Programs/SacredGeometry 10022021 - 500PM/index.html",
+		"/Users/justinbyrne/Programs/SacredGeometry/style/main.scss",
+		"/Users/justinbyrne/Programs/Sacred Geometry/LICENSE",
+		"/Users/justinbyrne/Programs/Sacred Geometry/script/main.js",
+		"/Users/justinbyrne/Programs/Sacred Geometry/index.html",
+		"/Users/justinbyrne/Programs/Sacred Geometry/script/main - v0.1.js",
+		"/Users/justinbyrne/Programs/Canvas/script/main - 0.4.js",
+		"/Users/justinbyrne/Programs/Canvas/canvasLab/js/canvasLab.js",
+		"/Users/justinbyrne/Programs/Canvas/script/matrix - patterning.txt",
+		"/Users/justinbyrne/Programs/Canvas/script/main - 0.1.js",
+		"/Users/justinbyrne/Programs/Canvas/script/main - 0.2.js",
+		"/Users/justinbyrne/Programs/Canvas/script/Array.txt",
+		"/Users/justinbyrne/Programs/Canvas/script/matrix.js",
+		"/Users/justinbyrne/Programs/Canvas/canvasLab/canvasLab.html",
+		"/Users/justinbyrne/Programs/Canvas/canvasLab/js/canvasLab_functions.js",
+		"/Users/justinbyrne/Programs/portfolio/Portfolio/bin/Release/netcoreapp2.1/publish/wwwroot/lib/Trumbowyg/docs/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js",
+		"/Users/justinbyrne/Documents/Wireshark Dumps/Godot Tests/Godot Local Port 6007 Test 2.json",
+		"/Users/justinbyrne/Programs/Godot/Games/project.godot",
+		"/Users/justinbyrne/Programs/BatchOrderProccesor/bin/release/podump/BT_26185_102720_47755635.txt",
+		"/Users/justinbyrne/Programs/BatchOrderProccesor/include/dirent.h",
+		"/Users/justinbyrne/Downloads/dirent-master/include/dirent.h",
+		"/Users/justinbyrne/Programs/BatchOrderProccesor/Make.make",
+		"/Users/justinbyrne/Programs/Godot/Games/icon.png.import",
+		"/Users/justinbyrne/Library/Application Support/Übersicht/widgets/getting-started.coffee",
+		"/Users/justinbyrne/Downloads/foundation-sites-6.6.3/scss/components/_accordion-menu.scss"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"sequenced",
+			"412aa0d",
+			"31b3fc1",
+			"de2f86d",
+			"                ",
+			"matrix",
+			"config.domWindow.yCenter",
+			"config.domWindow.xCenter",
+			"strokeWidth",
+			"rgba",
+			"global",
+			"'rgba(' + fillColor + ', ' + fillAlpha + ')'",
+			"'rgba(' + strokeColor + ', ' + strokeAlpha + ')'",
+			"stroke",
+			"alpha",
+			"this.",
+			"{object}",
+			"object",
+			"config.domWindow.xCenter + x",
+			"existingLineIndex",
+			"mouse.node",
+			"prexistingLineIndex",
+			"priorLineIndex",
+			"highlightLineSegment",
+			"mouse.node",
+			"            ",
+			"lineElementId",
+			"mouseEndTemp",
+			"mouse.end",
+			"drawLine",
+			"console.log",
+			"break",
+			"index",
+			"841fb2f",
+			"d26ee64",
+			"        ",
+			"indexOfArrayValues",
+			"indexOfArray",
+			"clear",
+			"start",
+			"activateRegion",
+			"context",
+			"setLine",
+			"[description]",
+			"{",
+			"[type]",
+			"settings",
+			"                       // ",
+			"//",
+			"1.75",
+			"1.5",
+			"spirit.radius",
+			"{number}",
+			"            ",
+			"outline",
+			"//",
+			"console.log",
+			"sortArray",
+			"clear",
+			"context",
+			"full",
+			"drawCircle",
+			"null",
+			"drawCircle",
+			", ",
+			"alpha",
+			"color",
+			"37c5ff6",
+			"regex",
+			"result",
+			"id=\"",
+			"><",
+			"\"><",
+			" / 2",
+			"spirit.radius * 5",
+			"single",
+			"cycleSacredArray",
+			"inputArray",
+			"inputs",
+			"string",
+			"isSequenceFull",
+			"error",
+			"bruce lee",
+			"{Number}",
+			"{Boolean}",
+			"{String}",
+			"number",
+			"j",
+			"triggerCheckboxes",
+			"toggleCheckbox",
+			"{number} ",
+			"{Int}",
+			"Int",
+			"<span class=\"check\">✔️</span>",
+			"<label class=\"label\" for=\"",
+			"<label class=\"label\" for=",
+			"fullCycle",
+			"number",
+			"parseToSequence",
+			"id=\"",
+			"</a>",
+			"\" class=\"",
+			"id=\"",
+			"\" class=\"",
+			"id=\"",
+			", ",
+			"// ",
+			"//",
+			"drawCircle",
+			",\n",
+			"drawCircle",
+			"circleArray",
+			"            ",
+			"cycleHexagonArray",
+			"cycleCircleArray",
+			"i",
+			"circleArray",
+			"sacredArrays",
+			"i",
+			"Changed",
+			"cycleSingleCircleArray",
+			"drawCircle",
+			"// x",
+			"magNo[0]",
+			"main.js:",
+			"min =",
+			"min = ",
+			"break;"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/justinbyrne/Programs/SacredGeometry/script/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 40930,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36042,
+								36042
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										36137,
+										36138
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										35983,
+										35984
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"sftp_duplicate_views": 0,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/justinbyrne/Programs/SacredGeometry/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 30170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								838,
+								838
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										838,
+										839
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										815,
+										816
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 119.0,
+						"translation.y": 436.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/justinbyrne/Documents/Blood Pressure",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								218,
+								218
+							]
+						],
+						"settings":
+						{
+							"auto_name": "144 / 98  - 12/02 @ 5:30 PM - No Alcohol",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"git_gutter_is_enabled": false,
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"default_dir": "/Users/justinbyrne/Programs/SacredGeometry/script",
+							"git_gutter_is_enabled": false,
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12,
+								12
+							]
+						],
+						"settings":
+						{
+							"auto_name": "no-drop",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"default_dir": "/Users/justinbyrne/Programs/SacredGeometry/script",
+							"git_gutter_is_enabled": false,
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 40611,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34441,
+								34439
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										35123,
+										35124
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										34439,
+										34440
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"default_dir": "/Users/justinbyrne/Programs/SacredGeometry/script",
+							"git_gutter_is_enabled": false,
+							"incomplete_sync": null,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5788.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "/Users/justinbyrne/Programs/SacredGeometry/docs/CHANGELOG.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4333,
+								4340
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										4340,
+										4341
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/square_bracket.png",
+										"region.bluish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										4332,
+										4333
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1695.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/justinbyrne/Programs/SacredGeometry/style/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3972,
+						"regions":
+						{
+							"gutter_color_106":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/silver.png",
+								"regions":
+								[
+									[
+										4179,
+										4179
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_1066":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/blue.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_111":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/silver.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_1163":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/blue.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_1172":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/blue.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_1213":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/blue.png",
+								"regions":
+								[
+									[
+										1213,
+										1287
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_13":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#607d8b.png",
+								"regions":
+								[
+									[
+										4179,
+										4179
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_140":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#dedede.png",
+								"regions":
+								[
+									[
+										4179,
+										4179
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_145":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#dedede.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_152":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#607d8b.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_177":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#1e88e5.png",
+								"regions":
+								[
+									[
+										4179,
+										4179
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_18":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#607d8b.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_182":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#1e88e5.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_211":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#dedede.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_214":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#ccc.png",
+								"regions":
+								[
+									[
+										4179,
+										4179
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_232":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#607d8b.png",
+								"regions":
+								[
+									[
+										232,
+										268
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_245":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/silver.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_248":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#333.png",
+								"regions":
+								[
+									[
+										4179,
+										4179
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_253":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#333.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_279":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#dedede.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_282":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#999.png",
+								"regions":
+								[
+									[
+										4179,
+										4179
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_285":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#ccc.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_287":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#999.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_316":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#fff.png",
+								"regions":
+								[
+									[
+										4179,
+										4179
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_319":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#333.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_321":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#fff.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_325":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/silver.png",
+								"regions":
+								[
+									[
+										325,
+										358
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3436":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/rgba(255, 165, 0, 0.73).png",
+								"regions":
+								[
+									[
+										4872,
+										4872
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3441":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/rgba(255, 165, 0, 0.73).png",
+								"regions":
+								[
+									[
+										4872,
+										4872
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_350":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#999.png",
+								"regions":
+								[
+									[
+										4179,
+										4179
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3507":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/rgba(255, 165, 0, 0.73).png",
+								"regions":
+								[
+									[
+										4872,
+										4872
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_353":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#ccc.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_355":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#999.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3575":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/rgba(255, 165, 0, 0.73).png",
+								"regions":
+								[
+									[
+										4872,
+										4872
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_359":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#dedede.png",
+								"regions":
+								[
+									[
+										359,
+										395
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3678":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/rgba(255, 165, 0, 0.73).png",
+								"regions":
+								[
+									[
+										4872,
+										4872
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3682":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/rgba(255, 165, 0, 0.73).png",
+								"regions":
+								[
+									[
+										4872,
+										4872
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3689":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/rgba(255, 165, 0, 0.73).png",
+								"regions":
+								[
+									[
+										4872,
+										4872
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3708":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/rgba(255, 165, 0, 0.73).png",
+								"regions":
+								[
+									[
+										4872,
+										4872
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3713":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/rgba(255, 165, 0, 0.73).png",
+								"regions":
+								[
+									[
+										4872,
+										4872
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3719":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/rgba(255, 165, 0, 0.73).png",
+								"regions":
+								[
+									[
+										4872,
+										4872
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3723":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/rgba(255, 165, 0, 0.73).png",
+								"regions":
+								[
+									[
+										4872,
+										4872
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3738":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#000.png",
+								"regions":
+								[
+									[
+										4872,
+										4872
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3762":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/rgba(255, 165, 0, 0.73).png",
+								"regions":
+								[
+									[
+										4872,
+										4872
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3805":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#000.png",
+								"regions":
+								[
+									[
+										4872,
+										4872
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3808":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#000.png",
+								"regions":
+								[
+									[
+										4872,
+										4872
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_387":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#333.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_396":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#1e88e5.png",
+								"regions":
+								[
+									[
+										396,
+										432
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_421":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#999.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_433":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#ccc.png",
+								"regions":
+								[
+									[
+										433,
+										466
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_455":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#fff.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_467":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#333.png",
+								"regions":
+								[
+									[
+										467,
+										500
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_489":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#999.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_501":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#999.png",
+								"regions":
+								[
+									[
+										501,
+										534
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_535":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#fff.png",
+								"regions":
+								[
+									[
+										535,
+										568
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_569":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#999.png",
+								"regions":
+								[
+									[
+										569,
+										602
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_678":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/silver.png",
+								"regions":
+								[
+									[
+										4179,
+										4179
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_683":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/silver.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_817":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/silver.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_84":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#607d8b.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_897":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/silver.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_914":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/silver.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_923":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/silver.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_927":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/blue.png",
+								"regions":
+								[
+									[
+										4179,
+										4179
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_938":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/silver.png",
+								"regions":
+								[
+									[
+										4526,
+										4526
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_964":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/silver.png",
+								"regions":
+								[
+									[
+										964,
+										997
+									]
+								],
+								"scope": "gutter_color"
+							}
+						},
+						"selection":
+						[
+							[
+								908,
+								908
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										3703,
+										3704
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										868,
+										869
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 35.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4136,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3497,
+								3497
+							]
+						],
+						"settings":
+						{
+							"auto_name": "0: Array(1)",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"default_dir": "/Users/justinbyrne/Programs/Sacred Geometry",
+							"git_gutter_is_enabled": false,
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 660.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1210,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1210,
+								1210
+							]
+						],
+						"settings":
+						{
+							"auto_name": "circle-01-01-checkbox",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"default_dir": "/Users/justinbyrne/Programs/SacredGeometry/docs",
+							"git_gutter_is_enabled": false,
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 171.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5163,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3827,
+								3888
+							]
+						],
+						"settings":
+						{
+							"auto_name": "# Changelog",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"default_dir": "/Users/justinbyrne/Programs/SacredGeometry/script",
+							"git_gutter_is_enabled": false,
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 524.0,
+						"translation.y": 1560.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.700795576308,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SFTP":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "SacredGeometry.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 216.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

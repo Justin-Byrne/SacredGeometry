@@ -11,7 +11,11 @@ body {
     padding: 0;
     position: absolute;
     display: none;
-    list-style-type: none; }
+    list-style-type: none;
+    border-bottom: 1px solid #c5c5c5;
+    border-right: 1px solid #d5d5d5;
+    border-left: 1px solid #e7e7e7;
+    border-radius: 3px; }
   .flyout-nav li {
     position: relative;
     display: block; }
@@ -75,10 +79,6 @@ body {
   position: absolute; }
 
 #canvas-underlay {
-  display: block;
-  position: absolute; }
-
-#canvas-pre-render {
   display: block;
   position: absolute; }
 

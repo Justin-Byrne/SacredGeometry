@@ -35,8 +35,8 @@ const config =
         Author:  'Justin Don Byrne',
         Created: 'September, 11 2021',
         Library: 'Sacred Geometry Sketch Pad',
-        Updated: 'December, 5 2021',
-        Version: '1.10.48',
+        Updated: 'December, 8 2021',
+        Version: '1.10.49',
     }
 }
 
@@ -399,7 +399,11 @@ Array.prototype.pushPopAdv         = function(val)
 {
     if (val == 0)                   // Handle seed variable first
     {
-        sacredArrays.circle.pushPop([0, 0]);
+        let index = sacredArrays.circle.indexOfArray([0, 0]);
+
+        (index > -1)
+            ? sacredArrays.circle.splice(index, 1)
+            : sacredArrays.circle.push([0, 0]);
     }
     else                            // If value > 0, compare against matrix 9 x 6 groups
     {
@@ -409,9 +413,15 @@ Array.prototype.pushPopAdv         = function(val)
         {
             var n = 1 + (6 * (i - 1));
 
-            (val >= compareValues[0] && val <= compareValues[1])
-                ? sacredArrays.circle.pushPop([i, val - n])
-                : null;
+            if (val >= compareValues[0] && val <= compareValues[1])
+            {
+                let index = sacredArrays.circle.indexOfArray([i, val - n]);
+
+                (index > -1)
+                    ? sacredArrays.circle.splice(index, 1)
+                    : sacredArrays.circle.push([i, val - n]); break;
+
+            }
 
             compareValues[0] = compareValues[0] + 6;
             compareValues[1] = compareValues[1] + 6;
@@ -948,9 +958,24 @@ function pushPopSacredArray(shape, value)
             var min = (n + (5 * (n - 1)));
             var max = (n + (5 * n));
 
+            let idString, idString2;
+
             for (var i = min; i <= max; i++)
             {
-                sacredArrays.circle.pushPopAdv(i);
+                idString = (value <= 1)
+                    ? `circle-${Number(value).convert2digStr()}-${Number(i).convert2digStr()}-checkbox`
+                    : `circle-${Number(value).convert2digStr()}-${Number((i - min) + 1).convert2digStr()}-checkbox`;
+
+                idString2 = `sequenced-circle-${Number(value).convert2digStr()}-checkbox`;  
+
+                if (document.getElementById(idString).checked == true && document.getElementById(idString2).checked == true)
+                {
+                    continue;
+                }
+                else
+                {
+                    sacredArrays.circle.pushPopAdv(i);
+                }
             }
 
             break;

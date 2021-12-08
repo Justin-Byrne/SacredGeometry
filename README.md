@@ -36,6 +36,10 @@ Please [open an issue](https://github.com/Justin-Byrne/SacredGeometry/issues/new
     ├── docs              (Notes regarding use...)
     │   └── CHANGELOG.md
     │
+    ├── proj              (Project files...)
+    │   └── SacredGeometry.sublime-project
+    │   └── SacredGeometry.sublime-workspace
+    │
     ├── script            (Main JavaScript files...)
     │   └── main.js
     │
