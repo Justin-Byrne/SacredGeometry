@@ -20,9 +20,15 @@
 					<span class="label">Main</span>
 				</a>
 				<ul>
+					<li class="disabled">
+						<a href="#">
+							<span class="label" id="load-file">load</span>
+						</a>
+					</li>
+					<li class="separator"></li>
 					<li>
 	                    <a href="#">
-	                        <span class="label" id="clear-canvas">Clear Canvas</span>
+	                        <span class="label" id="clear-canvas">Clear</span>
 	                    </a>
                 	</li>
 				</ul>
@@ -587,26 +593,112 @@
 			        </li>
 			    </ul>
 			</li>
+			<!-- Patterns -->
+			<li>
+				<a href="#">
+					<span class="label">Patterns</span>
+				</a>
+				<ul>
+					<!-- Seed -->
+                	<li class="disabled">
+                        <a href="#">
+                            <input type="checkbox" id="pattern-overlay-checkbox" class="overlay"/>
+                            <label class="label" for="pattern-overlay-checkbox">Overlay</label>
+						</a>
+                    </li>
+                    <li class="separator"></li>
+                    <!-- Pattern 0 -->
+                    <li>
+	                    <a href="#">
+	                        <input type="checkbox" id="pattern-00-checkbox" class="pattern-checkbox" value="0"/>
+			                <label class="label" for="pattern-00-checkbox">Vesica Pisces</label>
+	                    </a>
+                	</li>
+                	<!-- Pattern 1 -->
+                	<li>
+	                    <a href="#">
+	                        <input type="checkbox" id="pattern-01-checkbox" class="pattern-checkbox" value="1"/>
+			                <label class="label" for="pattern-01-checkbox">Seed of Life</label>
+	                    </a>
+                	</li>
+                	<!-- Pattern 2 -->
+                	<li>
+	                    <a href="#">
+	                        <input type="checkbox" id="pattern-02-checkbox" class="pattern-checkbox" value="2"/>
+			                <label class="label" for="pattern-02-checkbox">Fruit of Life</label>
+	                    </a>
+                	</li>
+                	<!-- Pattern 3 -->
+                	<li>
+	                    <a href="#">
+	                        <input type="checkbox" id="pattern-03-checkbox" class="pattern-checkbox" value="3"/>
+			                <label class="label" for="pattern-03-checkbox">Flower of Life</label>
+	                    </a>
+                	</li>
+                	<!-- Pattern 4 -->
+                	<li>
+	                    <a href="#">
+	                        <input type="checkbox" id="pattern-04-checkbox" class="pattern-checkbox" value="4"/>
+			                <label class="label" for="pattern-04-checkbox">Ocosahedron</label>
+	                    </a>
+                	</li>
+                	<!-- Pattern 5 -->
+                	<li>
+	                    <a href="#">
+	                        <input type="checkbox" id="pattern-05-checkbox" class="pattern-checkbox" value="5"/>
+			                <label class="label" for="pattern-05-checkbox">Metatron's Cube</label>
+	                    </a>
+                	</li>
+                	<!-- Pattern 6 -->
+                	<li>
+	                    <a href="#">
+	                        <input type="checkbox" id="pattern-06-checkbox" class="pattern-checkbox" value="6"/>
+			                <label class="label" for="pattern-06-checkbox">Hexagon Formation</label>
+	                    </a>
+                	</li>
+                	<!-- Pattern 7 -->
+                	<li>
+	                    <a href="#">
+	                        <input type="checkbox" id="pattern-07-checkbox" class="pattern-checkbox" value="7"/>
+			                <label class="label" for="pattern-07-checkbox">Triangle Grid</label>
+	                    </a>
+                	</li>
+                	<!-- Pattern 8 -->
+                	<li>
+	                    <a href="#">
+	                        <input type="checkbox" id="pattern-08-checkbox" class="pattern-checkbox" value="8"/>
+			                <label class="label" for="pattern-08-checkbox">Hexagonal Grid</label>
+	                    </a>
+                	</li>
+                	<!-- Pattern 9 -->
+                	<li>
+	                    <a href="#">
+	                        <input type="checkbox" id="pattern-09-checkbox" class="pattern-checkbox" value="9"/>
+			                <label class="label" for="pattern-09-checkbox">Dodecagram</label>
+	                    </a>
+                	</li>
+                </ul>
+			</li>
 			<!-- Settings -->
 			<li>
 				<a href="#">
 					<span class="label">Settings</span>
 				</a>
 				<ul>
-					<li>
+					<li class="disabled">
 	                    <a href="#">
-	                        <span class="label" id="clear-canvas">Color Fill</span>
+	                        <span class="label" id="fill-color">Fill</span>
 	                    </a>
                 	</li>
-                	<li>
+                	<li class="disabled">
 	                    <a href="#">
-	                        <span class="label" id="clear-canvas">Internal Circles</span>
+	                        <span class="label" id="stroke-color">Stroke</span>
 	                    </a>
                 	</li>
                 	<li class="separator"></li>
                 	<li>
 	                    <a href="#">
-	                        <span class="label" id="clear-canvas">Clear Canvas</span>
+	                        <span class="label" id="about">About</span>
 	                    </a>
                 	</li>
 				</ul>
@@ -614,6 +706,12 @@
 		</ul>
 		
 	</nav>
+
+	<div id="about-window" style="display: none; width: 500px; height: 290px;">
+		<img src="images/byrne-systems.logo.png" width="425">
+		<hr>
+		<div id="details"></div>
+	</div>
 
 	<div id="ui-overlay"></div>
 

@@ -27,16 +27,18 @@ const config =
     circle : 
     {
         centerDot: false,
-        stroke: true
+        stroke:    true
     },
-    debug : false,
+    debug : true,
     about : 
     {
-        Author:  'Justin Don Byrne',
-        Created: 'September, 11 2021',
-        Library: 'Sacred Geometry Sketch Pad',
-        Updated: 'December, 8 2021',
-        Version: '1.10.49',
+        Author:    'Justin Don Byrne',
+        Created:   'September, 11 2021',
+        Library:   'Sacred Geometry Sketch Pad',
+        Updated:   'December, 20 2021',
+        Version:   '1.11.55',
+        Copyright: 'Copyright (c) 2021 Justin Don Byrne',
+        Window:    false
     }
 }
 
@@ -259,6 +261,263 @@ const matrix =
     ]
 ];
 
+const patterns =
+[
+    {   // Vesica Pisces            0
+        'circle': [
+            [0, 0],
+            [1, 0]
+        ],
+        'hexagon':  [],
+        'line': [
+            [480, 472, 480, 472],
+            [480, 380, 480, 380],
+            [559.5847750865051, 426, 480, 380],
+            [480, 380, 400.4152249134948, 426],
+            [400.4152249134948, 426, 480, 472],
+            [480, 472, 559.5847750865051, 426],
+            [480, 380, 480, 472],
+            [400.4152249134948, 426, 559.5847750865051, 426]
+        ],
+        'triangle': []
+    },
+    {   // Seed of Life             1
+        'circle': [
+            [0, 0],
+            [1, 0],
+            [1, 1],
+            [1, 2],
+            [1, 3],
+            [1, 4],
+            [1, 5]
+        ],
+        'hexagon':  [],
+        'line':     [],
+        'triangle': []
+    },
+    {   // Fruit of Life            2
+        'circle': [
+            [0, 0],
+            [3, 0],
+            [3, 1],
+            [3, 2],
+            [3, 3],
+            [3, 4],
+            [3, 5],
+            [7, 0],
+            [7, 1],
+            [7, 2],
+            [7, 3],
+            [7, 4],
+            [7, 5]
+        ],
+        'hexagon':  [],
+        'line':     [],
+        'triangle': []
+    },
+    {   // Flower of Life           3
+        'circle': [
+            [0, 0],
+            [1, 0],
+            [1, 1],
+            [1, 2],
+            [1, 3],
+            [1, 4],
+            [1, 5],
+            [2, 0],
+            [2, 1],
+            [2, 2],
+            [2, 3],
+            [2, 4],
+            [2, 5],
+            [3, 0],
+            [3, 1],
+            [3, 2],
+            [3, 3],
+            [3, 4],
+            [3, 5]
+        ],
+        'hexagon':  [],
+        'line':     [],
+        'triangle': []
+    },
+    {   // Ocosahedron              4
+        'circle':   [],
+        'hexagon':  [ "7" ],
+        'line':     [
+            [480, 104, 161.66089965397924, 656],
+            [161.66089965397924, 656, 798.3391003460208, 656],
+            [798.3391003460208, 656, 480, 104],
+            [161.66089965397924, 288, 320.8304498269896, 380],
+            [320.8304498269896, 380, 639.1695501730104, 380],
+            [639.1695501730104, 380, 480, 656],
+            [480, 656, 320.8304498269896, 380],
+            [639.1695501730104, 380, 798.3391003460208, 288],
+            [480, 656, 480, 840]
+        ],
+        'triangle': []
+    },
+    {   // Metatron's Cube          5
+        'circle':   [],
+        'hexagon':  [],
+        'line': [
+            [480, 104, 161.66089965397924, 288],
+            [161.66089965397924, 288, 161.66089965397924, 656],
+            [161.66089965397924, 656, 480, 840],
+            [480, 840, 798.3391003460208, 656],
+            [798.3391003460208, 656, 798.3391003460208, 288],
+            [798.3391003460208, 288, 480, 104],
+            [480, 104, 161.66089965397924, 656],
+            [161.66089965397924, 656, 798.3391003460208, 656],
+            [798.3391003460208, 656, 480, 104],
+            [161.66089965397924, 288, 798.3391003460208, 288],
+            [798.3391003460208, 288, 480, 840],
+            [480, 840, 161.66089965397924, 288],
+            [480, 288, 320.8304498269896, 564],
+            [320.8304498269896, 564, 639.1695501730104, 564],
+            [639.1695501730104, 564, 480, 288],
+            [320.8304498269896, 380, 639.1695501730104, 380],
+            [639.1695501730104, 380, 480, 656],
+            [480, 656, 320.8304498269896, 380],
+            [480, 104, 320.8304498269896, 564],
+            [480, 104, 639.1695501730104, 564],
+            [480, 104, 480, 840],
+            [320.8304498269896, 380, 480, 840],
+            [480, 840, 639.1695501730104, 380],
+            [161.66089965397924, 288, 798.3391003460208, 656],
+            [798.3391003460208, 288, 161.66089965397924, 656],
+            [161.66089965397924, 288, 639.1695501730104, 380],
+            [161.66089965397924, 288, 480, 656],
+            [798.3391003460208, 288, 320.8304498269896, 380],
+            [798.3391003460208, 288, 480, 656],
+            [161.66089965397924, 656, 480, 288],
+            [798.3391003460208, 656, 480, 288],
+            [161.66089965397924, 656, 639.1695501730104, 564],
+            [798.3391003460208, 656, 320.8304498269896, 564]
+        ],
+        'triangle': []
+    },
+    {   // Hexagon Formation        6
+        'circle': [
+            [3, 0],
+            [3, 1],
+            [3, 2],
+            [3, 3],
+            [3, 4],
+            [3, 5],
+            [7, 0],
+            [7, 1],
+            [7, 2],
+            [7, 3],
+            [7, 4],
+            [7, 5]
+        ],
+        'hexagon':  [ "3", "7" ],
+        'line':     [
+            [480, 288, 480, 288],
+            [320.8304498269896, 380, 320.8304498269896, 380],
+            [320.8304498269896, 564, 320.8304498269896, 564],
+            [480, 656, 480, 656],
+            [639.1695501730104, 564, 639.1695501730104, 564],
+            [639.1695501730104, 380, 639.1695501730104, 380],
+            [798.3391003460208, 288, 798.3391003460208, 288],
+            [480, 104, 480, 104],
+            [161.66089965397924, 288, 161.66089965397924, 288],
+            [161.66089965397924, 656, 161.66089965397924, 656],
+            [480, 840, 480, 840],
+            [798.3391003460208, 656, 798.3391003460208, 656],
+            [480, 288, 320.8304498269896, 564],
+            [320.8304498269896, 564, 639.1695501730104, 564],
+            [639.1695501730104, 564, 480, 288],
+            [320.8304498269896, 380, 639.1695501730104, 380],
+            [639.1695501730104, 380, 480, 656],
+            [480, 656, 320.8304498269896, 380],
+            [161.66089965397924, 288, 798.3391003460208, 288],
+            [798.3391003460208, 288, 480, 840],
+            [480, 840, 161.66089965397924, 288],
+            [480, 104, 161.66089965397924, 656],
+            [161.66089965397924, 656, 798.3391003460208, 656],
+            [798.3391003460208, 656, 480, 104]
+        ],
+        'triangle': []
+    },
+    {   // Triangle Grid            7
+        'circle':   [],
+        'hexagon':  [],
+        'line':     [
+            [161.66089965397924, 656, 480, 104],
+            [480, 104, 798.3391003460208, 656],
+            [798.3391003460208, 656, 400.4152249134948, 242],
+            [798.3391003460208, 656, 241.24567474048445, 518],
+            [161.66089965397924, 656, 559.5847750865051, 242],
+            [161.66089965397924, 656, 718.7543252595156, 518],
+            [161.66089965397924, 288, 480, 840],
+            [480, 840, 798.3391003460208, 288],
+            [798.3391003460208, 288, 400.4152249134948, 702],
+            [161.66089965397924, 656, 798.3391003460208, 288],
+            [798.3391003460208, 656, 161.66089965397924, 288],
+            [161.66089965397924, 288, 559.5847750865051, 702],
+            [718.7543252595156, 426, 161.66089965397924, 288],
+            [798.3391003460208, 288, 241.24567474048445, 426]
+        ],
+        'triangle': []
+    },
+    {   // Hexagonal Grid           8
+        'circle':   [],
+        'hexagon':  [ "7" ],
+        'line':     [
+            [480, 104, 480, 840],
+            [559.5847750865051, 794, 559.5847750865051, 150],
+            [639.1695501730104, 196, 639.1695501730104, 748],
+            [718.7543252595156, 702, 718.7543252595156, 242],
+            [400.4152249134948, 150, 400.4152249134948, 794],
+            [320.8304498269896, 748, 320.8304498269896, 196],
+            [241.24567474048445, 242, 241.24567474048445, 702],
+            [161.66089965397924, 656, 798.3391003460208, 656],
+            [798.3391003460208, 564, 161.66089965397924, 564],
+            [161.66089965397924, 472, 798.3391003460208, 472],
+            [798.3391003460208, 380, 161.66089965397924, 380],
+            [161.66089965397924, 288, 798.3391003460208, 288],
+            [639.1695501730104, 196, 320.8304498269896, 196],
+            [639.1695501730104, 748, 320.8304498269896, 748],
+            [161.66089965397924, 656, 798.3391003460208, 288],
+            [718.7543252595156, 242, 161.66089965397924, 564],
+            [161.66089965397924, 472, 639.1695501730104, 196],
+            [559.5847750865051, 150, 161.66089965397924, 380],
+            [798.3391003460208, 380, 241.24567474048445, 702],
+            [320.8304498269896, 748, 798.3391003460208, 472],
+            [798.3391003460208, 564, 400.4152249134948, 794],
+            [559.5847750865051, 794, 161.66089965397924, 564],
+            [161.66089965397924, 472, 639.1695501730104, 748],
+            [718.7543252595156, 702, 161.66089965397924, 380],
+            [161.66089965397924, 288, 798.3391003460208, 656],
+            [798.3391003460208, 564, 241.24567474048445, 242],
+            [320.8304498269896, 196, 798.3391003460208, 472],
+            [798.3391003460208, 380, 400.4152249134948, 150]
+        ],
+        'triangle': []
+    },    
+    {   // Dodecagram               9
+        'circle':   [],
+        'hexagon':  [ "8", "10" ],
+        'line':     [
+            [400.4152249134948, 150, 241.24567474048445, 702],
+            [241.24567474048445, 702, 798.3391003460208, 564],
+            [798.3391003460208, 564, 400.4152249134948, 150],
+            [161.66089965397924, 380, 718.7543252595156, 242],
+            [718.7543252595156, 242, 559.5847750865051, 794],
+            [559.5847750865051, 794, 161.66089965397924, 380],
+            [241.24567474048445, 242, 400.4152249134948, 794],
+            [400.4152249134948, 794, 798.3391003460208, 380],
+            [798.3391003460208, 380, 241.24567474048445, 242],
+            [161.66089965397924, 564, 559.5847750865051, 150],
+            [559.5847750865051, 150, 718.7543252595156, 702],
+            [718.7543252595156, 702, 161.66089965397924, 564]
+        ],
+        'triangle': []
+    }
+]
+
 const colorArray = 
 [
     '74, 42, 115',                  // PURPLE           SECONDARY
@@ -282,11 +541,7 @@ const inputs =
         single:   document.querySelectorAll('.single-circle-checkbox'),
         sequence: document.querySelectorAll('.sequenced-circle-checkbox')
     },
-    hexagon:
-    {
-        lines:   [],
-        hexagon: []
-    }
+    hexagon: document.querySelectorAll('.hexagon-checkbox')
 }
 
 const inputArray = 
@@ -296,6 +551,7 @@ const inputArray =
         '.single-circle-checkbox',
         '.sequenced-circle-checkbox',
         '.hexagon-checkbox',
+        '.pattern-checkbox'
     ],
     id : 
     [
@@ -407,25 +663,7 @@ Array.prototype.pushPopAdv         = function(val)
     }
     else                            // If value > 0, compare against matrix 9 x 6 groups
     {
-        var compareValues = [1, 6];
-
-        for (var i = 1; i <= 10; i++)
-        {
-            var n = 1 + (6 * (i - 1));
-
-            if (val >= compareValues[0] && val <= compareValues[1])
-            {
-                let index = sacredArrays.circle.indexOfArray([i, val - n]);
-
-                (index > -1)
-                    ? sacredArrays.circle.splice(index, 1)
-                    : sacredArrays.circle.push([i, val - n]); break;
-
-            }
-
-            compareValues[0] = compareValues[0] + 6;
-            compareValues[1] = compareValues[1] + 6;
-        }
+        parseToSequence(val);
     }
 
     sacredArrays.circle.sort();
@@ -524,13 +762,11 @@ function centerY(offset)
 }
 
 /**
- * parseToSequence()        {Method}                    Returns the sequenced value of the value passed
- * @param                   {number} val                Value to be identified within the predefined sequence
- * @return                  {number}                    Sequence of which the passed value belongs to
+ * parseToSequence()        {Method}                    Parses and pushes the sequenced value of the value passed
+ * @param                   {number} val                Value to be parsed in correspondence to its sequence
  */
 function parseToSequence(val)
 {
-    var result        = null;
     var compareValues = [1, 6];
 
     for (var i = 1; i <= 10; i++)
@@ -538,16 +774,17 @@ function parseToSequence(val)
         var n = 1 + (6 * (i - 1));
 
         if (val >= compareValues[0] && val <= compareValues[1]) 
-        { 
-            result = i; 
-            break; 
+        {
+            let index = sacredArrays.circle.indexOfArray([i, val - n]);
+
+            (index > -1)
+                ? sacredArrays.circle.splice(index, 1)
+                : sacredArrays.circle.push([i, val - n]); break;
         }
 
         compareValues[0] = compareValues[0] + 6;
         compareValues[1] = compareValues[1] + 6;
     }
-
-    return result;
 }
 
 /**
@@ -562,6 +799,10 @@ function getRegExp(val, regex)
   
   return result[1];
 }
+
+////////////////////////////////////////////////////////////
+////////        INTERFACE FUNCTIONS                 ////////
+////////////////////////////////////////////////////////////
 
 /**
  * toggleCheckbox()         {Method}                    Toggles whether the passed input[type='checkbox'] is checked; or not
@@ -584,30 +825,9 @@ function toggleCheckboxes(shape)
 
             for (var i = 0; i <= 9; i++)
             {
-                if (inputs.circle.sequence[i].checked)
-                {
-                    for (var j = 0; j <= 5; j++)
-                    {
-                        var idString = `circle-${(i + 1).convert2digStr()}-${(j + 1).convert2digStr()}-checkbox`;
-
-                        (document.getElementById(idString).checked)
-                            ? toggleCheckbox(idString)
-                            : null;
-
-                        toggleCheckbox(idString);
-                    }
-                }
-                else
-                {
-                    for (var j = 0; j <= 5; j++)
-                    {
-                        var idString = `circle-${(i + 1).convert2digStr()}-${(j + 1).convert2digStr()}-checkbox`;
-
-                        (document.getElementById(idString).checked)
-                            ? toggleCheckbox(idString)
-                            : null;
-                    }
-                }
+                (inputs.circle.sequence[i].checked)
+                    ? toggleSequenceCheckboxes(i)           // Toggle 'on' all sequence checkboxes
+                    : toggleSequenceCheckboxes(i, false);   // Toggle 'off' all sequence checkboxes
             }
 
             break;
@@ -616,7 +836,7 @@ function toggleCheckboxes(shape)
 
             for (var i = 0; i <= 9; i++)
             {
-                var idString = `sequenced-circle-${(i + 1).convert2digStr()}-checkbox`;
+                let idString = `sequenced-circle-${(i + 1).convert2digStr()}-checkbox`;
 
                 document.getElementById(idString).checked = 
                     (Number(document.getElementById(idString).value).isSequenceFull())
@@ -629,6 +849,88 @@ function toggleCheckboxes(shape)
         default:
 
             console.log(`${shape} is not supported by the toggleCheckboxes() function!`);
+    }
+}
+
+/**
+ * toggleSequenceCheckboxes()       {Method}            Toggles 'on' or 'off' the complete underlying circles for each sequence passed via the sequence param
+ * @param                           {number}  sequence  Sequence to toggle single circles
+ * @param                           {boolean} on        Leave the single circles in an 'on' or 'off' state
+ */
+function toggleSequenceCheckboxes(sequence, on = true)
+{
+    for (var i = 0; i <= 5; i++)
+    {
+        var idString = `circle-${(sequence + 1).convert2digStr()}-${(i + 1).convert2digStr()}-checkbox`;
+
+        (document.getElementById(idString).checked)
+            ? toggleCheckbox(idString)
+            : null;
+
+        (on)
+            ? toggleCheckbox(idString)
+            : null;
+    }
+}
+
+/**
+ * toggleSequence()         {Method}                    Identify and toggle an entire sequential circle depending on the value passed
+ * @param                   {number} val                Value to be identified within a circle's sequence
+ */
+function toggleSequence(val)
+{
+    let n = parseInt(val);
+
+    let min = (n + (5 * (n - 1))), max = (n + (5 * n));
+
+    let idString, idString2;
+
+    for (var i = min; i <= max; i++)
+    {
+        idString = (val <= 1)
+            ? `circle-${Number(val).convert2digStr()}-${Number(i).convert2digStr()}-checkbox`
+            : `circle-${Number(val).convert2digStr()}-${Number((i - min) + 1).convert2digStr()}-checkbox`;
+
+        idString2 = `sequenced-circle-${Number(val).convert2digStr()}-checkbox`;  
+
+        if (document.getElementById(idString).checked == true && document.getElementById(idString2).checked == true)
+        {
+            continue;
+        }
+        else
+        {
+            sacredArrays.circle.pushPopAdv(i);
+        }
+    }
+}
+
+/**
+ * pushPopPattern()         {Method}                    Pushes & pops values passed in from the 'patterns' drop-down 
+ * @param                   {number} val                Numeric value passed from pushPopSacredArray()
+ */
+function pushPopPattern(val)
+{
+    for (let i = 0; i <= patterns[val].circle.length - 1; i++)                  // Circles
+    {
+        sacredArrays.circle.pushPop(patterns[val].circle[i]);
+
+        let node = patterns[val].circle[i];
+        
+        toggleCheckbox(`circle-${(node[0]).convert2digStr()}-${(node[1] + 1).convert2digStr()}-checkbox`);
+
+        toggleCheckboxes('single-circle');
+    }
+
+    for (let i = 0; i <= patterns[val].hexagon.length - 1; i++)                 // Hexagons
+    {
+        sacredArrays.hexagon.pushPop(patterns[val].hexagon[i]);
+
+        toggleCheckbox(`hexagon-${Number(sacredArrays.hexagon[i]).convert2digStr()}-checkbox`);
+    }
+
+    for (let i = 0; i <= patterns[val].line.length - 1; i++)                    // Lines
+    {
+        sacredArrays.line.pushPop(patterns[val].line[i]);
     }
 }
 
@@ -884,8 +1186,7 @@ function cycleSacredArray()
 {
     clearCanvas();
 
-    // Circles
-    for (var i = 0; i <= sacredArrays.circle.length - 1; i++)
+    for (var i = 0; i <= sacredArrays.circle.length - 1; i++)                   // Circles
     {
         drawCircle(
             matrix[sacredArrays.circle[i][0]][sacredArrays.circle[i][1]][0],
@@ -900,8 +1201,7 @@ function cycleSacredArray()
         );
     }
 
-    // Hexagon
-    for (var i = 0; i <= sacredArrays.hexagon.length - 1; i++)
+    for (var i = 0; i <= sacredArrays.hexagon.length - 1; i++)                  // Hexagon
     {
         for (var j = 0; j <= matrix[sacredArrays.hexagon[i]].length - 1; j++) 
         {
@@ -919,8 +1219,7 @@ function cycleSacredArray()
         }
     }
 
-    // Lines
-    for (var i = 0; i <= sacredArrays.line.length - 1; i++) 
+    for (var i = 0; i <= sacredArrays.line.length - 1; i++)                     // Lines
     {
         drawLine(
             sacredArrays.line[i][0], 
@@ -930,9 +1229,10 @@ function cycleSacredArray()
         );
     }
     
-    if (!config.debug)
+    if (!config.debug)                                                          // For debugging purposes only
     {
         console.clear();
+        console.log('config: ', config);
         console.log('sacredArrays: ', sacredArrays);
         console.log('inputs: ', inputs);
     }
@@ -949,34 +1249,11 @@ function cycleSacredArray()
  */
 function pushPopSacredArray(shape, value)
 {
-    var n = parseInt(value);
-
     switch (shape)
     {
         case 'sequenced-circle':
 
-            var min = (n + (5 * (n - 1)));
-            var max = (n + (5 * n));
-
-            let idString, idString2;
-
-            for (var i = min; i <= max; i++)
-            {
-                idString = (value <= 1)
-                    ? `circle-${Number(value).convert2digStr()}-${Number(i).convert2digStr()}-checkbox`
-                    : `circle-${Number(value).convert2digStr()}-${Number((i - min) + 1).convert2digStr()}-checkbox`;
-
-                idString2 = `sequenced-circle-${Number(value).convert2digStr()}-checkbox`;  
-
-                if (document.getElementById(idString).checked == true && document.getElementById(idString2).checked == true)
-                {
-                    continue;
-                }
-                else
-                {
-                    sacredArrays.circle.pushPopAdv(i);
-                }
-            }
+            toggleSequence(value);
 
             break;
 
@@ -992,13 +1269,28 @@ function pushPopSacredArray(shape, value)
 
             break;
 
+        case 'line':
+
+            sacredArrays.line.pushPop(value);
+
+            break;
+
+        case 'pattern':
+
+            pushPopPattern(value);
+
+            break;
+
         default:
 
             console.log(`${shape} is not supported by the pushPopSacredArray() function!`);
     }
 
     cycleSacredArray();
-    toggleCheckboxes(shape);
+
+    (shape != 'pattern')
+        ? toggleCheckboxes(shape)
+        : null;
 }
 
 ////////////////////////////////////////////////////////////
@@ -1136,6 +1428,36 @@ function insertUIElements()
     activateUnderlay();
 }
 
+/**
+ * showAbout()              {Method}                    Triggers the about window
+ */
+function showAbout()
+{
+    let about = document.getElementById('about-window');
+
+    (about.style.display == 'none')
+        ? pupulate()
+        : about.style.setProperty('display', 'none');    
+
+    function pupulate()
+    {
+        about.style.setProperty('display', 'block');
+        about.style.setProperty('margin-left', `${(config.domWindow.width  - parseInt(about.style.width))  / 2}px`);
+        about.style.setProperty('margin-top',  `${(config.domWindow.height - parseInt(about.style.height)) / 2}px`);
+
+        if (!config.about.Window)
+        {
+            document.getElementById('details').innerHTML +=
+                `<div id="program-name"><b>Program:</b> ${config.about.Library}</div>`
+                + `<div id="version-number"><b>Version:</b> ${config.about.Version}</div>`
+                + `<div id="updated-last"><b>Updated:</b> ${config.about.Updated}</div>`
+                + `<div id="about-copyright">Copyright &copy; 2021 Justin Don Byrne</div>`;
+
+            config.about.Window = true; 
+        }
+    }
+}
+
 ////////        UI Listeners        ////////
 
 /**
@@ -1171,6 +1493,26 @@ document.getElementById('full-hexagon-cycle').addEventListener("click", function
 document.getElementById('clear-canvas').addEventListener("click", function()
 {
     clearCanvas();
+
+    for (let shape in sacredArrays)
+    {
+        sacredArrays[shape].splice(0, sacredArrays[shape].length);
+    }
+
+    for (let i = 0; i <= 3; i++)    // Trigger all checked menu items upon clear
+    {
+        document.querySelectorAll(inputArray.class[i]).forEach(item =>
+        {
+            (document.getElementById(item.id).checked == true)
+                ? document.getElementById(item.id).checked = false
+                : null;
+        });
+    }
+});
+
+document.getElementById('about').addEventListener("click", function()
+{
+    showAbout();
 });
 
 window.addEventListener("mousemove", function(event) 

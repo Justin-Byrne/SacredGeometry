@@ -1,6 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.11.55] - 2021-12-20
+### Added
+- about window and showAbout() trigger
+- checked menu detection and appropriate trigger/clear when clearing canvas
+- toggleSequenceCheckboxes() toggles 'on' or 'off' the complete underlying circles for each sequence passed via the sequence param
+- pushPopPattern() pushes & pops values passed in from the 'patterns' drop-down 
+- toggleSequence() Value to be identified within a circle's sequence
+
+### Changed
+- 'clear-canvas' event listener to clear sacredArray object along with canvas
+- parseToSequence() modified to optimize Array.prototype.pushPopAdv()
+
 ## [1.10.49] - 2021-12-08
 ### Changed
 - pushPopSacredArray() to fix sequencing bug

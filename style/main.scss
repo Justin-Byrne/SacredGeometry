@@ -166,6 +166,30 @@ body
     z-index: 1;
 }
 
+#about-window
+{
+    position: absolute;
+    z-index: 2;
+
+    background-color: #e4fcff;
+    border: 1px solid #000;
+    border-radius: 5px;
+
+    img 
+    {
+        width: 425px;
+        padding-left: 35px;
+        padding-top: 25px;
+    }
+
+    #details
+    {
+        padding-left: 40px;
+        line-height: 2em;
+        color: #2d3997;
+    }
+}
+
 #canvas
 {
     display: block;
