@@ -74,6 +74,16 @@ body {
   position: absolute;
   z-index: 1; }
 
+#properties-window {
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(243, 243, 243, 0.5);
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #c5c5c5;
+  border-right: 1px solid #d5d5d5;
+  border-left: 1px solid #e7e7e7;
+  border-radius: 5px; }
+
 #about-window {
   position: absolute;
   z-index: 2;
@@ -84,7 +94,7 @@ body {
     width: 425px;
     padding-left: 35px;
     padding-top: 25px; }
-  #about-window #details {
+  #about-window #content {
     padding-left: 40px;
     line-height: 2em;
     color: #2d3997; }

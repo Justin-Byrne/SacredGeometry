@@ -12,7 +12,6 @@
 <body>
 
 	<nav class="flyout-nav">
-
 		<ul>
 			<!-- Main -->
 			<li>
@@ -498,13 +497,13 @@
 	                    </ul>
                 	</li>
                 	<!-- Full Circle -->
-                	<li class="separator"></li>
+                	<!-- <li class="separator"></li>
 			        <li>
 			            <a href="#">
 			                <input type="checkbox" id="full-circle-cycle-checkbox"/>
 			                <label class="label fullcycle" for="full-circle-cycle-checkbox" id="full-circle-cycle">Full</label>
 						</a>
-			        </li>
+			        </li> -->
                 </ul>
 			</li>
 			<!-- Hexagons -->
@@ -583,14 +582,14 @@
 			                <label class="label" for="hexagon-10-checkbox">10</label>
 						</a>
 			        </li>
-			        <li class="separator"></li>
 			        <!-- Full Sequence -->
+			        <!-- <li class="separator"></li>
 			        <li>
 			            <a href="#">
 			                <input type="checkbox" id="full-hexagon-checkbox"/>
 			                <label class="label" for="full-hexagon-checkbox" id="full-hexagon-cycle">Full</label>
 						</a>
-			        </li>
+			        </li> -->
 			    </ul>
 			</li>
 			<!-- Patterns -->
@@ -599,14 +598,14 @@
 					<span class="label">Patterns</span>
 				</a>
 				<ul>
-					<!-- Seed -->
-                	<li class="disabled">
+					<!-- Pattern Overlay -->
+                	<!-- <li>
                         <a href="#">
-                            <input type="checkbox" id="pattern-overlay-checkbox" class="overlay"/>
-                            <label class="label" for="pattern-overlay-checkbox">Overlay</label>
+                            <input type="checkbox" id="pattern-overlay" class="overlay"/>
+                            <label class="label" for="pattern-overlay">Overlay</label>
 						</a>
                     </li>
-                    <li class="separator"></li>
+                    <li class="separator"></li> -->
                     <!-- Pattern 0 -->
                     <li>
 	                    <a href="#">
@@ -656,25 +655,25 @@
 			                <label class="label" for="pattern-06-checkbox">Hexagon Formation</label>
 	                    </a>
                 	</li>
-                	<!-- Pattern 7 -->
-                	<li>
-	                    <a href="#">
-	                        <input type="checkbox" id="pattern-07-checkbox" class="pattern-checkbox" value="7"/>
-			                <label class="label" for="pattern-07-checkbox">Triangle Grid</label>
-	                    </a>
-                	</li>
                 	<!-- Pattern 8 -->
                 	<li>
 	                    <a href="#">
-	                        <input type="checkbox" id="pattern-08-checkbox" class="pattern-checkbox" value="8"/>
-			                <label class="label" for="pattern-08-checkbox">Hexagonal Grid</label>
+	                        <input type="checkbox" id="pattern-07-checkbox" class="pattern-checkbox" value="7"/>
+			                <label class="label" for="pattern-07-checkbox">Hexagonal Grid</label>
 	                    </a>
                 	</li>
                 	<!-- Pattern 9 -->
                 	<li>
 	                    <a href="#">
+	                        <input type="checkbox" id="pattern-08-checkbox" class="pattern-checkbox" value="8"/>
+			                <label class="label" for="pattern-08-checkbox">Dodecagram</label>
+	                    </a>
+                	</li>
+                	<!-- Pattern 10 -->
+                	<li>
+	                    <a href="#">
 	                        <input type="checkbox" id="pattern-09-checkbox" class="pattern-checkbox" value="9"/>
-			                <label class="label" for="pattern-09-checkbox">Dodecagram</label>
+			                <label class="label" for="pattern-09-checkbox">Vector Equilibrium</label>
 	                    </a>
                 	</li>
                 </ul>
@@ -695,6 +694,12 @@
 	                        <span class="label" id="stroke-color">Stroke</span>
 	                    </a>
                 	</li>
+                	<!-- <li class="separator"></li>
+                	<li>
+	                    <a href="#">
+	                        <span class="label" id="properties">Properties</span>
+	                    </a>
+                	</li> -->
                 	<li class="separator"></li>
                 	<li>
 	                    <a href="#">
@@ -704,14 +709,15 @@
 				</ul>
 			</li>
 		</ul>
-		
 	</nav>
 
 	<div id="about-window" style="display: none; width: 500px; height: 290px;">
 		<img src="images/byrne-systems.logo.png" width="425">
 		<hr>
-		<div id="details"></div>
+		<div id="content"></div>
 	</div>
+
+	<div id="properties-window" style="display: none; width: 800px; height: 200px;"></div>
 
 	<div id="ui-overlay"></div>
 

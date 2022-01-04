@@ -1,6 +1,33 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.16.62] - 2022-01-04
+### Added
+- self executing function to populate the const matrix for optimization
+- arrayEquals() identifies whether the two array's passed are equal
+- isolateMenuCluster() isolate menu cluster with multiple menu items
+- insertHtmlContent() insert HTML content in accordance with the window ID passed
+- showWindow() display the window that's passed via it's windowId param
+
+### Changed
+- cycleSacredArray() to drawSacredArray()
+- cycleFull() to drawFull()
+- optimized pushPopPattern() with how hexagons are validated and their drop-downs are toggled
+- drawOutline() to drawUnderlay()
+- setRegion() expanded to include various input types
+- config to include multiple window types
+- optimized startLine(), endLine(), mousemove listener, and line drawing algorithm within drawSacredArray to take matrix pointers
+
+### Deprecated
+- full circle and hexagon drop-down selection elements
+- showAbout() for improved showWindow() method
+- insertUIElements() for flexible insertHtmlContent() method
+- raw const matrix
+- start & end objects from const mouse object
+
+### Fixed
+- endLine() from adding dots along with lines
+
 ## [1.11.55] - 2021-12-20
 ### Added
 - about window and showAbout() trigger
@@ -137,7 +164,9 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-[1.10.49]: 2021-12-08 [CURRENT REVISION]
+[1.16.62]: 2022-01-04 [CURRENT REVISION]
+
+[1.11.55]: 2021-12-20 [b419526](https://github.com/Justin-Byrne/SacredGeometry/commit/b419526) added pattern selection, and small optimizations
 
 [1.10.48]: 2021-12-05 [2288256](https://github.com/Justin-Byrne/SacredGeometry/commit/2288256) implemented line eraser highlighting, and minor optimizations
 
