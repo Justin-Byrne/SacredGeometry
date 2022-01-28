@@ -36,18 +36,41 @@ const config =
         about:      false,
         properties: false
     },
+    settings:
+    {
+        line:
+        {
+            type:  1,               // [1] solid, [2] dashed
+            width: 1                //  1 - .... - 5
+        },
+        circle:   
+        {
+            line: 
+            {
+                type:  1,           // [1] solid, [2] dashed
+                width: 1            //  1 - .... - 5
+            },
+            fill:
+            {
+                type:  4,           // [1] empty, [2] solid, [3] gradient, [4] profile
+                color: 0            //  1 - ............................. - 12
+            }
+        },
+        triangle: [],
+        hexagon:  {}
+    },
     about : 
     {
         Author:    'Justin Don Byrne',
         Created:   'September, 11 2021',
         Library:   'Sacred Geometry: Sketch Pad & Study Tool',
-        Updated:   'January, 4 2022',
-        Version:   '1.16.62',
-        Copyright: 'Copyright (c) 2021 Justin Don Byrne',
+        Updated:   'January, 27 2022',
+        Version:   '1.19.68',
+        Copyright: 'Copyright (c) 2021 Justin Don Byrne'
     }
 }
 
-const padding      = 10;
+const padding      = 40;
 const zonaPolusada = config.domWindow.height / 2 - padding;
 const magNo        = 0.578;                                
 
@@ -138,27 +161,67 @@ const colorArray =
 
 const inputArray = 
 {
-    class : 
-    [
-        '.single-circle-checkbox',
-        '.sequenced-circle-checkbox',
-        '.hexagon-checkbox',
-        '.pattern-checkbox'
-    ],
-    id : 
-    [
-        'full-circle-cycle',
-        'full-hexagon-cycle',
-        'clear-canvas'
-    ]
+    shape :
+    {
+        class : 
+        [
+            '.single-circle-checkbox',
+            '.sequenced-circle-checkbox',
+            '.hexagon-checkbox',
+            '.pattern-checkbox'
+        ],
+        id : 
+        [
+            'full-circle-cycle',
+            'full-hexagon-cycle',
+            'clear-canvas'
+        ]
+    },
+    settings :
+    {
+        class :
+        [
+            '.line-stroke-type-settings',
+            '.line-stroke-width-settings',
+            '.circle-stroke-type-settings',
+            '.circle-stroke-width-settings',
+            '.circle-fill_type-settings',
+            '.circle-fill_color-solid-settings',
+            '.circle-fill_color-gradient-settings',
+            '.circle-fill_color-profile-settings'
+        ]
+    }
 }
 
 const sacredArrays = 
 {
-    circle:   [],
-    triangle: [],
-    hexagon:  [],
-    line:     []
+    pos: 
+    {
+        circle:   [],
+        triangle: [],
+        hexagon:  [],
+        line:     []
+    },
+    config: 
+    {
+        line:
+        {
+            type:  [], width: []
+        },
+        circle:   
+        {
+            line: 
+            {
+                type:  [], width: []
+            },
+            fill:
+            {
+                type:  [], color: []
+            }
+        },
+        triangle: [],
+        hexagon:  {}
+    }
 }
 
 const mouse = 
@@ -169,104 +232,82 @@ const mouse =
     existingLineIndex: -1
 }
 
-const matrix = new Array();
-
-(function()
-{
-    let a, b, c, d, e, F;
-
-    for (let i = 0; i <= 10; i++)
-    {
-        switch (i)
-        {
-            case 0:
-
-                matrix.push([[null, null]]);
-
-                break;
-
-            case 1:
-            case 3:
-            case 4:
-            case 7:
-
-                switch (i)
-                {
-                    case 1:  a = 0.5; b = 1;  break;
-                    case 3:  a = 1;   b = 2;  break;
-                    case 4:  a = 1.5; b = 3;  break;
-                    case 7:  a = 2;   b = 4;  break;
-                }
-
-                matrix.push(  [[    null,                       - (spirit.radius * b) ]]);
-                matrix[i].push([ - (spirit.radius / magNo) * a, - (spirit.radius * a) ] );
-                matrix[i].push([ - (spirit.radius / magNo) * a,   (spirit.radius * a) ] );
-                matrix[i].push([    null,                         (spirit.radius * b) ] );
-                matrix[i].push([   (spirit.radius / magNo) * a,   (spirit.radius * a) ] );
-                matrix[i].push([   (spirit.radius / magNo) * a, - (spirit.radius * a) ] ); 
-
-                break;
-
-            case 2:
-            case 9:
-
-                switch (i)
-                {
-                    case 2:  a = 0.5; b = 1; c = 1.5;  break;
-                    case 9:  a = 1;   b = 2; c = 3;    break;
-                }
-
-                matrix.push(  [[ - (spirit.radius / magNo) * a, - (spirit.radius * c)]]);
-                matrix[i].push([ - (spirit.radius / magNo) * b,    null              ] );
-                matrix[i].push([ - (spirit.radius / magNo) * a,    spirit.radius * c ] );
-                matrix[i].push([   (spirit.radius / magNo) * a,    spirit.radius * c ] );
-                matrix[i].push([   (spirit.radius / magNo) * b,    null              ] );
-                matrix[i].push([   (spirit.radius / magNo) * a, - (spirit.radius * c)] );
-
-                break;
-
-            case 5:
-            case 8:
-
-                switch (i)
-                {
-                    case 5:  a = 0.5; b = 1;   c = 1.5; d = 2;   e = 2.5;  break;
-                    case 8:  a = 0.5; b = 1.5; c = 2;   d = 2.5; e = 3.5;  break;
-                }
-
-                F = (i == 5) ? 0.5 : 1;
-
-                matrix.push(  [[ - (spirit.radius / magNo) * a, - (spirit.radius * e)]]);
-                matrix[i].push([ - (spirit.radius / magNo) * c, - (spirit.radius * F)] );
-                matrix[i].push([ - (spirit.radius / magNo) * b,    spirit.radius * d ] );
-                matrix[i].push([   (spirit.radius / magNo) * a,    spirit.radius * e ] );
-                matrix[i].push([   (spirit.radius / magNo) * c,    spirit.radius * F ] );
-                matrix[i].push([   (spirit.radius / magNo) * b, - (spirit.radius * d)] );
-
-                break;
-
-            case 6:
-            case 10:
-
-                switch (i)
-                {
-                    case 6:  a = 0.5;  b = 1;   c = 1.5; d = 2;   e = 2.5;  break;
-                    case 10:  a = 0.5; b = 1.5; c = 2;   d = 2.5; e = 3.5;  break;
-                }
-
-                F = (i == 6) ? 0.5 : 1;
-
-                matrix.push(  [[ - (spirit.radius / magNo) * b, - (spirit.radius * d)]]);
-                matrix[i].push([ - (spirit.radius / magNo) * c,    spirit.radius * F ] );
-                matrix[i].push([ - (spirit.radius / magNo) * a,    spirit.radius * e ] );
-                matrix[i].push([   (spirit.radius / magNo) * b,    spirit.radius * d ] );
-                matrix[i].push([   (spirit.radius / magNo) * c, - (spirit.radius * F)] );
-                matrix[i].push([   (spirit.radius / magNo) * a, - (spirit.radius * e)] );
-
-                break;
-        }
-    }
-})();
+const matrix = 
+[           // x                               // y  
+    [       
+        [      null,                              null                 ]        // 0
+    ],[     
+        [      null,                           - (spirit.radius)                // 1            
+        ],[ - (spirit.radius / magNo) * 0.5,   - (spirit.radius * 0.5)                   
+        ],[ - (spirit.radius / magNo) * 0.5,      spirit.radius * 0.5                       
+        ],[    null,                              spirit.radius                           
+        ],[   (spirit.radius / magNo) * 0.5,      spirit.radius * 0.5                       
+        ],[   (spirit.radius / magNo) * 0.5,   - (spirit.radius * 0.5) ]
+    ],[     
+        [   - (spirit.radius / magNo) * 0.5,   - (spirit.radius * 1.5)          // 2
+        ],[ - (spirit.radius / magNo),            null                    
+        ],[ - (spirit.radius / magNo) * 0.5,      spirit.radius * 1.5                    
+        ],[   (spirit.radius / magNo) * 0.5,      spirit.radius * 1.5                    
+        ],[    spirit.radius / magNo,             null                     
+        ],[   (spirit.radius / magNo) * 0.5,   - (spirit.radius * 1.5) ]
+    ],[     
+        [      null,                           - (spirit.radius * 2)            // 3
+        ],[ - (spirit.radius / magNo),         - (spirit.radius)
+        ],[ - (spirit.radius / magNo),            spirit.radius                    
+        ],[    null,                              spirit.radius * 2                      
+        ],[    spirit.radius / magNo,             spirit.radius
+        ],[    spirit.radius / magNo,          - (spirit.radius)       ]
+    ],[     
+        [      null,                           - (spirit.radius * 3)            // 4
+        ],[ - (spirit.radius / magNo) * 1.5,   - (spirit.radius * 1.5)                
+        ],[ - (spirit.radius / magNo) * 1.5,      spirit.radius * 1.5                    
+        ],[    null,                              spirit.radius * 3                     
+        ],[   (spirit.radius / magNo) * 1.5,      spirit.radius * 1.5                    
+        ],[   (spirit.radius / magNo) * 1.5,   - (spirit.radius * 1.5) ]
+    ],[     
+        [   - (spirit.radius / magNo) * 0.5,   - (spirit.radius * 2.5)          // 5
+        ],[ - (spirit.radius / magNo) * 1.5,   - (spirit.radius * 0.5)                  
+        ],[ - (spirit.radius / magNo),            spirit.radius * 2                     
+        ],[   (spirit.radius / magNo) * 0.5,      spirit.radius * 2.5                    
+        ],[   (spirit.radius / magNo) * 1.5,      spirit.radius * 0.5                      
+        ],[    spirit.radius / magNo,          - (spirit.radius * 2)   ]
+    ],[     
+        [   - (spirit.radius / magNo),         - (spirit.radius * 2)            // 6
+        ],[ - (spirit.radius / magNo) * 1.5,      spirit.radius * 0.5                      
+        ],[ - (spirit.radius / magNo) * 0.5,      spirit.radius * 2.5                    
+        ],[    spirit.radius / magNo,             spirit.radius * 2                      
+        ],[   (spirit.radius / magNo) * 1.5,   - (spirit.radius * 0.5)                
+        ],[   (spirit.radius / magNo) * 0.5,   - (spirit.radius * 2.5) ]
+    ],[     
+        [      null,                           - (spirit.radius * 4)            // 7
+        ],[ - (spirit.radius / magNo) * 2,     - (spirit.radius * 2)                  
+        ],[ - (spirit.radius / magNo) * 2,        spirit.radius * 2                      
+        ],[    null,                              spirit.radius * 4                      
+        ],[   (spirit.radius / magNo) * 2,        spirit.radius * 2                     
+        ],[   (spirit.radius / magNo) * 2,     - (spirit.radius * 2)   ]
+    ],[     
+        [   - (spirit.radius / magNo) * 0.5,   - (spirit.radius * 3.5)          // 8
+        ],[ - (spirit.radius / magNo) * 2,     - (spirit.radius)                  
+        ],[ - (spirit.radius / magNo) * 1.5,      spirit.radius * 2.5                    
+        ],[   (spirit.radius / magNo) * 0.5,      spirit.radius * 3.5                    
+        ],[   (spirit.radius / magNo) * 2,        spirit.radius                   
+        ],[   (spirit.radius / magNo) * 1.5,   - (spirit.radius * 2.5) ]
+    ],[     
+        [   - (spirit.radius / magNo),         - (spirit.radius * 3)            // 9
+        ],[ - (spirit.radius / magNo) * 2,        null                        
+        ],[ - (spirit.radius / magNo),            spirit.radius * 3                      
+        ],[    spirit.radius / magNo,             spirit.radius * 3                      
+        ],[   (spirit.radius / magNo) * 2,        null                     
+        ],[    spirit.radius / magNo,          - (spirit.radius * 3)   ]
+    ],[     
+        [   - (spirit.radius / magNo) * 1.5,   - (spirit.radius * 2.5)          // 10
+        ],[ - (spirit.radius / magNo) * 2,        spirit.radius                         
+        ],[ - (spirit.radius / magNo) * 0.5,      spirit.radius * 3.5                    
+        ],[   (spirit.radius / magNo) * 1.5,      spirit.radius * 2.5                    
+        ],[   (spirit.radius / magNo) * 2,     - (spirit.radius)                 
+        ],[   (spirit.radius / magNo) * 0.5,   - (spirit.radius * 3.5) ]
+    ]
+];
 
 ////////                            Debug Output                                            ////////
 
@@ -386,6 +427,13 @@ function setupEnvironment()
 
     document.title = config.about.Library + ' | ver: ' + config.about.Version;
 
+    toggleCheckbox('line-stroke-solid-checkbox');
+    toggleCheckbox('line-stroke-width-01-checkbox');
+    toggleCheckbox('circle-stroke-solid-checkbox');
+    toggleCheckbox('circle-stroke-width-01-checkbox');
+    toggleCheckbox('circle-fill_type-profile-checkbox');
+    toggleCheckbox('circle-fill_color-profile-01-checkbox');
+
     insertHtmlContent('ui-overlay');
 }
 
@@ -420,6 +468,47 @@ function arrayEquals(a, b)
     return Array.isArray(a) && Array.isArray(b) && a.length === b.length && a.every((val, index) => val === b[index]);
 }
 
+/**
+ * getParentNode()          {Method}                    Returns the parent node of the object passed, defined by the element param
+ * @param                   {Object} obj                Child object of parent
+ * @param                   {string} element            String value defining the parent DOM element to find
+ */
+function getParentNode(obj, element)
+{
+    let result = obj.parentNode;
+
+    return (result.nodeName != element.toUpperCase())
+        ? getParentNode(result, element)
+        : result;
+}
+
+/**
+ * getChildNodes()          {Method}                    Return all child nodes defined by the element param
+ * @param                   {Object} obj                Object to initiate search for child nodes 
+ * @param                   {string} element            String value defining the child DOM elements to find
+ * @param                   {Array}  result             All of the child nodes underneath the passed parent (obj)
+ */
+function getChildNodes(obj, element, result = new Array())
+{
+    let objChildren = obj.children;
+
+    for (let i = 0; i < objChildren.length; i++)
+    {
+        if (objChildren[i].nodeName != element.toUpperCase())
+        {
+            (objChildren[i].childElementCount > 0) 
+                ? getChildNodes(objChildren[i], element, result)
+                : null;
+        }
+        else
+        {
+            result.push(objChildren[i]);
+        }
+    }
+
+    return result;
+}
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////                            INTERFACE FUNCTIONS                                     ////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -436,6 +525,67 @@ function toggleCheckbox(id, check = null)
             ? false 
             : true
         : document.getElementById(id).checked = check;    
+}
+
+/**
+ * toggleLinearOptions()    {Method}                    Ensure that the passed object is the only option checked throughout it's surrounding (vertical) options
+ * @param                   {Object} obj                Object to toggle within a vertical row of linear options
+ */
+function toggleLinearOptions(obj)
+{
+    const valuePassed = parseInt(obj.value)
+    const elements    = document.getElementsByClassName(obj.classList[0]);
+    const typeCheck   = obj.id.match(/circle-(?<val1>\w+)/);
+
+    for (let i = 0; i < elements.length; i++)
+    {
+        const valueCompare = parseInt(elements[i].value);
+
+        elements[i].checked = (valueCompare != valuePassed)
+            ? false
+            : true;
+    }
+}
+
+/**
+ * toggleCrossOptions()     {Method}                    Toggle the appropriate root and sub options for nested options
+ * @param                   {Object} obj                Option clicked
+ */
+function toggleCrossOptions(obj)
+{
+    let parentNode, childNodes, index, altIndex;
+
+    let regex = obj.id.match(/^[^0-9()]+$/);
+    
+    parentNode = (regex != null)                 
+        ? getParentNode(obj, 'ul')                          // LEFT
+        : getParentNode(getParentNode(obj, 'ul'), 'ul');    // RIGHT
+
+    childNodes = getChildNodes(parentNode, 'input');
+    
+    index      = childNodes.indexOf(obj);
+
+    for (let i = 0; i < childNodes.length; i++) { childNodes[i].checked = false; }      // Clear all menu nodes
+
+    for (let i = index; i >= 0; i--)
+    {
+        if (regex != null)                                  // LEFT
+        {
+            altIndex = index + 1;
+        }
+        else                                                // RIGHT
+        {
+            if (childNodes[i].id.match(/fill_type/))
+            {
+                altIndex = i; break;
+            }
+        }
+    }
+
+    altIndex = (index == 0) ? 0 : altIndex;
+
+    childNodes[index].checked    = true;
+    childNodes[altIndex].checked = true;
 }
 
 /**
@@ -497,7 +647,7 @@ function pushPopPattern(val)
 {
     for (let i = 0; i <= patterns[val].circle.length - 1; i++)                  // Circles
     {
-        sacredArrays.circle.pushPop(patterns[val].circle[i]);
+        sacredArrays.pos.circle.pushPop(patterns[val].circle[i]);
 
         let node = patterns[val].circle[i];
 
@@ -506,14 +656,14 @@ function pushPopPattern(val)
 
     for (let i = 0; i <= patterns[val].hexagon.length - 1; i++)                 // Hexagons
     {
-        sacredArrays.hexagon.pushPop(patterns[val].hexagon[i]);
+        sacredArrays.pos.hexagon.pushPop(patterns[val].hexagon[i]);
 
         toggleCheckbox(`hexagon-${patterns[val].hexagon[i].convert2digStr()}-checkbox`);
     }
 
     for (let i = 0; i <= patterns[val].line.length - 1; i++)                    // Lines
     {
-        sacredArrays.line.pushPop(patterns[val].line[i]);    
+        sacredArrays.pos.line.pushPop(patterns[val].line[i]);    
     }
 }
 
@@ -666,17 +816,24 @@ function drawUnderlay(alpha)
  * @param                   {number} endX               X coordinate position to finish drawing at
  * @param                   {number} endY               Y coordinate position to finish drawing at
  */
-function drawLine(startX, startY, endX, endY, lineWidth = 1, strokeColor = '0, 0, 0', strokeAlpha = 0.5) 
+function drawLine(startX, startY, endX, endY, lineType = 'dashed', lineWidth = 1, strokeColor = '0, 0, 0', strokeAlpha = 0.5) 
 {
     config.context.strokeStyle = `rgba(${strokeColor}, ${strokeAlpha})`;
     config.context.lineCap     = 'round';
+    config.context.lineWidth   = lineWidth;                 // Sets the width the the line to be rendered
 
     config.context.beginPath();                             // Resets the current path
+
+    switch (lineType)
+    {
+        case 'solid':   config.context.setLineDash([]);        break;
+        case 'dashed':  config.context.setLineDash([10, 10]);  break;
+    }
 
     config.context.moveTo(startX, startY);                  // Creates a new subpath with the given point
     config.context.lineTo(endX, endY);                      // Adds the given point to the subpath
 
-    config.context.lineWidth = lineWidth;                   // Sets the width the the line to be rendered
+    
     config.context.stroke();                                // Strokes the subpaths with the current stroke style
 }
 
@@ -695,16 +852,16 @@ function drawSacredArray()
     ////////    CIRCLES                             ////////
     ////////////////////////////////////////////////////////
 
-    for (var i = 0; i <= sacredArrays.circle.length - 1; i++)
+    for (var i = 0; i <= sacredArrays.pos.circle.length - 1; i++)
     {
         drawCircle(
-            matrix[sacredArrays.circle[i][0]][sacredArrays.circle[i][1]][0],
-            matrix[sacredArrays.circle[i][0]][sacredArrays.circle[i][1]][1],
+            matrix[sacredArrays.pos.circle[i][0]][sacredArrays.pos.circle[i][1]][0],
+            matrix[sacredArrays.pos.circle[i][0]][sacredArrays.pos.circle[i][1]][1],
             spirit.radius,
             undefined,
             undefined,
             {
-                color: colorArray[sacredArrays.circle[i][0]],
+                color: colorArray[sacredArrays.pos.circle[i][0]],
                 alpha: 0.3
             }
         );
@@ -714,19 +871,19 @@ function drawSacredArray()
     ////////    HEXAGON                             ////////
     ////////////////////////////////////////////////////////
     
-    for (var i = 0; i <= sacredArrays.hexagon.length - 1; i++)
+    for (var i = 0; i <= sacredArrays.pos.hexagon.length - 1; i++)
     {
-        for (var j = 0; j <= matrix[sacredArrays.hexagon[i]].length - 1; j++) 
+        for (var j = 0; j <= matrix[sacredArrays.pos.hexagon[i]].length - 1; j++) 
         {
             var n = j + 1;
 
             if (n == 6) { n = 0; }
 
             drawLine(
-                centerX(matrix[sacredArrays.hexagon[i]][j][0]),                 // startX
-                centerY(matrix[sacredArrays.hexagon[i]][j][1]),                 // startY
-                centerX(matrix[sacredArrays.hexagon[i]][n][0]),                 // endX
-                centerY(matrix[sacredArrays.hexagon[i]][n][1])                  // endY
+                centerX(matrix[sacredArrays.pos.hexagon[i]][j][0]),                 // startX
+                centerY(matrix[sacredArrays.pos.hexagon[i]][j][1]),                 // startY
+                centerX(matrix[sacredArrays.pos.hexagon[i]][n][0]),                 // endX
+                centerY(matrix[sacredArrays.pos.hexagon[i]][n][1])                  // endY
             );
         }
     }
@@ -735,13 +892,13 @@ function drawSacredArray()
     ////////    LINES                               ////////
     ////////////////////////////////////////////////////////
 
-    for (var i = 0; i <= sacredArrays.line.length - 1; i++)
+    for (var i = 0; i <= sacredArrays.pos.line.length - 1; i++)
     {
         drawLine(
-            centerX(matrix[sacredArrays.line[i][0]][sacredArrays.line[i][1]][0]),                   // startX
-            centerY(matrix[sacredArrays.line[i][0]][sacredArrays.line[i][1]][1]),                   // startY
-            centerX(matrix[sacredArrays.line[i][2]][sacredArrays.line[i][3]][0]),                   // endX
-            centerY(matrix[sacredArrays.line[i][2]][sacredArrays.line[i][3]][1])                    // endY
+            centerX(matrix[sacredArrays.pos.line[i][0]][sacredArrays.pos.line[i][1]][0]),                   // startX
+            centerY(matrix[sacredArrays.pos.line[i][0]][sacredArrays.pos.line[i][1]][1]),                   // startY
+            centerX(matrix[sacredArrays.pos.line[i][2]][sacredArrays.pos.line[i][3]][0]),                   // endX
+            centerY(matrix[sacredArrays.pos.line[i][2]][sacredArrays.pos.line[i][3]][1])                    // endY
         );
     }
     
@@ -782,7 +939,7 @@ function highlightRegion(obj)
             endY:   parseInt(node[2])
         }
 
-        mouse.existingLineIndex = sacredArrays.line.indexOfArray([coords.startX, coords.startY, coords.endX, coords.endY]);
+        mouse.existingLineIndex = sacredArrays.pos.line.indexOfArray([coords.startX, coords.startY, coords.endX, coords.endY]);
     }
 }
 
@@ -809,7 +966,7 @@ function setRegion(obj)
     {
         case 'ui':
             
-            sacredArrays.circle.pushPop([parseInt(node[1]), parseInt(node[2])]);
+            sacredArrays.pos.circle.pushPop([parseInt(node[1]), parseInt(node[2])]);
 
             toggleCheckbox(`circle-${node[1]}-${(parseInt(node[2]) + 1).convert2digStr()}-checkbox`);
 
@@ -817,7 +974,7 @@ function setRegion(obj)
 
         case 'circle':
 
-            sacredArrays.circle.pushPop([parseInt(node[1]), (parseInt(node[2]) - 1)]);
+            sacredArrays.pos.circle.pushPop([parseInt(node[1]), (parseInt(node[2]) - 1)]);
 
             break;
 
@@ -831,7 +988,7 @@ function setRegion(obj)
 
                     if (!document.getElementById(idString).checked)
                     {
-                        sacredArrays.circle.pushPop([parseInt(obj.value), i]);  toggleCheckbox(idString);
+                        sacredArrays.pos.circle.pushPop([parseInt(obj.value), i]);  toggleCheckbox(idString);
                     }
                     else
                     {
@@ -847,7 +1004,7 @@ function setRegion(obj)
 
                     if (document.getElementById(idString).checked)
                     {
-                        sacredArrays.circle.pushPop([parseInt(obj.value), i]);  toggleCheckbox(idString);
+                        sacredArrays.pos.circle.pushPop([parseInt(obj.value), i]);  toggleCheckbox(idString);
                     }
                     else
                     {
@@ -860,7 +1017,7 @@ function setRegion(obj)
 
         case 'hexagon':
 
-            sacredArrays.hexagon.pushPop(parseInt(obj.value));
+            sacredArrays.pos.hexagon.pushPop(parseInt(obj.value));
 
             break;
 
@@ -882,6 +1039,60 @@ function setRegion(obj)
     toggleSequence();
 
     drawSacredArray();
+}
+
+/**
+ * setSettings()            {Method}                    Set config (global) variables while toggling the appropriate setting(s)
+ * @param                   {Object} obj                Object for the setting to toggle
+ */
+function setSettings(obj)
+{
+    toggleLinearOptions(obj);
+
+    const elementId = obj.id.match(/(?<val1>\w+)-(?<val2>\w+)-(?<val3>\w+)/);
+    const value     = parseInt(obj.value);
+
+    switch (elementId[1])
+    {
+        case 'line':
+            
+            switch (elementId[3])
+            {
+                case 'solid': case 'dashed':  config.settings.line.type  = value;  break;
+
+                case 'width':                 config.settings.line.width = value;  break;
+            }
+
+            break;
+
+        case 'circle':
+
+            switch (elementId[2])
+            {
+                case 'stroke':
+
+                    switch (elementId[3])
+                    {
+                        case 'solid': case 'dashed':  config.settings.circle.line.type  = value;  break;
+
+                        case 'width':                 config.settings.circle.line.width = value;  break;
+                    }
+                    
+                    break;
+
+                case 'fill_type':  config.settings.circle.fill.type  = value;  toggleCrossOptions(obj);  break;
+
+                case 'fill_color': config.settings.circle.fill.color = value;  toggleCrossOptions(obj);  break;
+            }
+
+            break;
+
+        default:
+
+            console.log(`${elementId[0]} is not supported by the setSettings() function!`);
+            
+            break;
+    }
 }
 
 /**
@@ -911,7 +1122,7 @@ function endLine(obj)
     coords.push(mouse.coord.start[0], mouse.coord.start[1], mouse.coord.end[0], mouse.coord.end[1]);
 
     (!arrayEquals(mouse.coord.start, mouse.coord.end))      // Confirm that a line's being drawn are actual lines... not a 'dots'
-        ? sacredArrays.line.pushPop(coords)
+        ? sacredArrays.pos.line.pushPop(coords)
         : null;
 
     drawSacredArray();
@@ -1073,9 +1284,9 @@ function showWindow(windowId, align = 'center')
 /**
  * Bind class inputs
  */
-for (var i = 0; i <= inputArray.class.length - 1; i++)
+for (var i = 0; i <= inputArray.shape.class.length - 1; i++)
 {
-    document.querySelectorAll(inputArray.class[i]).forEach(item =>
+    document.querySelectorAll(inputArray.shape.class[i]).forEach(item =>
     {
         item.addEventListener('click', event =>
         {
@@ -1084,18 +1295,29 @@ for (var i = 0; i <= inputArray.class.length - 1; i++)
     });
 }
 
+for (var i = 0; i <= inputArray.settings.class.length - 1; i++)
+{
+    document.querySelectorAll(inputArray.settings.class[i]).forEach(item =>
+    {
+        item.addEventListener('click', event =>
+        {
+            setSettings(item);
+        });
+    });
+}
+
 document.getElementById('clear-canvas').addEventListener("click", function()
 {
     clearCanvas();
 
-    for (let shape in sacredArrays)
+    for (let shape in sacredArrays.pos)
     {
-        sacredArrays[shape].splice(0, sacredArrays[shape].length);
+        sacredArrays.pos[shape].splice(0, sacredArrays.pos[shape].length);
     }
 
     for (let i = 0; i <= 3; i++)    // Trigger all checked menu items upon clear
     {
-        document.querySelectorAll(inputArray.class[i]).forEach(item =>
+        document.querySelectorAll(inputArray.shape.class[i]).forEach(item =>
         {
             (document.getElementById(item.id).checked == true)
                 ? document.getElementById(item.id).checked = false
@@ -1125,12 +1347,12 @@ window.addEventListener("mousemove", function(event)
             event.clientY, 
         );
 
-        (mouse.existingLineIndex != -1 && sacredArrays.line.length > 0)
+        (mouse.existingLineIndex != -1 && sacredArrays.pos.line.length > 0)
            ? drawLine(
-                centerX(matrix[sacredArrays.line[mouse.existingLineIndex][0]][sacredArrays.line[mouse.existingLineIndex][1]][0]), 
-                centerY(matrix[sacredArrays.line[mouse.existingLineIndex][0]][sacredArrays.line[mouse.existingLineIndex][1]][1]), 
-                centerX(matrix[sacredArrays.line[mouse.existingLineIndex][2]][sacredArrays.line[mouse.existingLineIndex][3]][0]), 
-                centerY(matrix[sacredArrays.line[mouse.existingLineIndex][2]][sacredArrays.line[mouse.existingLineIndex][3]][1]), 
+                centerX(matrix[sacredArrays.pos.line[mouse.existingLineIndex][0]][sacredArrays.pos.line[mouse.existingLineIndex][1]][0]), 
+                centerY(matrix[sacredArrays.pos.line[mouse.existingLineIndex][0]][sacredArrays.pos.line[mouse.existingLineIndex][1]][1]), 
+                centerX(matrix[sacredArrays.pos.line[mouse.existingLineIndex][2]][sacredArrays.pos.line[mouse.existingLineIndex][3]][0]), 
+                centerY(matrix[sacredArrays.pos.line[mouse.existingLineIndex][2]][sacredArrays.pos.line[mouse.existingLineIndex][3]][1]), 
                 7, 
                 '255, 25, 25'
             )

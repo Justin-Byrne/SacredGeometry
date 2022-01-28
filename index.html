@@ -684,29 +684,360 @@
 					<span class="label">Settings</span>
 				</a>
 				<ul>
-					<li class="disabled">
+					<!-- Line -->
+                	<li class="has-children">
 	                    <a href="#">
-	                        <span class="label" id="fill-color">Fill</span>
+			                <label class="label" for="line-settings">Line</label>
 	                    </a>
+	                    <ul>
+	                    	<!-- Stroke -->
+	                        <li class="has-children">
+	                            <a href="#">
+                                	<label class="label" for="line-stroke">Stroke</label>
+  								</a>
+	  							<ul>
+		                        	<li>
+		                            	<a href="#">
+	                                		<input type="checkbox" id="line-stroke-solid-checkbox" class="line-stroke-type-settings" value="1"/>
+	                                		<label class="label" for="line-stroke-solid-checkbox">Solid</label>
+	  									</a>
+		                        	</li>
+		                        	<li>
+		                            	<a href="#">
+	                                		<input type="checkbox" id="line-stroke-dashed-checkbox" class="line-stroke-type-settings" value="2"/>
+	                                		<label class="label" for="line-stroke-dashed-checkbox">Dashed</label>
+	  									</a>
+		                        	</li>
+		                        	<li class="separator"></li>
+		                        	<li class="has-children">
+		                            	<a href="#">
+	                                		<label class="label" for="line-stroke-width">Width</label>
+	  									</a>
+	  									<ul>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="line-stroke-width-01-checkbox" class="line-stroke-width-settings" value="1"/>
+			                                		<label class="label" for="line-stroke-width-01-checkbox">1</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="line-stroke-width-02-checkbox" class="line-stroke-width-settings" value="2"/>
+			                                		<label class="label" for="line-stroke-width-02-checkbox">2</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="line-stroke-width-03-checkbox" class="line-stroke-width-settings" value="3"/>
+			                                		<label class="label" for="line-stroke-width-03-checkbox">3</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="line-stroke-width-04-checkbox" class="line-stroke-width-settings" value="4"/>
+			                                		<label class="label" for="line-stroke-width-04-checkbox">4</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="line-stroke-width-05-checkbox" class="line-stroke-width-settings" value="5"/>
+			                                		<label class="label" for="line-stroke-width-05-checkbox">5</label>
+			  									</a>
+				                        	</li>
+				                        </ul>
+		                        	</li>
+		                        </ul>
+	                        </li>
+	                    </ul>
                 	</li>
-                	<li class="disabled">
+					<!-- Circle -->
+                	<li class="has-children">
 	                    <a href="#">
-	                        <span class="label" id="stroke-color">Stroke</span>
+			                <label class="label" for="circle-settings">Circle</label>
 	                    </a>
+	                    <ul>
+	                    	<!-- Stroke -->
+	                        <li class="has-children">
+	                            <a href="#">
+                                	<label class="label" for="circle-stroke">Stroke</label>
+  								</a>
+	  							<ul>
+		                        	<li>
+		                            	<a href="#">
+	                                		<input type="checkbox" id="circle-stroke-solid-checkbox" class="circle-stroke-type-settings" value="1"/>
+	                                		<label class="label" for="circle-stroke-solid-checkbox">Solid</label>
+	  									</a>
+		                        	</li>
+		                        	<li>
+		                            	<a href="#">
+	                                		<input type="checkbox" id="circle-stroke-dashed-checkbox" class="circle-stroke-type-settings" value="2"/>
+	                                		<label class="label" for="circle-stroke-dashed-checkbox">Dashed</label>
+	  									</a>
+		                        	</li>
+		                        	<li class="separator"></li>
+		                        	<li class="has-children">
+		                            	<a href="#">
+	                                		<label class="label" for="circle-stroke-width">Width</label>
+	  									</a>
+	  									<ul>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-stroke-width-01-checkbox" class="circle-stroke-width-settings" value="1"/>
+			                                		<label class="label" for="circle-stroke-width-01-checkbox">1</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-stroke-width-02-checkbox" class="circle-stroke-width-settings" value="2"/>
+			                                		<label class="label" for="circle-stroke-width-02-checkbox">2</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-stroke-width-03-checkbox" class="circle-stroke-width-settings" value="3"/>
+			                                		<label class="label" for="circle-stroke-width-03-checkbox">3</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-stroke-width-04-checkbox" class="circle-stroke-width-settings" value="4"/>
+			                                		<label class="label" for="circle-stroke-width-04-checkbox">4</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-stroke-width-05-checkbox" class="circle-stroke-width-settings" value="5"/>
+			                                		<label class="label" for="circle-stroke-width-05-checkbox">5</label>
+			  									</a>
+				                        	</li>
+				                        </ul>
+		                        	</li>
+		                        </ul>
+	                        </li>
+	                    	<!-- Fill -->
+	                        <li class="has-children">
+	                            <a href="#">
+                                	<label class="label" for="circle-fill">Fill</label>
+  								</a>
+	  							<ul>
+	  								<li>
+		                            	<a href="#">
+	                                		<input type="checkbox" id="circle-fill_type-empty-checkbox" class="circle-fill_type-settings" value="1"/>
+	                                		<label class="label" for="circle-fill_type-empty-checkbox">Empty</label>
+	  									</a>
+		                        	</li>
+		                        	<li class="separator"></li>
+		                        	<li class="has-children">
+		                            	<a href="#">
+		                            		<input type="checkbox" id="circle-fill_type-solid-checkbox" class="circle-fill_type-settings" value="2"/>
+	                                		<label class="label" for="circle-fill_type-solid-checkbox">Solid</label>
+	  									</a>
+	  									<ul>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-solid-01-checkbox" class="circle-fill_color-solid-settings" value="1"/>
+			                                		<label class="label" for="circle-fill_color-solid-01-checkbox">Purple</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-solid-02-checkbox" class="circle-fill_color-solid-settings" value="2"/>
+			                                		<label class="label" for="circle-fill_color-solid-02-checkbox">Blue Purple</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-solid-03-checkbox" class="circle-fill_color-solid-settings" value="3"/>
+			                                		<label class="label" for="circle-fill_color-solid-03-checkbox">Blue</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-solid-04-checkbox" class="circle-fill_color-solid-settings" value="4"/>
+			                                		<label class="label" for="circle-fill_color-solid-04-checkbox">Blue Green</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-solid-05-checkbox" class="circle-fill_color-solid-settings" value="5"/>
+			                                		<label class="label" for="circle-fill_color-solid-05-checkbox">Green</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-solid-06-checkbox" class="circle-fill_color-solid-settings" value="6"/>
+			                                		<label class="label" for="circle-fill_color-solid-06-checkbox">Yellow Green</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-solid-07-checkbox" class="circle-fill_color-solid-settings" value="7"/>
+			                                		<label class="label" for="circle-fill_color-solid-07-checkbox">Yellow</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-solid-08-checkbox" class="circle-fill_color-solid-settings" value="8"/>
+			                                		<label class="label" for="circle-fill_color-solid-08-checkbox">Yellow Orange</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-solid-09-checkbox" class="circle-fill_color-solid-settings" value="9"/>
+			                                		<label class="label" for="circle-fill_color-solid-09-checkbox">Orange</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-solid-10-checkbox" class="circle-fill_color-solid-settings" value="10"/>
+			                                		<label class="label" for="circle-fill_color-solid-10-checkbox">Red Orange</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-solid-11-checkbox" class="circle-fill_color-solid-settings" value="11"/>
+			                                		<label class="label" for="circle-fill_color-solid-11-checkbox">Red</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-solid-12-checkbox" class="circle-fill_color-solid-settings" value="12"/>
+			                                		<label class="label" for="circle-fill_color-solid-12-checkbox">Red Purple</label>
+			  									</a>
+				                        	</li>
+				                        </ul>
+		                        	</li>
+		                        	<li class="has-children">
+		                            	<a href="#">
+		                            		<input type="checkbox" id="circle-fill_type-gradient-checkbox" class="circle-fill_type-settings" value="3"/>
+	                                		<label class="label" for="circle-fill_type-gradient-checkbox">Gradient</label>
+	  									</a>
+	  									<ul>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-gradient-01-checkbox" class="circle-fill_color-gradient-settings" value="1"/>
+			                                		<label class="label" for="circle-fill_color-gradient-01-checkbox">Purple</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-gradient-02-checkbox" class="circle-fill_color-gradient-settings" value="2"/>
+			                                		<label class="label" for="circle-fill_color-gradient-02-checkbox">Blue Purple</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-gradient-03-checkbox" class="circle-fill_color-gradient-settings" value="3"/>
+			                                		<label class="label" for="circle-fill_color-gradient-03-checkbox">Blue</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-gradient-04-checkbox" class="circle-fill_color-gradient-settings" value="4"/>
+			                                		<label class="label" for="circle-fill_color-gradient-04-checkbox">Blue Green</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-gradient-05-checkbox" class="circle-fill_color-gradient-settings" value="5"/>
+			                                		<label class="label" for="circle-fill_color-gradient-05-checkbox">Green</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-gradient-06-checkbox" class="circle-fill_color-gradient-settings" value="6"/>
+			                                		<label class="label" for="circle-fill_color-gradient-06-checkbox">Yellow Green</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-gradient-07-checkbox" class="circle-fill_color-gradient-settings" value="7"/>
+			                                		<label class="label" for="circle-fill_color-gradient-07-checkbox">Yellow</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-gradient-08-checkbox" class="circle-fill_color-gradient-settings" value="8"/>
+			                                		<label class="label" for="circle-fill_color-gradient-08-checkbox">Yellow Orange</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-gradient-09-checkbox" class="circle-fill_color-gradient-settings" value="9"/>
+			                                		<label class="label" for="circle-fill_color-gradient-09-checkbox">Orange</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-gradient-10-checkbox" class="circle-fill_color-gradient-settings" value="10"/>
+			                                		<label class="label" for="circle-fill_color-gradient-10-checkbox">Red Orange</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-gradient-11-checkbox" class="circle-fill_color-gradient-settings" value="11"/>
+			                                		<label class="label" for="circle-fill_color-gradient-11-checkbox">Red</label>
+			  									</a>
+				                        	</li>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-gradient-12-checkbox" class="circle-fill_color-gradient-settings" value="12"/>
+			                                		<label class="label" for="circle-fill_color-gradient-12-checkbox">Red Purple</label>
+			  									</a>
+				                        	</li>
+				                        </ul>
+		                        	</li>
+		                        	<li class="separator"></li>
+		                        	<li>
+		                            	<a href="#">
+		                            		<input type="checkbox" id="circle-fill_type-profile-checkbox" class="circle-fill_type-settings" value="4"/>
+	                                		<label class="label" for="circle-fill_type-profile-checkbox">Profile</label>
+	  									</a>
+	  									<ul>
+				                        	<li>
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-profile-01-checkbox" class="circle-fill_color-profile-settings" value="1"/>
+			                                		<label class="label" for="circle-fill_color-profile-01-checkbox">1</label>
+			  									</a>
+				                        	</li>
+				                        	<li class="disabled">
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-profile-02-checkbox" class="circle-fill_color-profile-settings" value="2"/>
+			                                		<label class="label" for="circle-fill_color-profile-02-checkbox">2</label>
+			  									</a>
+				                        	</li>
+				                        	<li class="disabled">
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-profile-03-checkbox" class="circle-fill_color-profile-settings" value="3"/>
+			                                		<label class="label" for="circle-fill_color-profile-03-checkbox">3</label>
+			  									</a>
+				                        	</li>
+				                        	<li class="disabled">
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-profile-04-checkbox" class="circle-fill_color-profile-settings" value="4"/>
+			                                		<label class="label" for="circle-fill_color-profile-04-checkbox">4</label>
+			  									</a>
+				                        	</li>
+				                        	<li class="disabled">
+				                            	<a href="#">
+			                                		<input type="checkbox" id="circle-fill_color-profile-05-checkbox" class="circle-fill_color-profile-settings" value="5"/>
+			                                		<label class="label" for="circle-fill_color-profile-05-checkbox">5</label>
+			  									</a>
+				                        	</li>
+				                        </ul>
+		                        	</li>
+		                        </ul>
+	                        </li>
+	                    </ul>
                 	</li>
-                	<!-- <li class="separator"></li>
-                	<li>
-	                    <a href="#">
-	                        <span class="label" id="properties">Properties</span>
-	                    </a>
-                	</li> -->
+                	
                 	<li class="separator"></li>
                 	<li>
 	                    <a href="#">
 	                        <span class="label" id="about">About</span>
 	                    </a>
                 	</li>
-				</ul>
+                </ul>
 			</li>
 		</ul>
 	</nav>
@@ -725,6 +1056,7 @@
 
 	<canvas id="canvas-underlay"></canvas>
 
+	<!-- <script src="script/dropDown.js"></script> -->
 	<script src="script/main.js"></script>
 
 </body>

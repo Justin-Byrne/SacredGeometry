@@ -1,6 +1,20 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.19.68] - 2022-01-27
+### Added
+- circle stroke and fill settings for circles, and stroke settings for lines under settings menu
+- setSettings() set config (global) variables while toggling the appropriate setting(s)
+- toggleLinearOptions() ensure that the passed object is the only option checked throughout it's surrounding (vertical) options
+- toggleCrossOptions() toggle the appropriate root and sub options for nested options
+- getParentNode() returns the parent node of the object passed, defined by the element param
+- getChildNodes() return all child nodes defined by the element param
+
+### Changed
+- modified sacredArrays to separate shape positions and their configurations
+- modified drawLine to be able to set line type as dashed or solid
+- modified inputArray to include line and circle 
+
 ## [1.16.62] - 2022-01-04
 ### Added
 - self executing function to populate the const matrix for optimization
@@ -164,7 +178,9 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-[1.16.62]: 2022-01-04 [CURRENT REVISION]
+[1.16.64]: 2022-01-06 [CURRENT REVISION]
+
+[1.16.62]: 2022-01-04 [6867300](https://github.com/Justin-Byrne/SacredGeometry/commit/6867300) large optimizations with 25% code reduction
 
 [1.11.55]: 2021-12-20 [b419526](https://github.com/Justin-Byrne/SacredGeometry/commit/b419526) added pattern selection, and small optimizations
 
