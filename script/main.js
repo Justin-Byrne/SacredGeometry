@@ -26,8 +26,7 @@ const config =
     },
     circle : 
     {
-        centerDot: false,
-        stroke:    true
+        centerDot: false
     },
     debug :         false,
     patternOverlay: false,
@@ -41,7 +40,8 @@ const config =
         line:
         {
             type:  1,               // [1] solid, [2] dashed
-            width: 1                //  1 - .... - 5
+            width: 1,               //  1 - .... - 5
+            alpha: 0.5              //  
         },
         circle:   
         {
@@ -56,16 +56,16 @@ const config =
                 color: 0            //  1 - ............................. - 12
             }
         },
-        triangle: [],
-        hexagon:  {}
+        // triangle: [],
+        // hexagon:  {}
     },
     about : 
     {
         Author:    'Justin Don Byrne',
         Created:   'September, 11 2021',
         Library:   'Sacred Geometry: Sketch Pad & Study Tool',
-        Updated:   'January, 27 2022',
-        Version:   '1.19.68',
+        Updated:   'January, 31 2022',
+        Version:   '1.19.75',
         Copyright: 'Copyright (c) 2021 Justin Don Byrne'
     }
 }
@@ -82,63 +82,63 @@ const spirit =
 const patterns =
 [
     {   // Vesica Pisces            0
-        'circle':   [ [0, 0], [1, 0] ],
+        'circle':   [ [0, 0, 1, 2, 1, 0], [1, 0, 1, 2, 1, 0] ],
         'hexagon':  [],
-        'line':     [ [1, 0, 0, 0], [1, 0, 1, 5], [1, 1, 0, 0], [1, 1, 1, 0], [1, 5, 0, 0], [1, 5, 1, 1] ],
+        'line':     [ [1, 0, 0, 0, 2, 1], [1, 1, 1, 4, 1, 1], [1, 1, 1, 5, 2, 1], [1, 1, 2, 5, 1, 1], [1, 4, 2, 5, 1, 1] ],
         'triangle': []
     },
     {   // Seed of Life             1
-        'circle':   [ [0, 0], [1, 0], [1, 1], [1, 2], [1, 3], [1, 4], [1, 5] ],
+        'circle':   [ [1, 0, 2, 1, 1, 0], [1, 1, 2, 1, 1, 0], [1, 2, 2, 1, 1, 0], [1, 3, 2, 1, 1, 0], [1, 5, 2, 1, 1, 0], [1, 4, 2, 1, 1, 0], [0, 0, 1, 2, 1, 0] ],
         'hexagon':  [],
         'line':     [],
         'triangle': []
     },
     {   // Fruit of Life            2
-        'circle':   [ [0, 0], [3, 0], [3, 1], [3, 2], [3, 3], [3, 4], [3, 5], [7, 0], [7, 1], [7, 2], [7, 3], [7, 4], [7, 5] ],
+        'circle':   [ [0, 0, 1, 2, 1, 0], [3, 0, 1, 2, 1, 0], [3, 1, 1, 2, 1, 0], [3, 2, 1, 2, 1, 0], [3, 3, 1, 2, 1, 0], [3, 4, 1, 2, 1, 0], [3, 5, 1, 2, 1, 0], [7, 0, 1, 2, 1, 0], [7, 1, 1, 2, 1, 0], [7, 2, 1, 2, 1, 0], [7, 3, 1, 2, 1, 0], [7, 4, 1, 2, 1, 0], [7, 5, 1, 2, 1, 0] ],
         'hexagon':  [],
         'line':     [],
         'triangle': []
     },
     {   // Flower of Life           3
-        'circle':   [ [0, 0], [1, 0], [1, 1], [1, 2], [1, 3], [1, 4], [1, 5], [2, 0], [2, 1], [2, 2], [2, 3], [2, 4], [2, 5], [3, 0], [3, 1], [3, 2], [3, 3], [3, 4], [3, 5] ],
+        'circle':   [ [1, 0, 1, 2, 1, 0], [1, 1, 2, 1, 1, 0], [1, 2, 1, 2, 1, 0], [1, 3, 2, 1, 1, 0], [1, 4, 1, 2, 1, 0], [1, 5, 2, 1, 1, 0], [2, 0, 2, 1, 1, 0], [2, 1, 2, 1, 1, 0], [2, 2, 2, 1, 1, 0], [2, 3, 2, 1, 1, 0], [2, 4, 2, 1, 1, 0], [2, 5, 2, 1, 1, 0], [3, 0, 1, 2, 1, 0], [3, 1, 1, 2, 1, 0], [3, 2, 1, 2, 1, 0], [3, 3, 1, 2, 1, 0], [3, 4, 1, 2, 1, 0], [3, 5, 1, 2, 1, 0] ],
         'hexagon':  [],
         'line':     [],
         'triangle': []
     },
     {   // Icosahedron              4
         'circle':   [],
-        'hexagon':  [ 7 ],
-        'line':     [ [3, 1, 3, 3], [3, 1, 7, 1], [3, 3, 3, 5], [3, 5, 3, 1], [3, 5, 7, 5], [7, 0, 7, 2], [7, 0, 7, 4], [7, 3, 3, 3], [7, 4, 7, 2] ],
+        'hexagon':  [],
+        'line':     [ [3, 0, 3, 2, 2, 2], [3, 1, 3, 5, 1, 2], [3, 2, 3, 4, 2, 2], [3, 2, 7, 2, 2, 2], [3, 3, 3, 1, 1, 2], [3, 3, 3, 5, 1, 2], [3, 4, 3, 0, 2, 2], [3, 4, 7, 4, 2, 2], [7, 0, 3, 0, 2, 2], [7, 0, 7, 1, 1, 2], [7, 1, 3, 1, 1, 2], [7, 1, 7, 2, 1, 2], [7, 1, 7, 3, 2, 2], [7, 1, 9, 1, 1, 1], [7, 2, 7, 0, 1, 2], [7, 2, 7, 3, 1, 2], [7, 2, 7, 4, 1, 2], [7, 3, 3, 3, 1, 2], [7, 3, 7, 4, 1, 2], [7, 3, 7, 5, 2, 2], [7, 4, 7, 0, 1, 2], [7, 4, 7, 5, 1, 2], [7, 5, 3, 5, 1, 2], [7, 5, 7, 0, 1, 2], [7, 5, 7, 1, 2, 2] ],
         'triangle': []
     },
     {   // Metatron's Cube          5
-        'circle':   [],
-        'hexagon':  [ 3, 7 ],
-        'line':     [ [3, 1, 3, 5], [3, 3, 3, 1], [3, 5, 3, 3], [7, 0, 7, 3], [7, 0, 7, 4], [7, 1, 7, 3], [7, 1, 7, 4], [7, 2, 7, 0], [7, 3, 7, 5], [7, 4, 7, 2], [7, 5, 7, 1], [7, 5, 7, 2] ],
+        'circle':   [ [0, 0, 2, 1, 1, 0], [3, 0, 2, 1, 1, 0], [3, 1, 2, 1, 1, 0], [3, 2, 2, 1, 1, 0], [3, 3, 2, 1, 1, 0], [3, 4, 2, 1, 1, 0], [3, 5, 2, 1, 1, 0], [7, 0, 2, 1, 1, 0], [7, 1, 2, 1, 1, 0], [7, 2, 2, 1, 1, 0], [7, 3, 2, 1, 1, 0], [7, 4, 2, 1, 1, 0], [7, 5, 2, 1, 1, 0] ],
+        'hexagon':  [],
+        'line':     [ [1, 0, 7, 5, 2, 2], [1, 1, 7, 0, 2, 2], [1, 3, 7, 4, 2, 2], [1, 4, 7, 5, 2, 2], [1, 5, 7, 0, 2, 2], [3, 0, 3, 1, 1, 2], [3, 0, 3, 2, 2, 1], [3, 1, 3, 2, 1, 2], [3, 1, 3, 5, 1, 2], [3, 2, 3, 3, 1, 2], [3, 2, 3, 4, 2, 1], [3, 3, 3, 1, 1, 2], [3, 3, 3, 4, 1, 2], [3, 4, 3, 0, 2, 1], [3, 4, 3, 5, 1, 2], [3, 5, 3, 0, 1, 2], [3, 5, 3, 3, 1, 2], [7, 0, 7, 1, 1, 2], [7, 0, 7, 2, 1, 2], [7, 0, 7, 3, 2, 1], [7, 1, 1, 0, 2, 2], [7, 1, 1, 2, 2, 2], [7, 1, 7, 2, 1, 2], [7, 1, 7, 4, 2, 1], [7, 1, 7, 5, 1, 2], [7, 2, 1, 1, 2, 2], [7, 2, 1, 3, 2, 2], [7, 2, 7, 3, 1, 2], [7, 2, 7, 4, 1, 2], [7, 3, 1, 2, 2, 2], [7, 3, 1, 4, 2, 2], [7, 3, 7, 1, 1, 2], [7, 3, 7, 4, 1, 2], [7, 4, 1, 5, 2, 2], [7, 4, 7, 0, 1, 2], [7, 4, 7, 5, 1, 2], [7, 5, 7, 0, 1, 2], [7, 5, 7, 2, 2, 1], [7, 5, 7, 3, 1, 2] ],
         'triangle': []
     },
     {   // Hexagon Formation        6
-        'circle':   [ [3, 0], [3, 1], [3, 2], [3, 3], [3, 4], [3, 5], [7, 0], [7, 1], [7, 2], [7, 3], [7, 4], [7, 5] ],
-        'hexagon':  [ 3, 7 ],
-        'line':     [ [7, 0, 7, 2], [7, 4, 7, 2], [7, 4, 7, 0], [7, 1, 7, 5], [7, 5, 7, 3], [7, 3, 7, 1], [3, 1, 3, 5], [3, 2, 3, 4], [3, 3, 3, 1], [3, 5, 3, 3], [3, 0, 3, 2], [3, 0, 3, 4] ],
+        'circle':   [ [3, 0, 1, 1, 1, 0], [3, 1, 1, 1, 1, 0], [3, 2, 1, 1, 1, 0], [3, 3, 1, 1, 1, 0], [3, 4, 1, 1, 1, 0], [3, 5, 1, 1, 1, 0], [7, 0, 2, 1, 1, 0], [7, 1, 2, 1, 1, 0], [7, 2, 2, 1, 1, 0], [7, 3, 2, 1, 1, 0], [7, 4, 2, 1, 1, 0], [7, 5, 2, 1, 1, 0] ],
+        'hexagon':  [],
+        'line':     [ [3, 0, 3, 1, 2, 1], [3, 0, 3, 2, 2, 1], [3, 1, 3, 2, 2, 1], [3, 1, 3, 5, 2, 1], [3, 2, 3, 3, 2, 1], [3, 2, 3, 4, 2, 1], [3, 3, 3, 1, 2, 1], [3, 3, 3, 4, 2, 1], [3, 4, 3, 0, 2, 1], [3, 4, 3, 5, 2, 1], [3, 5, 3, 0, 2, 1], [3, 5, 3, 3, 2, 1], [7, 0, 7, 1, 2, 1], [7, 0, 7, 4, 2, 1], [7, 1, 7, 2, 2, 1], [7, 1, 7, 5, 2, 1], [7, 2, 7, 0, 2, 1], [7, 2, 7, 3, 2, 1], [7, 3, 7, 1, 2, 1], [7, 3, 7, 4, 2, 1], [7, 4, 7, 2, 2, 1], [7, 4, 7, 5, 2, 1], [7, 5, 7, 0, 2, 1], [7, 5, 7, 3, 2, 1] ],
         'triangle': []
     },
     {   // Hexagonal Grid           7
         'circle':   [],
-        'hexagon':  [ 7 ],
-        'line':     [ [10, 0, 8, 2], [10, 1, 8, 3], [10, 1, 8, 5], [10, 3, 8, 5], [10, 4, 8, 0], [10, 4, 8, 2], [7, 0, 7, 3], [7, 1, 7, 4], [7, 5, 7, 2], [8, 0, 10, 2], [8, 1, 10, 3], [8, 1, 10, 5], [8, 3, 10, 5], [8, 4, 10, 0], [8, 4, 10, 2], [9, 0, 9, 4], [9, 2, 9, 0], [9, 2, 9, 4], [9, 3, 9, 1], [9, 5, 9, 1], [9, 5, 9, 3] ],
+        'hexagon':  [],
+        'line':     [ [10, 0, 8, 2, 2, 1], [10, 1, 8, 3, 2, 1], [10, 2, 8, 4, 2, 1], [10, 3, 8, 5, 2, 1], [10, 4, 8, 0, 2, 1], [10, 5, 8, 1, 2, 1], [7, 0, 7, 1, 2, 1], [7, 0, 7, 3, 2, 1], [7, 1, 7, 2, 2, 1], [7, 1, 7, 4, 2, 1], [7, 2, 7, 3, 2, 1], [7, 2, 7, 5, 2, 1], [7, 3, 7, 4, 2, 1], [7, 4, 7, 5, 2, 1], [7, 5, 7, 0, 2, 1], [8, 0, 10, 2, 2, 1], [8, 1, 10, 3, 2, 1], [8, 2, 10, 4, 2, 1], [8, 3, 10, 5, 2, 1], [8, 4, 10, 0, 2, 1], [8, 5, 10, 1, 2, 1], [9, 0, 9, 4, 2, 1], [9, 1, 9, 5, 2, 1], [9, 2, 9, 0, 2, 1], [9, 3, 9, 1, 2, 1], [9, 4, 9, 2, 2, 1], [9, 5, 9, 3, 2, 1] ],
         'triangle': []
     },    
     {   // Dodecagram               8
         'circle':   [],
         'hexagon':  [ 8, 10 ],
-        'line':     [ [10, 0, 10, 2], [10, 0, 8, 5], [10, 1, 10, 5], [10, 2, 10, 4], [10, 2, 8, 4], [10, 3, 10, 1], [10, 3, 8, 2], [10, 4, 10, 0], [10, 5, 10, 3], [10, 5, 8, 1], [8, 0, 8, 2], [8, 1, 10, 2], [8, 1, 8, 3], [8, 2, 10, 0], [8, 2, 8, 4], [8, 3, 8, 5], [8, 4, 10, 5], [8, 4, 8, 0], [8, 5, 10, 3], [8, 5, 8, 1] ],
+        'line':     [ [10, 0, 10, 1, 1, 2], [10, 0, 10, 2, 1, 1], [10, 1, 10, 2, 1, 2], [10, 1, 10, 5, 1, 1], [10, 2, 10, 3, 1, 2], [10, 2, 10, 4, 1, 1], [10, 3, 10, 1, 1, 1], [10, 3, 10, 4, 1, 2], [10, 4, 10, 0, 1, 1], [10, 4, 10, 5, 1, 2], [10, 5, 10, 0, 1, 2], [10, 5, 10, 3, 1, 1], [8, 0, 8, 1, 1, 2], [8, 0, 8, 2, 1, 1], [8, 0, 8, 5, 1, 2], [8, 1, 8, 2, 1, 2], [8, 1, 8, 3, 1, 1], [8, 2, 8, 3, 1, 2], [8, 2, 8, 4, 1, 1], [8, 3, 8, 5, 1, 1], [8, 4, 8, 0, 1, 1], [8, 4, 8, 3, 1, 2], [8, 5, 8, 1, 1, 1], [8, 5, 8, 4, 1, 2] ],
         'triangle': []
     },
     {   // Vector Equilibrium       9
         'circle':   [],
-        'hexagon':  [ 7 ],
-        'line':     [ [2, 0, 2, 3], [2, 0, 7, 1], [2, 1, 2, 3], [2, 1, 2, 4], [2, 1, 7, 1], [2, 2, 2, 0], [2, 2, 2, 4], [2, 2, 7, 2], [2, 3, 7, 3], [2, 4, 2, 0], [2, 4, 7, 4], [2, 5, 2, 1], [2, 5, 2, 3], [2, 5, 7, 5], [7, 0, 2, 0], [7, 0, 2, 5], [7, 0, 7, 3], [7, 1, 7, 4], [7, 2, 2, 1], [7, 2, 7, 5], [7, 3, 2, 2], [7, 4, 2, 3], [7, 5, 2, 4] ],
+        'hexagon':  [],
+        'line':     [ [2, 1, 4, 1, 1, 1], [2, 1, 4, 2, 1, 1], [2, 2, 2, 0, 2, 1], [2, 2, 4, 2, 1, 1], [2, 3, 2, 1, 2, 1], [2, 3, 2, 5, 2, 1], [2, 4, 2, 0, 2, 1], [2, 4, 2, 2, 2, 1], [2, 5, 2, 1, 2, 1], [2, 5, 4, 5, 1, 1], [4, 0, 2, 0, 1, 1], [4, 0, 2, 5, 1, 1], [4, 1, 2, 0, 1, 1], [4, 1, 4, 0, 1, 2], [4, 2, 4, 1, 1, 2], [4, 3, 2, 2, 1, 1], [4, 3, 2, 3, 1, 1], [4, 3, 4, 0, 1, 1], [4, 3, 4, 2, 1, 2], [4, 4, 2, 3, 1, 1], [4, 4, 2, 4, 1, 1], [4, 4, 4, 1, 1, 1], [4, 4, 4, 3, 1, 2], [4, 5, 2, 4, 1, 1], [4, 5, 4, 0, 1, 2], [4, 5, 4, 2, 1, 1], [4, 5, 4, 4, 1, 2] ],
         'triangle': []
     }
 ]
@@ -195,40 +195,18 @@ const inputArray =
 
 const sacredArrays = 
 {
-    pos: 
-    {
-        circle:   [],
-        triangle: [],
-        hexagon:  [],
-        line:     []
-    },
-    config: 
-    {
-        line:
-        {
-            type:  [], width: []
-        },
-        circle:   
-        {
-            line: 
-            {
-                type:  [], width: []
-            },
-            fill:
-            {
-                type:  [], color: []
-            }
-        },
-        triangle: [],
-        hexagon:  {}
-    }
+    circle:   [],
+    triangle: [],
+    hexagon:  [],
+    line:     [],
+    triangle: []
 }
 
 const mouse = 
 {
     coord:   { start: null, end: null },
-    current: { x: null, y: null },
-    down: false,
+    current: { x:     null, y:   null },
+    down:    false,
     existingLineIndex: -1
 }
 
@@ -340,19 +318,47 @@ Array.prototype.containsArray      = function(val)
 }
 
 /**
- * indexOfArray()           {Array:Method}              Returns the index of the array values (e.g.: [1, 2]) passed
- * @param                   {array} val                 Array sequence to validate
+ * indexOfArray()           {Array:Method}              Returns the index within an array via the passed value(s) (e.g.: 1, [1, 2]) passed
+ * @param                   {array} val                 Number or array sequence to validate
  * @return                  {number}                    Integer representing the index where the passed array matches 
  */
 Array.prototype.indexOfArray       = function(val) 
 {
-    var index = -1;
+    let index = -1;
+
+    for (let i = 0; i < this.length; i++) 
+    {
+        if (JSON.stringify(this[i]) === JSON.stringify(val))
+        {
+            index = i;
+        }
+    }
+
+    return index;
+}
+
+/**
+ * indexOfArrayAdv()        {Array:Method}              Returns the index within an array via the passed array while truncating the root & passed array via the 'max' param
+ * @param                   {array}  val                Array sequence to validate
+ * @param                   {number} max                Maximum amount of elements (or length) of originating array to compare against passed value
+ * @return                  {number}                    Integer representing the index where the passed array matches 
+ */
+Array.prototype.indexOfArrayAdv   = function(val, max = 2)
+{
+    let index   = -1;
+    let compare = { root: null, pass: null }
+
+    compare.pass = (val.length > max) ? val.slice(0, max) : val;                                    // Slice Passed Array
 
     for (var i = 0; i < this.length; i++) 
     {
-        var pointInversion = [val[2], val[3], val[0], val[1]];                  // For lines draw in an inverted fashion
+        const invertPoints = (max == 4)                                                             // Set Invert Points; for lines only
+            ? [compare.pass[2], compare.pass[3], compare.pass[0], compare.pass[1]]
+            : val;
 
-        if (JSON.stringify(this[i]) === JSON.stringify(val) || JSON.stringify(this[i]) === JSON.stringify(pointInversion))
+        compare.root = (this[i].length > max) ? this[i].slice(0, max) : this[i];                    // Slice Root|This Array
+
+        if (JSON.stringify(compare.root) === JSON.stringify(compare.pass) || JSON.stringify(compare.root) === JSON.stringify(invertPoints))
         {
             index = i;
         }
@@ -371,7 +377,25 @@ Array.prototype.pushPop            = function(val)
         ? this.indexOf(val)
         : this.indexOfArray(val);
 
-    (index > -1) 
+    (index > -1)
+        ? this.splice(index, 1) 
+        : this.push(val);
+
+    this.sort((a, b) => a - b);
+}
+
+/**
+ * pushPopAdv()             {Array:Method}              Pushes or splices the array passed via the val param
+ * @param                   {array}  val                Array to be pushed or spliced
+ * @param                   {string} type               Type of array to obtain the index of
+ */
+Array.prototype.pushPopAdv         = function(val, type = 'circle')
+{
+    const index = (type == 'circle')
+        ? this.indexOfArrayAdv(val, 2)
+        : this.indexOfArrayAdv(val, 4);
+
+    (index > -1)
         ? this.splice(index, 1) 
         : this.push(val);
 
@@ -433,6 +457,7 @@ function setupEnvironment()
     toggleCheckbox('circle-stroke-width-01-checkbox');
     toggleCheckbox('circle-fill_type-profile-checkbox');
     toggleCheckbox('circle-fill_color-profile-01-checkbox');
+    toggleCheckbox('underlay-enabled-checkbox');
 
     insertHtmlContent('ui-overlay');
 }
@@ -584,6 +609,10 @@ function toggleCrossOptions(obj)
 
     altIndex = (index == 0) ? 0 : altIndex;
 
+    config.settings.circle.fill.type = (regex != null)      // Set Circle Type
+        ? parseInt(childNodes[index].value)
+        : parseInt(childNodes[altIndex].value);
+
     childNodes[index].checked    = true;
     childNodes[altIndex].checked = true;
 }
@@ -640,6 +669,28 @@ function isolateMenuCluster(obj)
 }
 
 /**
+ * pushPopLine()            {Method}                    Pushes or pops a single line along with it's settings
+ * @param                   {number} startX             Node 1 coordinate [0]
+ * @param                   {number} endX               Node 1 coordinate [1]
+ * @param                   {number} startY             Node 2 coordinate [0]
+ * @param                   {number} endY               Node 2 coordinate [1]
+ */
+function pushPopLine(startX, endX, startY, endY)
+{
+    sacredArrays.line.pushPopAdv([startX, endX, startY, endY, config.settings.line.type, config.settings.line.width], 'line');
+}
+
+/**
+ * pushPopCircle()          {Method}                    Pushes or pops a single circle along with it's settings
+ * @param                   {number} nodeOne            Node coordinate [0] 
+ * @param                   {number} nodeTwo            Node coordinate [1]
+ */
+function pushPopCircle(nodeOne, nodeTwo)
+{
+    sacredArrays.circle.pushPopAdv([nodeOne, nodeTwo, config.settings.circle.line.type, config.settings.circle.line.width, config.settings.circle.fill.type, config.settings.circle.fill.color]);
+}
+
+/**
  * pushPopPattern()         {Method}                    Pushes & pops values passed in from the 'patterns' drop-down 
  * @param                   {number} val                Numeric value passed from pushPopSacredArray()
  */
@@ -647,7 +698,7 @@ function pushPopPattern(val)
 {
     for (let i = 0; i <= patterns[val].circle.length - 1; i++)                  // Circles
     {
-        sacredArrays.pos.circle.pushPop(patterns[val].circle[i]);
+        sacredArrays.circle.pushPopAdv(patterns[val].circle[i]);
 
         let node = patterns[val].circle[i];
 
@@ -656,14 +707,14 @@ function pushPopPattern(val)
 
     for (let i = 0; i <= patterns[val].hexagon.length - 1; i++)                 // Hexagons
     {
-        sacredArrays.pos.hexagon.pushPop(patterns[val].hexagon[i]);
+        sacredArrays.hexagon.pushPop(patterns[val].hexagon[i]);
 
         toggleCheckbox(`hexagon-${patterns[val].hexagon[i].convert2digStr()}-checkbox`);
     }
 
     for (let i = 0; i <= patterns[val].line.length - 1; i++)                    // Lines
     {
-        sacredArrays.pos.line.pushPop(patterns[val].line[i]);    
+        sacredArrays.line.pushPopAdv(patterns[val].line[i], 'line');    
     }
 }
 
@@ -713,14 +764,16 @@ function clearCanvas()
  * @param                   {number}  angle.start       Start angle
  * @param                   {number}  angle.end         End angle
  * @param                   {Object}  stroke            Stroke object containing stroke properties
+ * @param                   {number}  stroke.type       Stroke type; 1 (solid) | 2 (dashed)
+ * @param                   {string}  stroke.width      Stroke width value
  * @param                   {string}  stroke.color      Stroke RGB number set for fill; r, g, b
  * @param                   {decimal} stroke.alpha      Stroke alpha (transparency) number value
  * @param                   {Object}  fill              Fill object containing fill properties
+ * @param                   {number}  fill.type         Fill type; 1 (empty) | 2 (solid) | 3 (gradient) | 4 (profile)
  * @param                   {string}  fill.color        Fill RGB number set for fill; r, g, b
  * @param                   {decimal} fill.alpha        Fill alpha (transparency) number value
- * @param                   {boolean} centerDot         Include a center dot
  */
-function drawCircle(x, y, radius, angle = { start: 0, end: 2 * Math.PI }, stroke = { color: '0, 0, 0', alpha: 0.5 }, fill = { color: '255, 255, 255', alpha: 0.3}) 
+function drawCircle(x, y, radius, angle = { start: 0, end: 2 * Math.PI }, stroke = { type: 1, width: 1, color: '0, 0, 0', alpha: 0.5 }, fill = { type: 4, color: '255, 255, 255', alpha: 0.3}) 
 {
     const circle = 
     { 
@@ -741,29 +794,38 @@ function drawCircle(x, y, radius, angle = { start: 0, end: 2 * Math.PI }, stroke
     }
 
     config.context.strokeStyle = `rgba(${stroke.color}, ${stroke.alpha})`;
-    config.context.lineWidth   = 1;
+    config.context.lineWidth   = stroke.width;
 
-    config.context.fillStyle = getRadialGradient(circle.start, circle.end);
+    switch (fill.type)
+    {
+        case 1:  config.context.fillStyle = `rgba(${fill.color}, 0)`;                     break;    // Empty
+        case 2:  config.context.fillStyle = `rgba(${fill.color}, ${fill.alpha})`;         break;    // Solid
+        case 3:  config.context.fillStyle = getRadialGradient(circle.start, circle.end);  break;    // Gradient
+        case 4:  config.context.fillStyle = getRadialGradient(circle.start, circle.end);  break;    // Profile
+    }
 
     config.context.beginPath();
     
     config.context.arc(
-        circle.start.x, 
-        circle.start.y, 
-        radius, 
-        angle.start, 
-        angle.end, 
+        circle.start.x,
+        circle.start.y,
+        radius,
+        angle.start,
+        angle.end,
         false                       // Counter Clockwise
     );
     
-    (config.circle.stroke)
-        ? config.context.stroke()
-        : null;
+    switch (stroke.type)
+    {
+        case 1:  config.context.setLineDash([]);      break;
+        case 2:  config.context.setLineDash([5, 5]);  break;
+    }
 
+    config.context.stroke();
     config.context.fill();
 
     (config.circle.centerDot)
-        ? drawCircle(x, y, (radius / 4) * 0.18, angle.start, angle.end, stroke.color, stroke.alpha, fill.color, fill.alpha, false)
+        ? drawCircle(x, y, (radius / 4) * 0.18, angle.start, angle.end, 1, 1, stroke.color, stroke.alpha, 1, fill.color, fill.alpha, false)
         : null;
 }
 
@@ -811,28 +873,32 @@ function drawUnderlay(alpha)
 
 /**
  * drawLine()               {Method}                    Draws a simple circle
- * @param                   {number} startX             X coordinate position to begin drawing at
- * @param                   {number} StartY             Y coordinate position to begin drawing at
- * @param                   {number} endX               X coordinate position to finish drawing at
- * @param                   {number} endY               Y coordinate position to finish drawing at
+ * @param                   {number}  startX            X coordinate position to begin drawing at
+ * @param                   {number}  StartY            Y coordinate position to begin drawing at
+ * @param                   {number}  endX              X coordinate position to finish drawing at
+ * @param                   {number}  endY              Y coordinate position to finish drawing at
+ * @param                   {Object}  stroke            Stroke object containing stroke properties
+ * @param                   {number}  stroke.type       Stroke type; 1 (solid) | 2 (dashed)
+ * @param                   {number}  stroke.width      Stroke width; 1 - 5
+ * @param                   {string}  stroke.color      Stroke RGB number set for fill; r, g, b
+ * @param                   {decimal} stroke.alpha      Stroke alpha (transparency) number value
  */
-function drawLine(startX, startY, endX, endY, lineType = 'dashed', lineWidth = 1, strokeColor = '0, 0, 0', strokeAlpha = 0.5) 
+function drawLine(startX, startY, endX, endY, stroke = { type: 1, width: 1, color: '0, 0, 0', alpha: 0.5 })
 {
-    config.context.strokeStyle = `rgba(${strokeColor}, ${strokeAlpha})`;
+    config.context.strokeStyle = `rgba(${stroke.color}, ${stroke.alpha})`;
     config.context.lineCap     = 'round';
-    config.context.lineWidth   = lineWidth;                 // Sets the width the the line to be rendered
+    config.context.lineWidth   = stroke.width;              // Sets the width the the line to be rendered
 
     config.context.beginPath();                             // Resets the current path
 
-    switch (lineType)
+    switch (stroke.type)
     {
-        case 'solid':   config.context.setLineDash([]);        break;
-        case 'dashed':  config.context.setLineDash([10, 10]);  break;
+        case 1:  config.context.setLineDash([]);      break;
+        case 2:  config.context.setLineDash([5, 5]);  break;
     }
 
     config.context.moveTo(startX, startY);                  // Creates a new subpath with the given point
     config.context.lineTo(endX, endY);                      // Adds the given point to the subpath
-
     
     config.context.stroke();                                // Strokes the subpaths with the current stroke style
 }
@@ -852,16 +918,26 @@ function drawSacredArray()
     ////////    CIRCLES                             ////////
     ////////////////////////////////////////////////////////
 
-    for (var i = 0; i <= sacredArrays.pos.circle.length - 1; i++)
+    for (var i = 0; i <= sacredArrays.circle.length - 1; i++)
     {
+        let color = (sacredArrays.circle[i][4] == 4)                            // Set Color via Type
+            ? colorArray[sacredArrays.circle[i][0]]
+            : colorArray[sacredArrays.circle[i][5]];
+
         drawCircle(
-            matrix[sacredArrays.pos.circle[i][0]][sacredArrays.pos.circle[i][1]][0],
-            matrix[sacredArrays.pos.circle[i][0]][sacredArrays.pos.circle[i][1]][1],
+            matrix[sacredArrays.circle[i][0]][sacredArrays.circle[i][1]][0],
+            matrix[sacredArrays.circle[i][0]][sacredArrays.circle[i][1]][1],
             spirit.radius,
-            undefined,
-            undefined,
+            undefined,                                                          // Angle
             {
-                color: colorArray[sacredArrays.pos.circle[i][0]],
+                type:  sacredArrays.circle[i][2],                               // Stroke
+                color: '0, 0, 0',
+                width: sacredArrays.circle[i][3],
+                alpha: undefined
+            },
+            {   
+                type:  sacredArrays.circle[i][4],                               // Fill
+                color: color,
                 alpha: 0.3
             }
         );
@@ -871,19 +947,20 @@ function drawSacredArray()
     ////////    HEXAGON                             ////////
     ////////////////////////////////////////////////////////
     
-    for (var i = 0; i <= sacredArrays.pos.hexagon.length - 1; i++)
+    for (var i = 0; i <= sacredArrays.hexagon.length - 1; i++)
     {
-        for (var j = 0; j <= matrix[sacredArrays.pos.hexagon[i]].length - 1; j++) 
+        for (var j = 0; j <= matrix[sacredArrays.hexagon[i]].length - 1; j++) 
         {
             var n = j + 1;
 
             if (n == 6) { n = 0; }
 
             drawLine(
-                centerX(matrix[sacredArrays.pos.hexagon[i]][j][0]),                 // startX
-                centerY(matrix[sacredArrays.pos.hexagon[i]][j][1]),                 // startY
-                centerX(matrix[sacredArrays.pos.hexagon[i]][n][0]),                 // endX
-                centerY(matrix[sacredArrays.pos.hexagon[i]][n][1])                  // endY
+                centerX(matrix[sacredArrays.hexagon[i]][j][0]),                 // startX
+                centerY(matrix[sacredArrays.hexagon[i]][j][1]),                 // startY
+                centerX(matrix[sacredArrays.hexagon[i]][n][0]),                 // endX
+                centerY(matrix[sacredArrays.hexagon[i]][n][1]),                 // endY
+                undefined
             );
         }
     }
@@ -892,13 +969,19 @@ function drawSacredArray()
     ////////    LINES                               ////////
     ////////////////////////////////////////////////////////
 
-    for (var i = 0; i <= sacredArrays.pos.line.length - 1; i++)
+    for (var i = 0; i <= sacredArrays.line.length - 1; i++)
     {
         drawLine(
-            centerX(matrix[sacredArrays.pos.line[i][0]][sacredArrays.pos.line[i][1]][0]),                   // startX
-            centerY(matrix[sacredArrays.pos.line[i][0]][sacredArrays.pos.line[i][1]][1]),                   // startY
-            centerX(matrix[sacredArrays.pos.line[i][2]][sacredArrays.pos.line[i][3]][0]),                   // endX
-            centerY(matrix[sacredArrays.pos.line[i][2]][sacredArrays.pos.line[i][3]][1])                    // endY
+            centerX(matrix[sacredArrays.line[i][0]][sacredArrays.line[i][1]][0]),                   // startX
+            centerY(matrix[sacredArrays.line[i][0]][sacredArrays.line[i][1]][1]),                   // startY
+            centerX(matrix[sacredArrays.line[i][2]][sacredArrays.line[i][3]][0]),                   // endX
+            centerY(matrix[sacredArrays.line[i][2]][sacredArrays.line[i][3]][1]),                   // endY
+            {
+                type:  sacredArrays.line[i][4],
+                width: sacredArrays.line[i][5],
+                color: '0, 0, 0',
+                alpha: 0.5
+            }
         );
     }
     
@@ -939,7 +1022,7 @@ function highlightRegion(obj)
             endY:   parseInt(node[2])
         }
 
-        mouse.existingLineIndex = sacredArrays.pos.line.indexOfArray([coords.startX, coords.startY, coords.endX, coords.endY]);
+        mouse.existingLineIndex = sacredArrays.line.indexOfArrayAdv([coords.startX, coords.startY, coords.endX, coords.endY], 4);
     }
 }
 
@@ -966,7 +1049,7 @@ function setRegion(obj)
     {
         case 'ui':
             
-            sacredArrays.pos.circle.pushPop([parseInt(node[1]), parseInt(node[2])]);
+            pushPopCircle(parseInt(node[1]), parseInt(node[2]));
 
             toggleCheckbox(`circle-${node[1]}-${(parseInt(node[2]) + 1).convert2digStr()}-checkbox`);
 
@@ -974,7 +1057,7 @@ function setRegion(obj)
 
         case 'circle':
 
-            sacredArrays.pos.circle.pushPop([parseInt(node[1]), (parseInt(node[2]) - 1)]);
+            pushPopCircle(parseInt(node[1]), (parseInt(node[2]) - 1));
 
             break;
 
@@ -988,7 +1071,9 @@ function setRegion(obj)
 
                     if (!document.getElementById(idString).checked)
                     {
-                        sacredArrays.pos.circle.pushPop([parseInt(obj.value), i]);  toggleCheckbox(idString);
+                        pushPopCircle(parseInt(obj.value), i);
+
+                        toggleCheckbox(idString);
                     }
                     else
                     {
@@ -1004,7 +1089,9 @@ function setRegion(obj)
 
                     if (document.getElementById(idString).checked)
                     {
-                        sacredArrays.pos.circle.pushPop([parseInt(obj.value), i]);  toggleCheckbox(idString);
+                        pushPopCircle(parseInt(obj.value), i);
+
+                        toggleCheckbox(idString);
                     }
                     else
                     {
@@ -1017,7 +1104,7 @@ function setRegion(obj)
 
         case 'hexagon':
 
-            sacredArrays.pos.hexagon.pushPop(parseInt(obj.value));
+            sacredArrays.hexagon.pushPop(parseInt(obj.value));
 
             break;
 
@@ -1113,16 +1200,13 @@ function startLine(obj)
  */
 function endLine(obj)
 {
-    let node   = obj.id.match(/(?<val1>\d+)-(?<val2>\d+)/);
-    let coords = new Array();
+    let node = obj.id.match(/(?<val1>\d+)-(?<val2>\d+)/);
 
     mouse.down      = false;
     mouse.coord.end = [ parseInt(node[1]), parseInt(node[2]) ];
 
-    coords.push(mouse.coord.start[0], mouse.coord.start[1], mouse.coord.end[0], mouse.coord.end[1]);
-
     (!arrayEquals(mouse.coord.start, mouse.coord.end))      // Confirm that a line's being drawn are actual lines... not a 'dots'
-        ? sacredArrays.pos.line.pushPop(coords)
+        ? pushPopLine(mouse.coord.start[0], mouse.coord.start[1], mouse.coord.end[0], mouse.coord.end[1])
         : null;
 
     drawSacredArray();
@@ -1310,9 +1394,9 @@ document.getElementById('clear-canvas').addEventListener("click", function()
 {
     clearCanvas();
 
-    for (let shape in sacredArrays.pos)
+    for (let shape in sacredArrays)
     {
-        sacredArrays.pos[shape].splice(0, sacredArrays.pos[shape].length);
+        sacredArrays[shape].splice(0, sacredArrays[shape].length);
     }
 
     for (let i = 0; i <= 3; i++)    // Trigger all checked menu items upon clear
@@ -1324,6 +1408,11 @@ document.getElementById('clear-canvas').addEventListener("click", function()
                 : null;
         });
     }
+});
+
+document.getElementById('underlay-enabled-checkbox').addEventListener("click", function()
+{
+    document.getElementById('canvas-underlay').style.setProperty('display', (this.checked) ? 'block' : 'none');
 });
 
 document.getElementById('about').addEventListener("click", function()
@@ -1344,17 +1433,27 @@ window.addEventListener("mousemove", function(event)
             centerX(matrix[mouse.coord.start[0]][mouse.coord.start[1]][0]),
             centerY(matrix[mouse.coord.start[0]][mouse.coord.start[1]][1]), 
             event.clientX, 
-            event.clientY, 
+            event.clientY,
+            {
+                type:  config.settings.line.type,
+                width: config.settings.line.width,
+                color: '0, 0, 0',
+                alpha: config.settings.line.alpha
+            }
         );
 
-        (mouse.existingLineIndex != -1 && sacredArrays.pos.line.length > 0)
+        (mouse.existingLineIndex != -1 && sacredArrays.line.length > 0)
            ? drawLine(
-                centerX(matrix[sacredArrays.pos.line[mouse.existingLineIndex][0]][sacredArrays.pos.line[mouse.existingLineIndex][1]][0]), 
-                centerY(matrix[sacredArrays.pos.line[mouse.existingLineIndex][0]][sacredArrays.pos.line[mouse.existingLineIndex][1]][1]), 
-                centerX(matrix[sacredArrays.pos.line[mouse.existingLineIndex][2]][sacredArrays.pos.line[mouse.existingLineIndex][3]][0]), 
-                centerY(matrix[sacredArrays.pos.line[mouse.existingLineIndex][2]][sacredArrays.pos.line[mouse.existingLineIndex][3]][1]), 
-                7, 
-                '255, 25, 25'
+                centerX(matrix[sacredArrays.line[mouse.existingLineIndex][0]][sacredArrays.line[mouse.existingLineIndex][1]][0]), 
+                centerY(matrix[sacredArrays.line[mouse.existingLineIndex][0]][sacredArrays.line[mouse.existingLineIndex][1]][1]), 
+                centerX(matrix[sacredArrays.line[mouse.existingLineIndex][2]][sacredArrays.line[mouse.existingLineIndex][3]][0]), 
+                centerY(matrix[sacredArrays.line[mouse.existingLineIndex][2]][sacredArrays.line[mouse.existingLineIndex][3]][1]), 
+                {
+                    type:  1,
+                    width: 7,
+                    color: '255, 25, 25',
+                    alpha: 0.7
+                }
             )
            : mouse.existingLineIndex = -1;
     }

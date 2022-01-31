@@ -1,6 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.19.75] - 2022-01-31
+### Added
+- canvas-underlay enable | disable menu option
+- indexOfArrayAdv() returns the index within an array via the passed array while truncating the root & passed array via the 'max' param
+- pushPopAdv() pushes or splices the array passed via the val param
+- pushPopLine() pushes or pops a single line along with it's settings
+- pushPopCircle() pushes or pops a single circle along with it's settings
+
+### Changed
+- optimized & modified drawLine() & drawCircle() to include solid & dashed lines and expanded functionality
+- migrated menu into dropDown.js, to inject via JavaScript; to properly rate program on git as a JS focused packaged
+
 ## [1.19.68] - 2022-01-27
 ### Added
 - circle stroke and fill settings for circles, and stroke settings for lines under settings menu
@@ -178,7 +190,9 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-[1.16.64]: 2022-01-06 [CURRENT REVISION]
+[1.19.75]: 2022-01-31 [CURRENT REVISION]
+
+[1.19.68]: 2022-01-27 [2c42da1](https://github.com/Justin-Byrne/SacredGeometry/commit/2c42da1) added ui setting elements and supporting functions
 
 [1.16.62]: 2022-01-04 [6867300](https://github.com/Justin-Byrne/SacredGeometry/commit/6867300) large optimizations with 25% code reduction
 
