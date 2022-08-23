@@ -37,27 +37,28 @@ Open the **index.html** file within the root directory; in a HTML5 compliant bro
 
 ### Vesica Pisces
 
-![Vesica Pisces](https://github.com/Justin-Byrne/SacredGeometry/tree/main/images/vesica_pisces.png)
+<img src="https://github.com/Justin-Byrne/SacredGeometry/blob/main/images/vesica_pisces.png" width="50%">
 
 ### Fruit of Life
 
-![Fruit of Life](https://github.com/Justin-Byrne/SacredGeometry/tree/main/images/fruit_of_life.png)
+<img src="https://github.com/Justin-Byrne/SacredGeometry/blob/main/images/fruit_of_life.png" width="50%">
 
 ### Flower of Life
 
-![Flower of Life](https://github.com/Justin-Byrne/SacredGeometry/tree/main/images/flower_of_life.png)
+<img src="https://github.com/Justin-Byrne/SacredGeometry/blob/main/images/flower_of_life.png" width="50%">
 
 ### Metatrons Cube
 
-![Metatrons Cube](https://github.com/Justin-Byrne/SacredGeometry/tree/main/images/metatrons_cube.png)
+<img src="https://github.com/Justin-Byrne/SacredGeometry/blob/main/images/metatrons_cube.png" width="50%">
 
 ### Icosahedron
 
-![Icosahedron](https://github.com/Justin-Byrne/SacredGeometry/tree/main/images/icosahedron-color.png)
+<img src="https://github.com/Justin-Byrne/SacredGeometry/blob/main/images/icosahedron-color.png" width="50%">
 
 ### Hexagon Formation
 
-![Hexagon Formation](https://github.com/Justin-Byrne/SacredGeometry/tree/main/images/hexagon_formation-color.png)
+<img src="https://github.com/Justin-Byrne/SacredGeometry/blob/main/images/hexagon_formation-color.png" width="50%">
+
 
 ## Support
 
