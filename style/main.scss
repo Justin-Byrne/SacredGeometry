@@ -187,8 +187,17 @@ body
     z-index: 2;
 
     background-color: #e4fcff;
-    border: 1px solid #000;
+    border: 1px solid #abf4fb;
     border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px #303030;
+
+    hr 
+    {
+        border-top: 1px solid #c1c2c5;
+        border-bottom: 0px;
+        box-shadow: 0px 1px 3px 2px #b4f1ff;
+        width: 95%;
+    }
 
     img 
     {
@@ -215,4 +224,26 @@ body
 {
     display: block;
     position: absolute;
+}
+
+#donations
+{
+    display: table;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 175px;
+    height: 75px;
+
+    z-index: 5;
+
+    #patreon-logo,
+    #coffee-logo
+    {
+        height: auto;
+
+        float: right;
+        margin-right: 16px;
+    }
 }

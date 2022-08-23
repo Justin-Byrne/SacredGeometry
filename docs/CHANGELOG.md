@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.19.77] - 2022-01-31
+### Added
+
+### Changed
+- renamed dropDown.js to interfaceOverlay.js
+
 ## [1.19.75] - 2022-01-31
 ### Added
 - canvas-underlay enable | disable menu option

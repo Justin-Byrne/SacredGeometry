@@ -343,7 +343,7 @@ Array.prototype.indexOfArray       = function(val)
  * @param                   {number} max                Maximum amount of elements (or length) of originating array to compare against passed value
  * @return                  {number}                    Integer representing the index where the passed array matches 
  */
-Array.prototype.indexOfArrayAdv   = function(val, max = 2)
+Array.prototype.indexOfArrayAdv    = function(val, max = 2)
 {
     let index   = -1;
     let compare = { root: null, pass: null }

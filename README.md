@@ -10,6 +10,13 @@ This tool is being developed as an aesthetic sacred geometry sketch pad and stud
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [Examples](#examples)
+  - [Vesica Pisces](#vesica-pisces)
+  - [Fruit of Life](#fruit-of-life)
+  - [Flower of Life](#flower-of-life)
+  - [Metatrons Cube](#metatrons-cube)
+  - [Icosahedron](#icosahedron)
+  - [Hexagon Formation](#hexagon-formation)
 - [Support](#support)
 - [Structure](#structure)
 - [Copyright](#copyright)
@@ -26,6 +33,32 @@ git clone https://github.com/Justin-Byrne/SacredGeometry.git
 
 Open the **index.html** file within the root directory; in a HTML5 compliant browser
 
+## Examples
+
+### Vesica Pisces
+
+![Vesica Pisces](https://https://github.com/Justin-Byrne/SacredGeometry/tree/main/images/vesica_pisces.png)
+
+### Fruit of Life
+
+![Fruit of Life](https://https://github.com/Justin-Byrne/SacredGeometry/tree/main/images/fruit_of_life.png)
+
+### Flower of Life
+
+![Flower of Life](https://https://github.com/Justin-Byrne/SacredGeometry/tree/main/images/flower_of_life.png)
+
+### Metatrons Cube
+
+![Metatrons Cube](https://https://github.com/Justin-Byrne/SacredGeometry/tree/main/images/metatrons_cube.png)
+
+### Icosahedron
+
+![Icosahedron](https://https://github.com/Justin-Byrne/SacredGeometry/tree/main/images/icosahedron-color.png)
+
+### Hexagon Formation
+
+![Hexagon Formation](https://https://github.com/Justin-Byrne/SacredGeometry/tree/main/images/hexagon_formation-color.png)
+
 ## Support
 
 Please [open an issue](https://github.com/Justin-Byrne/SacredGeometry/issues/new) for support.
@@ -36,17 +69,23 @@ Please [open an issue](https://github.com/Justin-Byrne/SacredGeometry/issues/new
     │
     │
     ├── docs              (Notes regarding use...)
+    │   │
     │   └── CHANGELOG.md
     │
     ├── proj              (Project files...)
-    │   └── SacredGeometry.sublime-project
+    │   │
+    │   ├── SacredGeometry.sublime-project
+    │   │
     │   └── SacredGeometry.sublime-workspace
     │
     ├── script            (Main JavaScript files...)
+    │   │
     │   └── main.js
     │
     ├── style             (Styles directory...)
+    │   │
     │   ├── main.scss
+    │   │
     │   └── style.css
     │
     ├── index.html
