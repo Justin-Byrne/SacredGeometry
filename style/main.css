@@ -118,11 +118,12 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 175px;
+  width: 240px;
   height: 75px;
   z-index: 5; }
   #donations #patreon-logo,
-  #donations #coffee-logo {
+  #donations #coffee-logo,
+  #donations #github-sponsor-logo {
     height: auto;
     float: right;
     margin-right: 16px; }

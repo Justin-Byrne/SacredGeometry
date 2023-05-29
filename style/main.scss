@@ -20,18 +20,18 @@ $menu-content-padding:      0.5rem 1rem 0.5rem 1.75rem;
 $menu-border-radius:        0.5rem;
 $menu-top-padding:          0.25rem;
 
-body 
+body
 {
     margin: 0;
 }
 
-.flyout-nav 
+.flyout-nav
 {
     position: absolute;
     z-index: 5;
 
     // list of menu items at any level
-    ul 
+    ul
     {
         background: $menu-silver;
         margin: 0;
@@ -47,14 +47,14 @@ body
     }
 
     // a menu item
-    li 
+    li
     {
         position: relative;
         display: block;
 
 
         // the menu items - text, shortcut info and hover effect (blue bg)
-        a 
+        a
         {
             text-decoration: none;
             color: $menu-text-color;
@@ -63,30 +63,30 @@ body
             width: 100%;
 
             .label,
-            .shortcut 
+            .shortcut
             {
                 display: table-cell;
                 padding: $menu-content-padding;
             }
 
-            .shortcut 
+            .shortcut
             {
                 text-align: right;
                 color: $menu-shortcut-color;
             }
 
-            label 
+            label
             {
                 cursor: pointer;
             }
 
             // for menu items that are toggled
-            input[type='checkbox'] 
+            input[type='checkbox']
             {
                 display: none;
             }
 
-            input[type='checkbox']:checked + .label 
+            input[type='checkbox']:checked + .label
             {
                 &::before {
                     content: '✔️';
@@ -97,11 +97,11 @@ body
                 }
             }
 
-            &:hover 
+            &:hover
             {
                 background: $menu-focused;
                 .label,
-                .shortcut 
+                .shortcut
                 {
                     color: $menu-focused-text-color;
                 }
@@ -110,10 +110,10 @@ body
 
         // don't let disabled options respond to hover
         // or click and color them different
-        &.disabled 
+        &.disabled
         {
             .label,
-            .shortcut 
+            .shortcut
             {
                 color: $menu-text-color-disabled;
             }
@@ -121,7 +121,7 @@ body
         }
 
         // the separator item
-        &.separator 
+        &.separator
         {
             margin-bottom: $menu-top-padding;
             border-bottom: $menu-border-width solid $menu-separator;
@@ -130,9 +130,9 @@ body
 
         // show the next level drop-down on
         // the right at the same height
-        &:hover 
+        &:hover
         {
-            & > ul 
+            & > ul
             {
                 display: block;
                 top: 0;
@@ -142,7 +142,7 @@ body
     }
 
     // overrides for first-level behavior (horizontal bar)
-    & > ul 
+    & > ul
     {
         display: flex;
         flex-flow: row nowrap;
@@ -151,7 +151,7 @@ body
 
         // first-level drop-down should appear
         // below at the same left position
-        & > li:hover > ul 
+        & > li:hover > ul
         {
             top: 100%;
             left: 0;
@@ -177,7 +177,7 @@ body
     border-bottom: 1px solid #c5c5c5;
     border-right:  1px solid #d5d5d5;
     border-left:   1px solid #e7e7e7;
-    
+
     border-radius: 5px;
 }
 
@@ -191,7 +191,7 @@ body
     border-radius: 5px;
     box-shadow: 0px 0px 4px 0px #303030;
 
-    hr 
+    hr
     {
         border-top: 1px solid #c1c2c5;
         border-bottom: 0px;
@@ -199,7 +199,7 @@ body
         width: 95%;
     }
 
-    img 
+    img
     {
         width: 425px;
         padding-left: 35px;
@@ -233,13 +233,14 @@ body
     bottom: 0;
     right: 0;
 
-    width: 175px;
+    width: 240px;
     height: 75px;
 
     z-index: 5;
 
     #patreon-logo,
-    #coffee-logo
+    #coffee-logo,
+    #github-sponsor-logo
     {
         height: auto;
 
